@@ -1,0 +1,69 @@
+$ dotnet test tests/BinaryMaxHeap.Tests --no-build --settings heap.runsettings --collect XPlat Code Coverage --logger trx --results-directory ../artifacts/coverage/before/results
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Не пройден IndexerGet_ValidIndexes_ReturnHeapOrderElements [16 ms]
+  Сообщение об ошибке:
+     Assert.That(heap[1], Is.EqualTo(1))
+  Expected: 1
+  But was:  2
+
+  Трассировка стека:
+     at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerGet_ValidIndexes_ReturnHeapOrderElements() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 150
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerGet_ValidIndexes_ReturnHeapOrderElements() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 150
+
+
+  Не пройден IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty [< 1 ms]
+  Сообщение об ошибке:
+     Assert.That(heap[0], Is.EqualTo(1))
+  Expected: 1
+  But was:  5
+
+  Трассировка стека:
+     at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 251
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 251
+
+
+  Не пройден ToArray_ReturnsElementsInHeapOrder [2 ms]
+  Сообщение об ошибке:
+     Assert.That(HeapOf(1, 2, 3).ToArray(), Is.EqualTo(new[] { 3, 1, 2 }))
+  Expected and actual are both <System.Int32[3]>
+  Values differ at index [1]
+  Expected: 1
+  But was:  2
+
+  Трассировка стека:
+     at UnitTests_for_BMH.BinaryMaxHeapTests.ToArray_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 693
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.ToArray_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 693
+
+
+  Не пройден ToList_ReturnsElementsInHeapOrder [< 1 ms]
+  Сообщение об ошибке:
+     Assert.That(HeapOf(1, 2, 3).ToList(), Is.EqualTo(new List<int> { 3, 1, 2 }))
+  Expected and actual are both <System.Collections.Generic.List`1[System.Int32]> with 3 elements
+  Values differ at index [1]
+  Expected: 1
+  But was:  2
+
+  Трассировка стека:
+     at UnitTests_for_BMH.BinaryMaxHeapTests.ToList_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 716
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.ToList_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 716
+
+
+  Пропущен ToMinHeap_ContainsAllElementsWithMinimumOnTop [< 1 ms]
+  Пропущен ToMinHeap_DoesNotAffectOriginalHeap [< 1 ms]
+  Пропущен ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap [< 1 ms]
+  Пропущен ToMinHeap_ExtractsInAscendingOrder [< 1 ms]
+  Пропущен ToMinHeap_PassesTheSameComparerToTheMinHeap [< 1 ms]
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/coverage/before/results/_MacBook-Air-Egor_2026-11-21_19_28_01_net10.0.trx
+
+Не пройден!: не пройдено     4, пройдено    86, пропущено     5, всего    95, длительность 87 ms. - BinaryMaxHeap.Tests.dll (net10.0)
+
+Вложения:
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/coverage/before/results/1a769372-c3e6-427d-845b-430a89e7c39b/coverage.cobertura.xml
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/coverage/before/results/1a769372-c3e6-427d-845b-430a89e7c39b/coverage.opencover.xml
+
+EXIT CODE: 1

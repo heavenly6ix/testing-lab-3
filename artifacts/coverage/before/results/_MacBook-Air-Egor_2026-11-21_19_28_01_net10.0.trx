@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e25e5470-1453-448f-90b8-21f46e9ab38b" name="@MacBook-Air-Egor 2026-11-21 19:28:01" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-21T19:28:01.0941410+07:00" queuing="2026-11-21T19:28:01.0941410+07:00" start="2026-11-21T19:28:00.4113170+07:00" finish="2026-11-21T19:28:01.2423650+07:00" />
+  <TestSettings name="default" id="820f2179-7cf7-4e8d-90d9-afdfec3d10cf">
+    <Deployment runDeploymentRoot="_MacBook-Air-Egor_2026-11-21_19_28_01" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="81c3b5dd-de60-485e-a3ad-9b993c17106d" testId="6800fa57-949f-0362-1cc4-28da21b4f9a2" testName="ToMinHeap_PassesTheSameComparerToTheMinHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0000720" startTime="2026-11-21T19:28:01.0907710+07:00" endTime="2026-11-21T19:28:01.0908430+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81c3b5dd-de60-485e-a3ad-9b993c17106d">
+      <Output>
+        <StdOut>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</StdOut>
+        <ErrorInfo>
+          <Message>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9eabb841-5879-4272-baa1-36a59d7c52cc" testId="e4785fbc-48bb-a88a-e1fa-48e70a847bec" testName="Peek_ReturnsMaxWithoutRemovingIt" computerName="MacBook-Air-Egor" duration="00:00:00.0000630" startTime="2026-11-21T19:28:01.0806400+07:00" endTime="2026-11-21T19:28:01.0807040+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9eabb841-5879-4272-baa1-36a59d7c52cc" />
+    <UnitTestResult executionId="1def74bb-5fee-4cb7-b081-3de822d7181f" testId="932d2a4b-4ea8-04b6-47b9-883cb66f1d3d" testName="DefaultConstructor_CreatesEmptyHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0000390" startTime="2026-11-21T19:28:01.0545470+07:00" endTime="2026-11-21T19:28:01.0545860+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1def74bb-5fee-4cb7-b081-3de822d7181f" />
+    <UnitTestResult executionId="74048024-6435-46f8-903b-7d079dfd917f" testId="aed70461-40dc-a9a0-fc51-e75216941186" testName="Initialize_ThreeElements_LeftIsLargest" computerName="MacBook-Air-Egor" duration="00:00:00.0000470" startTime="2026-11-21T19:28:01.0798870+07:00" endTime="2026-11-21T19:28:01.0799340+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74048024-6435-46f8-903b-7d079dfd917f" />
+    <UnitTestResult executionId="2f2c17bf-037e-4dc5-8ebe-972e52b1a2aa" testId="a0218276-6ac4-b024-559a-6dbda83f1b66" testName="IndexerSet_InvalidIndex_Throws(3)" computerName="MacBook-Air-Egor" duration="00:00:00.0000749" startTime="2026-11-21T19:28:01.0758650+07:00" endTime="2026-11-21T19:28:01.0759390+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f2c17bf-037e-4dc5-8ebe-972e52b1a2aa" />
+    <UnitTestResult executionId="9e830eef-3ab2-4d4f-af45-62387c2b9aa3" testId="bb6462e4-78e3-458a-f971-32f7638808d6" testName="IndexerGet_ValidIndexes_ReturnHeapOrderElements" computerName="MacBook-Air-Egor" duration="00:00:00.0162370" startTime="2026-11-21T19:28:01.0577320+07:00" endTime="2026-11-21T19:28:01.0739680+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e830eef-3ab2-4d4f-af45-62387c2b9aa3">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(heap[1], Is.EqualTo(1))
+  Expected: 1
+  But was:  2
+</Message>
+          <StackTrace>   at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerGet_ValidIndexes_ReturnHeapOrderElements() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 150
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerGet_ValidIndexes_ReturnHeapOrderElements() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 150
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="974a515c-1fd4-4e4d-8e69-0497c0195a41" testId="23dd25c6-edd8-f3aa-8a9f-0dc466ec6f3f" testName="RebuildHeap_OnValidHeap_ChangesNothing" computerName="MacBook-Air-Egor" duration="00:00:00.0000550" startTime="2026-11-21T19:28:01.0809350+07:00" endTime="2026-11-21T19:28:01.0809900+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="974a515c-1fd4-4e4d-8e69-0497c0195a41" />
+    <UnitTestResult executionId="4224cf3e-d8bd-4207-93a4-2025229d5fd4" testId="996ad51a-2a66-b2e3-10fc-b02a9e3ea607" testName="CapacityConstructor_NegativeCapacity_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0020650" startTime="2026-11-21T19:28:01.0495170+07:00" endTime="2026-11-21T19:28:01.0515820+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4224cf3e-d8bd-4207-93a4-2025229d5fd4" />
+    <UnitTestResult executionId="59213568-e56b-45bb-a1b1-ce3b139c923e" testId="5558e220-0871-0b87-c421-1fd72078d053" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(4)" computerName="MacBook-Air-Egor" duration="00:00:00.0000100" startTime="2026-11-21T19:28:01.0792640+07:00" endTime="2026-11-21T19:28:01.0792740+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59213568-e56b-45bb-a1b1-ce3b139c923e" />
+    <UnitTestResult executionId="67719c18-c5db-4ef4-9081-75682a24dfd2" testId="2b6babad-32e5-2d29-dfc6-74d264baf2ac" testName="ToMinHeap_ContainsAllElementsWithMinimumOnTop" computerName="MacBook-Air-Egor" duration="00:00:00.0003860" startTime="2026-11-21T19:28:01.0900560+07:00" endTime="2026-11-21T19:28:01.0904430+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67719c18-c5db-4ef4-9081-75682a24dfd2">
+      <Output>
+        <StdOut>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</StdOut>
+        <ErrorInfo>
+          <Message>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d3337ca-c1a7-4416-9f44-c62fce388b4f" testId="315c2f16-796b-f778-f837-6b48eacab406" testName="Clear_HeapIsReusableAfterwards" computerName="MacBook-Air-Egor" duration="00:00:00.0001310" startTime="2026-11-21T19:28:01.0539390+07:00" endTime="2026-11-21T19:28:01.0540700+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d3337ca-c1a7-4416-9f44-c62fce388b4f" />
+    <UnitTestResult executionId="c1b28e15-3a8a-4ea7-b67b-c5f265848dc4" testId="3200bc9f-6c54-88ac-e989-39841ac70e82" testName="Union_BothHeapsNull_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0001190" startTime="2026-11-21T19:28:01.0910340+07:00" endTime="2026-11-21T19:28:01.0911530+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1b28e15-3a8a-4ea7-b67b-c5f265848dc4" />
+    <UnitTestResult executionId="fdcba66c-ee0b-4b94-a308-047533a988bc" testId="597f220d-0354-e118-cbc9-1454578c4f42" testName="ReversedComparerMock_TurnsHeapIntoMinFirstHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0003840" startTime="2026-11-21T19:28:01.0844400+07:00" endTime="2026-11-21T19:28:01.0848240+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdcba66c-ee0b-4b94-a308-047533a988bc" />
+    <UnitTestResult executionId="6feb4a2b-c7a3-408f-87e8-e26d0b22b505" testId="26ca4b6c-5797-49ef-66f1-a8bab6d7aa70" testName="ToMinHeap_ExtractsInAscendingOrder" computerName="MacBook-Air-Egor" duration="00:00:00.0000740" startTime="2026-11-21T19:28:01.0906950+07:00" endTime="2026-11-21T19:28:01.0907690+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6feb4a2b-c7a3-408f-87e8-e26d0b22b505">
+      <Output>
+        <StdOut>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</StdOut>
+        <ErrorInfo>
+          <Message>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f9020ed-bd39-4ff3-92a2-92423a5d9209" testId="ac628079-04c0-59ed-dd76-2379f735d4ed" testName="Union_FirstEmpty_ReturnsCopyOfSecond" computerName="MacBook-Air-Egor" duration="00:00:00.0000820" startTime="2026-11-21T19:28:01.0911570+07:00" endTime="2026-11-21T19:28:01.0912380+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f9020ed-bd39-4ff3-92a2-92423a5d9209" />
+    <UnitTestResult executionId="f2408d2d-2d8e-4009-9d97-a9912f6d2999" testId="9a0deb40-fb2f-aae4-97e4-2a46ee2a023e" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(8)" computerName="MacBook-Air-Egor" duration="00:00:00.0000140" startTime="2026-11-21T19:28:01.0792900+07:00" endTime="2026-11-21T19:28:01.0793040+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2408d2d-2d8e-4009-9d97-a9912f6d2999" />
+    <UnitTestResult executionId="71b9811a-b59e-4949-9536-0bdc668325fb" testId="5a19b508-ff12-32cd-557e-bc2c59676648" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(16)" computerName="MacBook-Air-Egor" duration="00:00:00.0000230" startTime="2026-11-21T19:28:01.0793320+07:00" endTime="2026-11-21T19:28:01.0793550+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71b9811a-b59e-4949-9536-0bdc668325fb" />
+    <UnitTestResult executionId="4790e786-79c5-4704-b016-f1daf9238421" testId="7447f0c4-abbf-587c-1081-61ff8c8f2b06" testName="RemoveMax_Repeatedly_ReturnsToEmptyAndThenThrows" computerName="MacBook-Air-Egor" duration="00:00:00.0001530" startTime="2026-11-21T19:28:01.0812150+07:00" endTime="2026-11-21T19:28:01.0813680+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4790e786-79c5-4704-b016-f1daf9238421" />
+    <UnitTestResult executionId="c06a88ee-3819-4c2d-98d9-7ccca9f2f004" testId="2cf2f4ae-18dc-9638-1cc1-ed3e47914777" testName="Union_FirstHeapNull_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0000950" startTime="2026-11-21T19:28:01.0912430+07:00" endTime="2026-11-21T19:28:01.0913380+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c06a88ee-3819-4c2d-98d9-7ccca9f2f004" />
+    <UnitTestResult executionId="edd0e02e-9327-4a45-a0b5-cf63b7beb296" testId="0dc60515-90e5-f05f-2ece-ae046829fd88" testName="IndexerSet_GreaterThanRoot_ComparesAgainstRootThenRebuilds" computerName="MacBook-Air-Egor" duration="00:00:00.0014180" startTime="2026-11-21T19:28:01.0742860+07:00" endTime="2026-11-21T19:28:01.0757040+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edd0e02e-9327-4a45-a0b5-cf63b7beb296" />
+    <UnitTestResult executionId="29a9f0d3-637e-4e74-9d2d-1853f7537811" testId="a51c81b7-eddc-c852-24d6-4946ad351a6a" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(3)" computerName="MacBook-Air-Egor" duration="00:00:00.0000100" startTime="2026-11-21T19:28:01.0792530+07:00" endTime="2026-11-21T19:28:01.0792620+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29a9f0d3-637e-4e74-9d2d-1853f7537811" />
+    <UnitTestResult executionId="a855f6f3-a021-4f72-a4bf-3f95ddc5f6f1" testId="9aaa8663-4dab-7a78-c7d0-c4aa29f422c4" testName="ExtractMax_ReturnsMaxAndRemovesIt" computerName="MacBook-Air-Egor" duration="00:00:00.0000760" startTime="2026-11-21T19:28:01.0572480+07:00" endTime="2026-11-21T19:28:01.0573240+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a855f6f3-a021-4f72-a4bf-3f95ddc5f6f1" />
+    <UnitTestResult executionId="518e4d2b-9ac7-42f5-95a6-99228a5b6eee" testId="bcbd9f34-46ed-6c94-f8eb-04e20e816c85" testName="Constructor_NullComparer_FallsBackToDefaultComparer" computerName="MacBook-Air-Egor" duration="00:00:00.0000490" startTime="2026-11-21T19:28:01.0543360+07:00" endTime="2026-11-21T19:28:01.0543840+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="518e4d2b-9ac7-42f5-95a6-99228a5b6eee" />
+    <UnitTestResult executionId="7a5e187e-e9ea-41c7-b62c-4f25ba39d637" testId="cc7165ec-386a-ed3b-bf48-256a6f8c364f" testName="ExtractMax_Repeatedly_ReturnsDescendingOrder(2)" computerName="MacBook-Air-Egor" duration="00:00:00.0002910" startTime="2026-11-21T19:28:01.0559990+07:00" endTime="2026-11-21T19:28:01.0562900+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a5e187e-e9ea-41c7-b62c-4f25ba39d637" />
+    <UnitTestResult executionId="bd99bd32-ae82-451e-9b26-ab6bd0985eff" testId="c1fccdc8-eea0-c80c-e5d8-79a7f5f7c07c" testName="Union_SetsBothOriginalReferencesToNull" computerName="MacBook-Air-Egor" duration="00:00:00.0001280" startTime="2026-11-21T19:28:01.0919200+07:00" endTime="2026-11-21T19:28:01.0920470+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd99bd32-ae82-451e-9b26-ab6bd0985eff" />
+    <UnitTestResult executionId="79bc36c6-210a-469b-bca7-28c5991d0a49" testId="a0b337e4-48f5-a141-7ae5-1bd88e144fa1" testName="RemoveMax_SevenElements_ProducesExpectedLayout" computerName="MacBook-Air-Egor" duration="00:00:00.0028230" startTime="2026-11-21T19:28:01.0813710+07:00" endTime="2026-11-21T19:28:01.0841930+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79bc36c6-210a-469b-bca7-28c5991d0a49" />
+    <UnitTestResult executionId="633038d0-06a6-4514-af7f-91a829ce0131" testId="05733d20-c730-c733-69cc-a9d7667c93f2" testName="Initialize_AcceptsAnIListOfAnyKind" computerName="MacBook-Air-Egor" duration="00:00:00.0000680" startTime="2026-11-21T19:28:01.0779700+07:00" endTime="2026-11-21T19:28:01.0780370+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="633038d0-06a6-4514-af7f-91a829ce0131" />
+    <UnitTestResult executionId="20723998-14b9-4128-925c-b676e6259bd9" testId="af4a8291-2be7-3e41-768f-47be426f8e72" testName="ExtractMax_Repeatedly_ReturnsDescendingOrder(33)" computerName="MacBook-Air-Egor" duration="00:00:00.0000590" startTime="2026-11-21T19:28:01.0563100+07:00" endTime="2026-11-21T19:28:01.0563690+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20723998-14b9-4128-925c-b676e6259bd9" />
+    <UnitTestResult executionId="bcb20fd5-0863-4168-84c8-377dce2d7227" testId="c1c5757a-c7f0-8070-9307-0059e1b75aca" testName="ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0001120" startTime="2026-11-21T19:28:01.0905800+07:00" endTime="2026-11-21T19:28:01.0906920+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcb20fd5-0863-4168-84c8-377dce2d7227">
+      <Output>
+        <StdOut>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</StdOut>
+        <ErrorInfo>
+          <Message>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a6161a5-b658-43d8-9296-e5bcb89d3974" testId="82a5af67-0700-8aa1-ac9f-5cf61e9fd269" testName="Initialize_DoesNotModifySourceCollection" computerName="MacBook-Air-Egor" duration="00:00:00.0000550" startTime="2026-11-21T19:28:01.0780390+07:00" endTime="2026-11-21T19:28:01.0780940+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a6161a5-b658-43d8-9296-e5bcb89d3974" />
+    <UnitTestResult executionId="a43f280d-3284-404f-96c3-9618fd9bd437" testId="fb385da4-84be-47c5-8f2e-ef6810a8f0f1" testName="Initialize_WithDuplicates_KeepsAllOfThem" computerName="MacBook-Air-Egor" duration="00:00:00.0000770" startTime="2026-11-21T19:28:01.0803750+07:00" endTime="2026-11-21T19:28:01.0804520+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a43f280d-3284-404f-96c3-9618fd9bd437" />
+    <UnitTestResult executionId="93501b2a-aa33-42c9-b57c-b771bb12dcb1" testId="76ff5040-dc77-9c98-a5ab-bb1269c1b2b3" testName="ToArray_ReturnsIndependentCopy" computerName="MacBook-Air-Egor" duration="00:00:00.0001350" startTime="2026-11-21T19:28:01.0887320+07:00" endTime="2026-11-21T19:28:01.0888670+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93501b2a-aa33-42c9-b57c-b771bb12dcb1" />
+    <UnitTestResult executionId="a90ed9d0-e7c7-45bf-b3c7-87195450e07e" testId="e68198ee-15f7-9fd6-3fda-4ab1b6822282" testName="IndexerSet_ValueEqualToRoot_TakesTheGreaterOrEqualBranch" computerName="MacBook-Air-Egor" duration="00:00:00.0010450" startTime="2026-11-21T19:28:01.0767220+07:00" endTime="2026-11-21T19:28:01.0777670+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a90ed9d0-e7c7-45bf-b3c7-87195450e07e" />
+    <UnitTestResult executionId="ea23bf20-2a25-4889-9bda-16d88d46f42c" testId="1b8a185c-780d-46b1-3341-e53cc1a0aa78" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(15)" computerName="MacBook-Air-Egor" duration="00:00:00.0000240" startTime="2026-11-21T19:28:01.0793060+07:00" endTime="2026-11-21T19:28:01.0793300+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea23bf20-2a25-4889-9bda-16d88d46f42c" />
+    <UnitTestResult executionId="cedd295c-7e18-4285-8a6b-b2c92534769c" testId="7b0dab6c-a66b-e8b3-1eec-7e2ee3945587" testName="Union_MergesAllElementsIntoNewValidHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0001140" startTime="2026-11-21T19:28:01.0914910+07:00" endTime="2026-11-21T19:28:01.0916050+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cedd295c-7e18-4285-8a6b-b2c92534769c" />
+    <UnitTestResult executionId="f1b98358-7e5f-424d-b077-e3da8e02e80a" testId="7879c37c-2d6b-2469-f984-2be462098c61" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(50)" computerName="MacBook-Air-Egor" duration="00:00:00.0000740" startTime="2026-11-21T19:28:01.0793560+07:00" endTime="2026-11-21T19:28:01.0794300+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1b98358-7e5f-424d-b077-e3da8e02e80a" />
+    <UnitTestResult executionId="3cfdb2f7-b846-4e41-82b9-4407bde90f37" testId="608f2f9c-7628-5d38-2c17-f845b8f02601" testName="ToList_ReturnsElementsInHeapOrder" computerName="MacBook-Air-Egor" duration="00:00:00.0004010" startTime="2026-11-21T19:28:01.0893710+07:00" endTime="2026-11-21T19:28:01.0897720+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cfdb2f7-b846-4e41-82b9-4407bde90f37">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(HeapOf(1, 2, 3).ToList(), Is.EqualTo(new List&lt;int&gt; { 3, 1, 2 }))
+  Expected and actual are both &lt;System.Collections.Generic.List`1[System.Int32]&gt; with 3 elements
+  Values differ at index [1]
+  Expected: 1
+  But was:  2
+</Message>
+          <StackTrace>   at UnitTests_for_BMH.BinaryMaxHeapTests.ToList_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 716
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.ToList_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 716
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c5a72998-62f7-4ce2-9db6-f204e64d32c1" testId="26d32ced-b17c-bd31-b250-a8aff42e3e45" testName="CountAndIsEmpty_TrackAddsAndRemovals" computerName="MacBook-Air-Egor" duration="00:00:00.0001590" startTime="2026-11-21T19:28:01.0543860+07:00" endTime="2026-11-21T19:28:01.0545450+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5a72998-62f7-4ce2-9db6-f204e64d32c1" />
+    <UnitTestResult executionId="8bc9d741-181b-48cd-8b0d-7142e3aeb617" testId="4b9c0a1c-2994-a528-8425-ccf6114a518f" testName="IndexerGet_IndexGreaterThanCount_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0000749" startTime="2026-11-21T19:28:01.0575820+07:00" endTime="2026-11-21T19:28:01.0576580+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bc9d741-181b-48cd-8b0d-7142e3aeb617" />
+    <UnitTestResult executionId="a5e6d9c4-4362-4d43-ac32-028e9403601d" testId="ed04841e-336c-51e7-6ef4-1301f5a75ab4" testName="Peek_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0001789" startTime="2026-11-21T19:28:01.0804560+07:00" endTime="2026-11-21T19:28:01.0806360+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5e6d9c4-4362-4d43-ac32-028e9403601d" />
+    <UnitTestResult executionId="6a7e5598-37ca-4a30-a7db-2573ad06ba14" testId="6d6a8fa5-4bbb-c147-9672-700bbcc1fbdf" testName="IndexerSet_ValueSmallerThanRoot_StoresValueWithoutTouchingRoot" computerName="MacBook-Air-Egor" duration="00:00:00.0000560" startTime="2026-11-21T19:28:01.0779110+07:00" endTime="2026-11-21T19:28:01.0779670+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a7e5598-37ca-4a30-a7db-2573ad06ba14" />
+    <UnitTestResult executionId="0031a450-5385-469a-99e0-28f9346f6573" testId="15320573-09a0-e9e0-6e16-f0a426f88870" testName="Add_ManyRandomValues_KeepsHeapPropertyAfterEveryInsert" computerName="MacBook-Air-Egor" duration="00:00:00.0016400" startTime="2026-11-21T19:28:01.0130850+07:00" endTime="2026-11-21T19:28:01.0147240+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0031a450-5385-469a-99e0-28f9346f6573" />
+    <UnitTestResult executionId="05bf95d3-4626-43b1-a88c-8e277c5ebf51" testId="2f9d3749-af3e-ebb4-2420-563d5598f8cc" testName="IndexerSet_ValueGreaterThanRoot_PromotesNewMax" computerName="MacBook-Air-Egor" duration="00:00:00.0001130" startTime="2026-11-21T19:28:01.0777900+07:00" endTime="2026-11-21T19:28:01.0779030+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05bf95d3-4626-43b1-a88c-8e277c5ebf51" />
+    <UnitTestResult executionId="d9bd2361-0cb9-4d08-a368-92e1d7bd4669" testId="43914ba5-584f-10b8-a185-da77784bafa7" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(7)" computerName="MacBook-Air-Egor" duration="00:00:00.0000130" startTime="2026-11-21T19:28:01.0792760+07:00" endTime="2026-11-21T19:28:01.0792890+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9bd2361-0cb9-4d08-a368-92e1d7bd4669" />
+    <UnitTestResult executionId="32ff5360-03a2-4344-bc13-88d27ab1e778" testId="5e24faea-3561-97c7-5e9b-a19716dffb35" testName="ToList_ReturnsIndependentCopy" computerName="MacBook-Air-Egor" duration="00:00:00.0000770" startTime="2026-11-21T19:28:01.0897780+07:00" endTime="2026-11-21T19:28:01.0898550+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32ff5360-03a2-4344-bc13-88d27ab1e778" />
+    <UnitTestResult executionId="09d1b61e-d812-4e1f-8e2f-ca3173963732" testId="597b8ab7-c6a4-4371-9f13-5795380813d0" testName="ExtractMax_Repeatedly_ReturnsDescendingOrder(150)" computerName="MacBook-Air-Egor" duration="00:00:00.0003040" startTime="2026-11-21T19:28:01.0563700+07:00" endTime="2026-11-21T19:28:01.0566740+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09d1b61e-d812-4e1f-8e2f-ca3173963732" />
+    <UnitTestResult executionId="9da13046-8c7d-4ebf-968e-2ddfa0bac63f" testId="9c27952f-5efb-f785-1f8c-6bca5940c7c7" testName="ToList_EmptyHeap_ReturnsEmptyList" computerName="MacBook-Air-Egor" duration="00:00:00.0004920" startTime="2026-11-21T19:28:01.0888720+07:00" endTime="2026-11-21T19:28:01.0893650+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9da13046-8c7d-4ebf-968e-2ddfa0bac63f" />
+    <UnitTestResult executionId="b37770e5-31a2-45bd-9ae7-81a5fb062262" testId="d5ac9a03-88e6-30b9-a918-a374554954b1" testName="ExtractMax_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0003100" startTime="2026-11-21T19:28:01.0545880+07:00" endTime="2026-11-21T19:28:01.0548990+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b37770e5-31a2-45bd-9ae7-81a5fb062262" />
+    <UnitTestResult executionId="8b5efba7-e1c6-4ddc-aff8-103ad145cf34" testId="bce1234b-1099-df53-769b-84efdc23a38a" testName="ToArray_EmptyHeap_ReturnsEmptyArray" computerName="MacBook-Air-Egor" duration="00:00:00.0011199" startTime="2026-11-21T19:28:01.0848300+07:00" endTime="2026-11-21T19:28:01.0859500+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b5efba7-e1c6-4ddc-aff8-103ad145cf34" />
+    <UnitTestResult executionId="46e6357e-bea2-4961-b4b4-17b2869a0aa8" testId="fb89d193-283f-be2c-9839-7f06b8f474af" testName="Union_BothEmpty_ReturnsEmptyHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0001840" startTime="2026-11-21T19:28:01.0908460+07:00" endTime="2026-11-21T19:28:01.0910310+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46e6357e-bea2-4961-b4b4-17b2869a0aa8" />
+    <UnitTestResult executionId="18809c34-aa38-4475-879e-8327b79e0b6a" testId="dbd12249-4f3e-4870-a287-4bc7bb87b338" testName="Initialize_SevenElements_RequiresRecursiveSiftDown" computerName="MacBook-Air-Egor" duration="00:00:00.0000570" startTime="2026-11-21T19:28:01.0797770+07:00" endTime="2026-11-21T19:28:01.0798340+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18809c34-aa38-4475-879e-8327b79e0b6a" />
+    <UnitTestResult executionId="1986d053-72e8-4d4a-9978-e9fb4d19bf78" testId="9f5d4d93-575e-dbdb-0793-b9a2a77ec576" testName="ComparerConstructor_CreatesEmptyHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0000470" startTime="2026-11-21T19:28:01.0541320+07:00" endTime="2026-11-21T19:28:01.0541790+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1986d053-72e8-4d4a-9978-e9fb4d19bf78" />
+    <UnitTestResult executionId="874edac3-de45-40cb-ab6b-2872dd0c06c9" testId="91bf52ee-0dbd-17ec-8462-e6e7b9dad458" testName="Add_SingleElement_NeverInvokesComparer" computerName="MacBook-Air-Egor" duration="00:00:00.0007390" startTime="2026-11-21T19:28:01.0485570+07:00" endTime="2026-11-21T19:28:01.0492970+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="874edac3-de45-40cb-ab6b-2872dd0c06c9" />
+    <UnitTestResult executionId="16580b0e-31ca-448f-8ec7-ecfa22617e30" testId="30bc0c20-2116-ff30-c6cb-6e13db93a74f" testName="IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty" computerName="MacBook-Air-Egor" duration="00:00:00.0002520" startTime="2026-11-21T19:28:01.0759750+07:00" endTime="2026-11-21T19:28:01.0762260+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16580b0e-31ca-448f-8ec7-ecfa22617e30">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(heap[0], Is.EqualTo(1))
+  Expected: 1
+  But was:  5
+</Message>
+          <StackTrace>   at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 251
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 251
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e8e074e6-5657-41a6-8e9d-d3b7e840a9d7" testId="104f0541-6d3b-e357-a311-1465a7dc2133" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(1)" computerName="MacBook-Air-Egor" duration="00:00:00.0001950" startTime="2026-11-21T19:28:01.0789740+07:00" endTime="2026-11-21T19:28:01.0791680+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8e074e6-5657-41a6-8e9d-d3b7e840a9d7" />
+    <UnitTestResult executionId="7a7d7701-f66e-475f-9229-444ab9662456" testId="18aa1d92-62a8-7a40-b055-c6e4d056e2ed" testName="Union_SecondHeapNull_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0001310" startTime="2026-11-21T19:28:01.0917480+07:00" endTime="2026-11-21T19:28:01.0918790+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a7d7701-f66e-475f-9229-444ab9662456" />
+    <UnitTestResult executionId="a3640d05-a370-4cee-b722-0bc966994d88" testId="8530ac5e-699f-0c40-b28a-e9c5be27b6d0" testName="ToMinHeap_DoesNotAffectOriginalHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0000820" startTime="2026-11-21T19:28:01.0904470+07:00" endTime="2026-11-21T19:28:01.0905290+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3640d05-a370-4cee-b722-0bc966994d88">
+      <Output>
+        <StdOut>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</StdOut>
+        <ErrorInfo>
+          <Message>Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="95786195-c044-4478-a93f-4d67fec0a980" testId="0cdccafd-69af-713f-d30a-25987725f3fb" testName="Union_SecondEmpty_ReturnsCopyOfFirst" computerName="MacBook-Air-Egor" duration="00:00:00.0000630" startTime="2026-11-21T19:28:01.0916090+07:00" endTime="2026-11-21T19:28:01.0916720+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95786195-c044-4478-a93f-4d67fec0a980" />
+    <UnitTestResult executionId="90f22324-7d3c-4bf9-ae49-8de021e3d2bb" testId="a192459b-3825-8664-fce7-a2469bcfec16" testName="ToArray_ReturnsElementsInHeapOrder" computerName="MacBook-Air-Egor" duration="00:00:00.0027670" startTime="2026-11-21T19:28:01.0859570+07:00" endTime="2026-11-21T19:28:01.0887230+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90f22324-7d3c-4bf9-ae49-8de021e3d2bb">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(HeapOf(1, 2, 3).ToArray(), Is.EqualTo(new[] { 3, 1, 2 }))
+  Expected and actual are both &lt;System.Int32[3]&gt;
+  Values differ at index [1]
+  Expected: 1
+  But was:  2
+</Message>
+          <StackTrace>   at UnitTests_for_BMH.BinaryMaxHeapTests.ToArray_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 693
+
+1)    at UnitTests_for_BMH.BinaryMaxHeapTests.ToArray_ReturnsElementsInHeapOrder() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs:line 693
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e9f5c83e-e4c5-48f6-9914-b0d5cf22e240" testId="79638935-cd36-8813-8bf5-a461dfa5e55a" testName="Initialize_EmptyCollection_OnEmptyHeap_StaysEmpty" computerName="MacBook-Air-Egor" duration="00:00:00.0000370" startTime="2026-11-21T19:28:01.0781540+07:00" endTime="2026-11-21T19:28:01.0781910+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9f5c83e-e4c5-48f6-9914-b0d5cf22e240" />
+    <UnitTestResult executionId="26acb017-f5da-45fb-a1d1-725fff94f79f" testId="2c628c02-a68d-e930-0630-c7caf985fb2e" testName="RebuildHeap_RestoresHeapPropertyAfterIndexerSet" computerName="MacBook-Air-Egor" duration="00:00:00.0000760" startTime="2026-11-21T19:28:01.0809920+07:00" endTime="2026-11-21T19:28:01.0810670+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26acb017-f5da-45fb-a1d1-725fff94f79f" />
+    <UnitTestResult executionId="6b50539f-3c5a-4dbd-9b2a-647fd1ace5f5" testId="4923bc44-66a7-d7b9-ea17-20d1b2f38525" testName="IndexerSet_InvalidIndex_Throws(100)" computerName="MacBook-Air-Egor" duration="00:00:00.0000130" startTime="2026-11-21T19:28:01.0759430+07:00" endTime="2026-11-21T19:28:01.0759550+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b50539f-3c5a-4dbd-9b2a-647fd1ace5f5" />
+    <UnitTestResult executionId="c1cd45fc-ee60-403c-ad14-51d75ae2c7b7" testId="5e4a43a2-132f-d0dc-e4d7-3561b1ba5fc0" testName="Initialize_InvokesInjectedComparer" computerName="MacBook-Air-Egor" duration="00:00:00.0003669" startTime="2026-11-21T19:28:01.0781930+07:00" endTime="2026-11-21T19:28:01.0785600+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1cd45fc-ee60-403c-ad14-51d75ae2c7b7" />
+    <UnitTestResult executionId="50a34a04-b06e-4b62-9a3f-961519702459" testId="e755ba3e-ba13-8312-1e88-d5261e111c50" testName="Add_ToEmptyHeap_BecomesRoot" computerName="MacBook-Air-Egor" duration="00:00:00.0000620" startTime="2026-11-21T19:28:01.0494510+07:00" endTime="2026-11-21T19:28:01.0495140+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50a34a04-b06e-4b62-9a3f-961519702459" />
+    <UnitTestResult executionId="cabe931e-d7a5-42a0-8003-1d94aaf8ce44" testId="824df25d-de1c-bf65-396a-e13dbb2cf175" testName="ExtractMax_Repeatedly_ReturnsDescendingOrder(1)" computerName="MacBook-Air-Egor" duration="00:00:00.0010760" startTime="2026-11-21T19:28:01.0549190+07:00" endTime="2026-11-21T19:28:01.0559950+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cabe931e-d7a5-42a0-8003-1d94aaf8ce44" />
+    <UnitTestResult executionId="5d9258db-ec5c-40c7-a030-c95629c2bfee" testId="5ef5a37b-e503-2efd-a72f-d930beef779c" testName="Clear_NonEmptyHeap_RemovesEverything" computerName="MacBook-Air-Egor" duration="00:00:00.0000560" startTime="2026-11-21T19:28:01.0540730+07:00" endTime="2026-11-21T19:28:01.0541290+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d9258db-ec5c-40c7-a030-c95629c2bfee" />
+    <UnitTestResult executionId="cab9d8a2-399a-4dd3-b368-03849ef0a011" testId="11cbd5aa-14e0-6c27-b396-57e928a72b66" testName="IndexerGet_NegativeIndex_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0000710" startTime="2026-11-21T19:28:01.0576600+07:00" endTime="2026-11-21T19:28:01.0577300+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cab9d8a2-399a-4dd3-b368-03849ef0a011" />
+    <UnitTestResult executionId="37e4f95f-e479-43ae-8db3-0d2a8830c4b3" testId="52497cff-6304-cf0b-b0a3-297c816dc322" testName="IndexerGet_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0001660" startTime="2026-11-21T19:28:01.0573310+07:00" endTime="2026-11-21T19:28:01.0574970+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37e4f95f-e479-43ae-8db3-0d2a8830c4b3" />
+    <UnitTestResult executionId="ee4940c7-9b99-4e0c-a40a-603293ca79ae" testId="2b8b3bc5-98a2-a6ad-103e-34e18ee406ed" testName="Initialize_TwoElements_LeftChildIsLastIndex_IsSwappedUp" computerName="MacBook-Air-Egor" duration="00:00:00.0000560" startTime="2026-11-21T19:28:01.0803160+07:00" endTime="2026-11-21T19:28:01.0803720+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee4940c7-9b99-4e0c-a40a-603293ca79ae" />
+    <UnitTestResult executionId="824a7d36-ee5a-4b48-9183-89297fffd280" testId="ec2fb1d8-d354-929e-2a57-a87fd5f64f84" testName="Add_SecondElement_InvokesInjectedComparer" computerName="MacBook-Air-Egor" duration="00:00:00.0337980" startTime="2026-11-21T19:28:01.0147290+07:00" endTime="2026-11-21T19:28:01.0485250+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="824a7d36-ee5a-4b48-9183-89297fffd280" />
+    <UnitTestResult executionId="d10ec96f-37fd-4802-b83f-d3bd80fef01c" testId="413cabac-855e-c261-2e45-eb40d0c1feef" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(200)" computerName="MacBook-Air-Egor" duration="00:00:00.0003370" startTime="2026-11-21T19:28:01.0794310+07:00" endTime="2026-11-21T19:28:01.0797680+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d10ec96f-37fd-4802-b83f-d3bd80fef01c" />
+    <UnitTestResult executionId="3204f302-7440-4d2c-9499-28ce4fcec4ae" testId="bfddb959-d1a0-7c97-9971-5156a9f78e47" testName="RemoveMax_SingleElement_LeavesHeapEmpty" computerName="MacBook-Air-Egor" duration="00:00:00.0000749" startTime="2026-11-21T19:28:01.0842160+07:00" endTime="2026-11-21T19:28:01.0842910+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3204f302-7440-4d2c-9499-28ce4fcec4ae" />
+    <UnitTestResult executionId="e9b7c621-48f9-4698-adcc-17bbbe7adb01" testId="80c435f0-98f4-870d-2c13-092f138de109" testName="Constructor_CustomComparer_DeterminesOrdering" computerName="MacBook-Air-Egor" duration="00:00:00.0001520" startTime="2026-11-21T19:28:01.0541820+07:00" endTime="2026-11-21T19:28:01.0543330+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9b7c621-48f9-4698-adcc-17bbbe7adb01" />
+    <UnitTestResult executionId="0015e65d-8cef-4d48-8bd4-975dfa324b37" testId="4aadaaad-19af-153c-638e-10ff1eec2657" testName="Initialize_NonEmptyCollection_OverridesExistingContents" computerName="MacBook-Air-Egor" duration="00:00:00.0003990" startTime="2026-11-21T19:28:01.0785640+07:00" endTime="2026-11-21T19:28:01.0789630+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0015e65d-8cef-4d48-8bd4-975dfa324b37" />
+    <UnitTestResult executionId="64aee3f2-81d5-4835-943d-782eceddd12b" testId="4a2c3333-ed3f-41f0-cc9d-1aabcef0fdea" testName="Initialize_SingleElement" computerName="MacBook-Air-Egor" duration="00:00:00.0000480" startTime="2026-11-21T19:28:01.0798360+07:00" endTime="2026-11-21T19:28:01.0798840+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64aee3f2-81d5-4835-943d-782eceddd12b" />
+    <UnitTestResult executionId="fda41250-78ca-4838-8a56-0676bde83457" testId="fe419978-19ca-2f9f-b4ce-0f2f28a04b51" testName="CapacityConstructor_PositiveCapacity_CreatesEmptyUsableHeap" computerName="MacBook-Air-Egor" duration="00:00:00.0000730" startTime="2026-11-21T19:28:01.0516010+07:00" endTime="2026-11-21T19:28:01.0516740+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fda41250-78ca-4838-8a56-0676bde83457" />
+    <UnitTestResult executionId="c0992b61-8dcb-4dfa-8158-ef8cba58451f" testId="5fb55eeb-01f8-ae5f-ed55-2b3702d97d2c" testName="Initialize_ThreeElements_RightIsLargest" computerName="MacBook-Air-Egor" duration="00:00:00.0003040" startTime="2026-11-21T19:28:01.0799350+07:00" endTime="2026-11-21T19:28:01.0802390+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0992b61-8dcb-4dfa-8158-ef8cba58451f" />
+    <UnitTestResult executionId="bc3cc665-3a3b-45d3-8681-2e08d24f64ea" testId="98cc8c6f-b96b-1af3-10d2-8e8860426d3a" testName="Add_LargerThanMax_BecomesNewMax" computerName="MacBook-Air-Egor" duration="00:00:00.0002999" startTime="2026-11-21T19:28:01.0127810+07:00" endTime="2026-11-21T19:28:01.0130810+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc3cc665-3a3b-45d3-8681-2e08d24f64ea" />
+    <UnitTestResult executionId="7993152d-1844-4bda-9fd8-5f936579f2e4" testId="355e9a97-98e4-99f6-3f08-326ce4cc24eb" testName="IndexerGet_IndexEqualToCount_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0000810" startTime="2026-11-21T19:28:01.0574990+07:00" endTime="2026-11-21T19:28:01.0575800+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7993152d-1844-4bda-9fd8-5f936579f2e4" />
+    <UnitTestResult executionId="bfd96a52-28d6-4558-8f8a-292c1cb089aa" testId="67536f9d-ea5b-dd23-df8f-fb18644eef1a" testName="RebuildHeap_EmptyHeap_DoesNotThrow" computerName="MacBook-Air-Egor" duration="00:00:00.0002260" startTime="2026-11-21T19:28:01.0807070+07:00" endTime="2026-11-21T19:28:01.0809320+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bfd96a52-28d6-4558-8f8a-292c1cb089aa" />
+    <UnitTestResult executionId="7d8b27e0-a4ac-4074-9252-53a302494ebb" testId="7982b184-c84d-171e-9bd8-2a69c5810ec7" testName="RemoveMax_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0001430" startTime="2026-11-21T19:28:01.0810690+07:00" endTime="2026-11-21T19:28:01.0812120+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d8b27e0-a4ac-4074-9252-53a302494ebb" />
+    <UnitTestResult executionId="f87a538b-df5a-46fb-a595-58cc48ef9941" testId="e6a8725d-cbc2-28b5-9a8b-9d17940315ac" testName="Add_AscendingSequence_ProducesExpectedLayout" computerName="MacBook-Air-Egor" duration="00:00:00.0056450" startTime="2026-11-21T19:28:01.0048930+07:00" endTime="2026-11-21T19:28:01.0105130+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f87a538b-df5a-46fb-a595-58cc48ef9941" />
+    <UnitTestResult executionId="02fd474c-8a04-411a-9ccc-6614e60a3d7d" testId="3c80d852-9531-90cc-77bc-1584b4fe6454" testName="Union_KeepsDuplicatesFromBothHeaps" computerName="MacBook-Air-Egor" duration="00:00:00.0000950" startTime="2026-11-21T19:28:01.0913920+07:00" endTime="2026-11-21T19:28:01.0914870+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02fd474c-8a04-411a-9ccc-6614e60a3d7d" />
+    <UnitTestResult executionId="e2acfa1a-8e91-472b-bdd9-5c77ac695972" testId="d72df315-9b60-91ce-66d0-51fc9519cb53" testName="Initialize_EmptyCollection_LeavesExistingContentsUntouched" computerName="MacBook-Air-Egor" duration="00:00:00.0000560" startTime="2026-11-21T19:28:01.0780960+07:00" endTime="2026-11-21T19:28:01.0781520+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2acfa1a-8e91-472b-bdd9-5c77ac695972" />
+    <UnitTestResult executionId="2760942c-e9a1-453a-9a82-80b886e7f7dd" testId="2b19b860-73cd-61a2-3b2c-44d98fb285b7" testName="Add_Duplicates_AreAllKept" computerName="MacBook-Air-Egor" duration="00:00:00.0017160" startTime="2026-11-21T19:28:01.0110560+07:00" endTime="2026-11-21T19:28:01.0127720+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2760942c-e9a1-453a-9a82-80b886e7f7dd" />
+    <UnitTestResult executionId="70285dd1-5703-4f44-af80-92434338c1be" testId="2a07d315-e4a7-e96a-058a-7e766eab4b22" testName="RemoveMax_TwoElements_LeavesTheSmallerOne" computerName="MacBook-Air-Egor" duration="00:00:00.0000610" startTime="2026-11-21T19:28:01.0843760+07:00" endTime="2026-11-21T19:28:01.0844370+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70285dd1-5703-4f44-af80-92434338c1be" />
+    <UnitTestResult executionId="d2b73ef4-5e23-491b-88c2-0c4739873fad" testId="21eaad40-2a54-19aa-a6cd-dde65c770b04" testName="IndexerSet_InvalidIndex_Throws(-1)" computerName="MacBook-Air-Egor" duration="00:00:00.0001220" startTime="2026-11-21T19:28:01.0757390+07:00" endTime="2026-11-21T19:28:01.0758610+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2b73ef4-5e23-491b-88c2-0c4739873fad" />
+    <UnitTestResult executionId="97d48a32-b840-47b0-beb4-83f44ae1775b" testId="97906326-d843-2981-cfc7-9f4c3cee1459" testName="Clear_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0022550" startTime="2026-11-21T19:28:01.0516770+07:00" endTime="2026-11-21T19:28:01.0539320+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97d48a32-b840-47b0-beb4-83f44ae1775b" />
+    <UnitTestResult executionId="9c689fb4-523d-412b-894d-14e6b0804103" testId="a0a69f23-2e65-4a45-9d5b-7a2b1583b753" testName="RemoveMax_ThreeElements_LeftIsLastIndexAfterRemoval_IsSwappedUp" computerName="MacBook-Air-Egor" duration="00:00:00.0000760" startTime="2026-11-21T19:28:01.0842960+07:00" endTime="2026-11-21T19:28:01.0843720+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c689fb4-523d-412b-894d-14e6b0804103" />
+    <UnitTestResult executionId="e22f4b49-28ca-4be8-890b-26c148a7573d" testId="3b071a7e-ca01-5c66-32e3-cc784fbb4e54" testName="Initialize_RandomData_ProducesValidHeapAndSortedDrain(2)" computerName="MacBook-Air-Egor" duration="00:00:00.0000790" startTime="2026-11-21T19:28:01.0791710+07:00" endTime="2026-11-21T19:28:01.0792500+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e22f4b49-28ca-4be8-890b-26c148a7573d" />
+    <UnitTestResult executionId="8dfe9304-c48d-4b1e-8f55-a32c1a71b247" testId="3a4ceb4b-71eb-36dc-e3e9-0b9ed0b8b519" testName="Initialize_ThreeElements_RootAlreadyLargest_NoSwap" computerName="MacBook-Air-Egor" duration="00:00:00.0000690" startTime="2026-11-21T19:28:01.0802440+07:00" endTime="2026-11-21T19:28:01.0803130+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8dfe9304-c48d-4b1e-8f55-a32c1a71b247" />
+    <UnitTestResult executionId="78cb2b5a-ee2d-4ee4-aeb9-0ec9d453525c" testId="db14c923-e49a-76bd-ca9b-6db6bbcd6287" testName="ExtractMax_Repeatedly_ReturnsDescendingOrder(5)" computerName="MacBook-Air-Egor" duration="00:00:00.0000150" startTime="2026-11-21T19:28:01.0562930+07:00" endTime="2026-11-21T19:28:01.0563080+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78cb2b5a-ee2d-4ee4-aeb9-0ec9d453525c" />
+    <UnitTestResult executionId="ffe59391-72e2-4015-bed4-d4c578864064" testId="840738de-dd84-3b06-162a-751f1ed77d00" testName="IndexerSet_EmptyHeap_Throws" computerName="MacBook-Air-Egor" duration="00:00:00.0002560" startTime="2026-11-21T19:28:01.0740270+07:00" endTime="2026-11-21T19:28:01.0742820+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffe59391-72e2-4015-bed4-d4c578864064" />
+    <UnitTestResult executionId="8667dea4-f22d-4cbb-b414-d15cfa6f6be8" testId="0edd7863-26f3-8e0e-790e-fc5f96583bb1" testName="Add_SmallerThanMax_MaxUnchanged" computerName="MacBook-Air-Egor" duration="00:00:00.0001230" startTime="2026-11-21T19:28:01.0493220+07:00" endTime="2026-11-21T19:28:01.0494450+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8667dea4-f22d-4cbb-b414-d15cfa6f6be8" />
+    <UnitTestResult executionId="990b12e4-00f1-4ec7-880b-c6913094d19c" testId="440cc9cb-475a-26e0-f2c6-64d8b0fa7fee" testName="IndexerSet_SmallerThanRoot_ComparesOnceAndDoesNotRebuild" computerName="MacBook-Air-Egor" duration="00:00:00.0004890" startTime="2026-11-21T19:28:01.0762300+07:00" endTime="2026-11-21T19:28:01.0767180+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="990b12e4-00f1-4ec7-880b-c6913094d19c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Add_LargerThanMax_BecomesNewMax" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="98cc8c6f-b96b-1af3-10d2-8e8860426d3a">
+      <Execution id="bc3cc665-3a3b-45d3-8681-2e08d24f64ea" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_LargerThanMax_BecomesNewMax" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_Repeatedly_ReturnsDescendingOrder(2)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="cc7165ec-386a-ed3b-bf48-256a6f8c364f">
+      <Execution id="7a5e187e-e9ea-41c7-b62c-4f25ba39d637" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_Repeatedly_ReturnsDescendingOrder(2)" />
+    </UnitTest>
+    <UnitTest name="CountAndIsEmpty_TrackAddsAndRemovals" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="26d32ced-b17c-bd31-b250-a8aff42e3e45">
+      <Execution id="c5a72998-62f7-4ce2-9db6-f204e64d32c1" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="CountAndIsEmpty_TrackAddsAndRemovals" />
+    </UnitTest>
+    <UnitTest name="Union_SetsBothOriginalReferencesToNull" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="c1fccdc8-eea0-c80c-e5d8-79a7f5f7c07c">
+      <Execution id="bd99bd32-ae82-451e-9b26-ab6bd0985eff" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_SetsBothOriginalReferencesToNull" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(3)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="a51c81b7-eddc-c852-24d6-4946ad351a6a">
+      <Execution id="29a9f0d3-637e-4e74-9d2d-1853f7537811" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(3)" />
+    </UnitTest>
+    <UnitTest name="Union_MergesAllElementsIntoNewValidHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="7b0dab6c-a66b-e8b3-1eec-7e2ee3945587">
+      <Execution id="cedd295c-7e18-4285-8a6b-b2c92534769c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_MergesAllElementsIntoNewValidHeap" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_SingleElement_LeavesHeapEmpty" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="bfddb959-d1a0-7c97-9971-5156a9f78e47">
+      <Execution id="3204f302-7440-4d2c-9499-28ce4fcec4ae" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_SingleElement_LeavesHeapEmpty" />
+    </UnitTest>
+    <UnitTest name="Add_SmallerThanMax_MaxUnchanged" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="0edd7863-26f3-8e0e-790e-fc5f96583bb1">
+      <Execution id="8667dea4-f22d-4cbb-b414-d15cfa6f6be8" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_SmallerThanMax_MaxUnchanged" />
+    </UnitTest>
+    <UnitTest name="RebuildHeap_EmptyHeap_DoesNotThrow" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="67536f9d-ea5b-dd23-df8f-fb18644eef1a">
+      <Execution id="bfd96a52-28d6-4558-8f8a-292c1cb089aa" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RebuildHeap_EmptyHeap_DoesNotThrow" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_ValueSmallerThanRoot_StoresValueWithoutTouchingRoot" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="6d6a8fa5-4bbb-c147-9672-700bbcc1fbdf">
+      <Execution id="6a7e5598-37ca-4a30-a7db-2573ad06ba14" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_ValueSmallerThanRoot_StoresValueWithoutTouchingRoot" />
+    </UnitTest>
+    <UnitTest name="ToMinHeap_ContainsAllElementsWithMinimumOnTop" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2b6babad-32e5-2d29-dfc6-74d264baf2ac">
+      <Execution id="67719c18-c5db-4ef4-9081-75682a24dfd2" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToMinHeap_ContainsAllElementsWithMinimumOnTop" />
+    </UnitTest>
+    <UnitTest name="Clear_NonEmptyHeap_RemovesEverything" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5ef5a37b-e503-2efd-a72f-d930beef779c">
+      <Execution id="5d9258db-ec5c-40c7-a030-c95629c2bfee" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Clear_NonEmptyHeap_RemovesEverything" />
+    </UnitTest>
+    <UnitTest name="Add_SingleElement_NeverInvokesComparer" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="91bf52ee-0dbd-17ec-8462-e6e7b9dad458">
+      <Execution id="874edac3-de45-40cb-ab6b-2872dd0c06c9" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_SingleElement_NeverInvokesComparer" />
+    </UnitTest>
+    <UnitTest name="IndexerGet_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="52497cff-6304-cf0b-b0a3-297c816dc322">
+      <Execution id="37e4f95f-e479-43ae-8db3-0d2a8830c4b3" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerGet_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_ThreeElements_LeftIsLastIndexAfterRemoval_IsSwappedUp" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="a0a69f23-2e65-4a45-9d5b-7a2b1583b753">
+      <Execution id="9c689fb4-523d-412b-894d-14e6b0804103" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_ThreeElements_LeftIsLastIndexAfterRemoval_IsSwappedUp" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_TwoElements_LeavesTheSmallerOne" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2a07d315-e4a7-e96a-058a-7e766eab4b22">
+      <Execution id="70285dd1-5703-4f44-af80-92434338c1be" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_TwoElements_LeavesTheSmallerOne" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(1)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="104f0541-6d3b-e357-a311-1465a7dc2133">
+      <Execution id="e8e074e6-5657-41a6-8e9d-d3b7e840a9d7" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(1)" />
+    </UnitTest>
+    <UnitTest name="Initialize_ThreeElements_RightIsLargest" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5fb55eeb-01f8-ae5f-ed55-2b3702d97d2c">
+      <Execution id="c0992b61-8dcb-4dfa-8158-ef8cba58451f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_ThreeElements_RightIsLargest" />
+    </UnitTest>
+    <UnitTest name="Initialize_EmptyCollection_LeavesExistingContentsUntouched" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="d72df315-9b60-91ce-66d0-51fc9519cb53">
+      <Execution id="e2acfa1a-8e91-472b-bdd9-5c77ac695972" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_EmptyCollection_LeavesExistingContentsUntouched" />
+    </UnitTest>
+    <UnitTest name="Peek_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="ed04841e-336c-51e7-6ef4-1301f5a75ab4">
+      <Execution id="a5e6d9c4-4362-4d43-ac32-028e9403601d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Peek_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_InvalidIndex_Throws(-1)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="21eaad40-2a54-19aa-a6cd-dde65c770b04">
+      <Execution id="d2b73ef4-5e23-491b-88c2-0c4739873fad" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_InvalidIndex_Throws(-1)" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_ValueEqualToRoot_TakesTheGreaterOrEqualBranch" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="e68198ee-15f7-9fd6-3fda-4ab1b6822282">
+      <Execution id="a90ed9d0-e7c7-45bf-b3c7-87195450e07e" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_ValueEqualToRoot_TakesTheGreaterOrEqualBranch" />
+    </UnitTest>
+    <UnitTest name="Initialize_AcceptsAnIListOfAnyKind" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="05733d20-c730-c733-69cc-a9d7667c93f2">
+      <Execution id="633038d0-06a6-4514-af7f-91a829ce0131" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_AcceptsAnIListOfAnyKind" />
+    </UnitTest>
+    <UnitTest name="RebuildHeap_OnValidHeap_ChangesNothing" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="23dd25c6-edd8-f3aa-8a9f-0dc466ec6f3f">
+      <Execution id="974a515c-1fd4-4e4d-8e69-0497c0195a41" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RebuildHeap_OnValidHeap_ChangesNothing" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_InvalidIndex_Throws(100)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="4923bc44-66a7-d7b9-ea17-20d1b2f38525">
+      <Execution id="6b50539f-3c5a-4dbd-9b2a-647fd1ace5f5" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_InvalidIndex_Throws(100)" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_Repeatedly_ReturnsDescendingOrder(5)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="db14c923-e49a-76bd-ca9b-6db6bbcd6287">
+      <Execution id="78cb2b5a-ee2d-4ee4-aeb9-0ec9d453525c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_Repeatedly_ReturnsDescendingOrder(5)" />
+    </UnitTest>
+    <UnitTest name="CapacityConstructor_NegativeCapacity_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="996ad51a-2a66-b2e3-10fc-b02a9e3ea607">
+      <Execution id="4224cf3e-d8bd-4207-93a4-2025229d5fd4" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="CapacityConstructor_NegativeCapacity_Throws" />
+    </UnitTest>
+    <UnitTest name="Union_KeepsDuplicatesFromBothHeaps" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="3c80d852-9531-90cc-77bc-1584b4fe6454">
+      <Execution id="02fd474c-8a04-411a-9ccc-6614e60a3d7d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_KeepsDuplicatesFromBothHeaps" />
+    </UnitTest>
+    <UnitTest name="Initialize_InvokesInjectedComparer" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5e4a43a2-132f-d0dc-e4d7-3561b1ba5fc0">
+      <Execution id="c1cd45fc-ee60-403c-ad14-51d75ae2c7b7" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_InvokesInjectedComparer" />
+    </UnitTest>
+    <UnitTest name="ToArray_ReturnsElementsInHeapOrder" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="a192459b-3825-8664-fce7-a2469bcfec16">
+      <Execution id="90f22324-7d3c-4bf9-ae49-8de021e3d2bb" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToArray_ReturnsElementsInHeapOrder" />
+    </UnitTest>
+    <UnitTest name="ToArray_EmptyHeap_ReturnsEmptyArray" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="bce1234b-1099-df53-769b-84efdc23a38a">
+      <Execution id="8b5efba7-e1c6-4ddc-aff8-103ad145cf34" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToArray_EmptyHeap_ReturnsEmptyArray" />
+    </UnitTest>
+    <UnitTest name="Constructor_CustomComparer_DeterminesOrdering" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="80c435f0-98f4-870d-2c13-092f138de109">
+      <Execution id="e9b7c621-48f9-4698-adcc-17bbbe7adb01" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Constructor_CustomComparer_DeterminesOrdering" />
+    </UnitTest>
+    <UnitTest name="Initialize_WithDuplicates_KeepsAllOfThem" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="fb385da4-84be-47c5-8f2e-ef6810a8f0f1">
+      <Execution id="a43f280d-3284-404f-96c3-9618fd9bd437" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_WithDuplicates_KeepsAllOfThem" />
+    </UnitTest>
+    <UnitTest name="ToMinHeap_PassesTheSameComparerToTheMinHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="6800fa57-949f-0362-1cc4-28da21b4f9a2">
+      <Execution id="81c3b5dd-de60-485e-a3ad-9b993c17106d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToMinHeap_PassesTheSameComparerToTheMinHeap" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(8)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="9a0deb40-fb2f-aae4-97e4-2a46ee2a023e">
+      <Execution id="f2408d2d-2d8e-4009-9d97-a9912f6d2999" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(8)" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_ReturnsMaxAndRemovesIt" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="9aaa8663-4dab-7a78-c7d0-c4aa29f422c4">
+      <Execution id="a855f6f3-a021-4f72-a4bf-3f95ddc5f6f1" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_ReturnsMaxAndRemovesIt" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_ValueGreaterThanRoot_PromotesNewMax" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2f9d3749-af3e-ebb4-2420-563d5598f8cc">
+      <Execution id="05bf95d3-4626-43b1-a88c-8e277c5ebf51" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_ValueGreaterThanRoot_PromotesNewMax" />
+    </UnitTest>
+    <UnitTest name="Initialize_DoesNotModifySourceCollection" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="82a5af67-0700-8aa1-ac9f-5cf61e9fd269">
+      <Execution id="7a6161a5-b658-43d8-9296-e5bcb89d3974" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_DoesNotModifySourceCollection" />
+    </UnitTest>
+    <UnitTest name="Union_FirstHeapNull_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2cf2f4ae-18dc-9638-1cc1-ed3e47914777">
+      <Execution id="c06a88ee-3819-4c2d-98d9-7ccca9f2f004" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_FirstHeapNull_Throws" />
+    </UnitTest>
+    <UnitTest name="IndexerGet_IndexEqualToCount_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="355e9a97-98e4-99f6-3f08-326ce4cc24eb">
+      <Execution id="7993152d-1844-4bda-9fd8-5f936579f2e4" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerGet_IndexEqualToCount_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_SevenElements_RequiresRecursiveSiftDown" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="dbd12249-4f3e-4870-a287-4bc7bb87b338">
+      <Execution id="18809c34-aa38-4475-879e-8327b79e0b6a" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_SevenElements_RequiresRecursiveSiftDown" />
+    </UnitTest>
+    <UnitTest name="IndexerGet_NegativeIndex_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="11cbd5aa-14e0-6c27-b396-57e928a72b66">
+      <Execution id="cab9d8a2-399a-4dd3-b368-03849ef0a011" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerGet_NegativeIndex_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(4)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5558e220-0871-0b87-c421-1fd72078d053">
+      <Execution id="59213568-e56b-45bb-a1b1-ce3b139c923e" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(4)" />
+    </UnitTest>
+    <UnitTest name="Clear_HeapIsReusableAfterwards" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="315c2f16-796b-f778-f837-6b48eacab406">
+      <Execution id="9d3337ca-c1a7-4416-9f44-c62fce388b4f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Clear_HeapIsReusableAfterwards" />
+    </UnitTest>
+    <UnitTest name="Union_FirstEmpty_ReturnsCopyOfSecond" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="ac628079-04c0-59ed-dd76-2379f735d4ed">
+      <Execution id="4f9020ed-bd39-4ff3-92a2-92423a5d9209" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_FirstEmpty_ReturnsCopyOfSecond" />
+    </UnitTest>
+    <UnitTest name="Initialize_ThreeElements_RootAlreadyLargest_NoSwap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="3a4ceb4b-71eb-36dc-e3e9-0b9ed0b8b519">
+      <Execution id="8dfe9304-c48d-4b1e-8f55-a32c1a71b247" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_ThreeElements_RootAlreadyLargest_NoSwap" />
+    </UnitTest>
+    <UnitTest name="RebuildHeap_RestoresHeapPropertyAfterIndexerSet" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2c628c02-a68d-e930-0630-c7caf985fb2e">
+      <Execution id="26acb017-f5da-45fb-a1d1-725fff94f79f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RebuildHeap_RestoresHeapPropertyAfterIndexerSet" />
+    </UnitTest>
+    <UnitTest name="Add_SecondElement_InvokesInjectedComparer" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="ec2fb1d8-d354-929e-2a57-a87fd5f64f84">
+      <Execution id="824a7d36-ee5a-4b48-9183-89297fffd280" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_SecondElement_InvokesInjectedComparer" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(15)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="1b8a185c-780d-46b1-3341-e53cc1a0aa78">
+      <Execution id="ea23bf20-2a25-4889-9bda-16d88d46f42c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(15)" />
+    </UnitTest>
+    <UnitTest name="Add_Duplicates_AreAllKept" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2b19b860-73cd-61a2-3b2c-44d98fb285b7">
+      <Execution id="2760942c-e9a1-453a-9a82-80b886e7f7dd" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_Duplicates_AreAllKept" />
+    </UnitTest>
+    <UnitTest name="ToList_EmptyHeap_ReturnsEmptyList" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="9c27952f-5efb-f785-1f8c-6bca5940c7c7">
+      <Execution id="9da13046-8c7d-4ebf-968e-2ddfa0bac63f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToList_EmptyHeap_ReturnsEmptyList" />
+    </UnitTest>
+    <UnitTest name="ToList_ReturnsIndependentCopy" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5e24faea-3561-97c7-5e9b-a19716dffb35">
+      <Execution id="32ff5360-03a2-4344-bc13-88d27ab1e778" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToList_ReturnsIndependentCopy" />
+    </UnitTest>
+    <UnitTest name="Add_AscendingSequence_ProducesExpectedLayout" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="e6a8725d-cbc2-28b5-9a8b-9d17940315ac">
+      <Execution id="f87a538b-df5a-46fb-a595-58cc48ef9941" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_AscendingSequence_ProducesExpectedLayout" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_Repeatedly_ReturnsDescendingOrder(1)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="824df25d-de1c-bf65-396a-e13dbb2cf175">
+      <Execution id="cabe931e-d7a5-42a0-8003-1d94aaf8ce44" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_Repeatedly_ReturnsDescendingOrder(1)" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(50)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="7879c37c-2d6b-2469-f984-2be462098c61">
+      <Execution id="f1b98358-7e5f-424d-b077-e3da8e02e80a" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(50)" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_GreaterThanRoot_ComparesAgainstRootThenRebuilds" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="0dc60515-90e5-f05f-2ece-ae046829fd88">
+      <Execution id="edd0e02e-9327-4a45-a0b5-cf63b7beb296" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_GreaterThanRoot_ComparesAgainstRootThenRebuilds" />
+    </UnitTest>
+    <UnitTest name="Union_SecondHeapNull_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="18aa1d92-62a8-7a40-b055-c6e4d056e2ed">
+      <Execution id="7a7d7701-f66e-475f-9229-444ab9662456" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_SecondHeapNull_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_SingleElement" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="4a2c3333-ed3f-41f0-cc9d-1aabcef0fdea">
+      <Execution id="64aee3f2-81d5-4835-943d-782eceddd12b" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_SingleElement" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_SmallerThanRoot_ComparesOnceAndDoesNotRebuild" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="440cc9cb-475a-26e0-f2c6-64d8b0fa7fee">
+      <Execution id="990b12e4-00f1-4ec7-880b-c6913094d19c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_SmallerThanRoot_ComparesOnceAndDoesNotRebuild" />
+    </UnitTest>
+    <UnitTest name="Union_BothEmpty_ReturnsEmptyHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="fb89d193-283f-be2c-9839-7f06b8f474af">
+      <Execution id="46e6357e-bea2-4961-b4b4-17b2869a0aa8" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_BothEmpty_ReturnsEmptyHeap" />
+    </UnitTest>
+    <UnitTest name="Initialize_TwoElements_LeftChildIsLastIndex_IsSwappedUp" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="2b8b3bc5-98a2-a6ad-103e-34e18ee406ed">
+      <Execution id="ee4940c7-9b99-4e0c-a40a-603293ca79ae" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_TwoElements_LeftChildIsLastIndex_IsSwappedUp" />
+    </UnitTest>
+    <UnitTest name="Union_BothHeapsNull_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="3200bc9f-6c54-88ac-e989-39841ac70e82">
+      <Execution id="c1b28e15-3a8a-4ea7-b67b-c5f265848dc4" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_BothHeapsNull_Throws" />
+    </UnitTest>
+    <UnitTest name="ToMinHeap_ExtractsInAscendingOrder" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="26ca4b6c-5797-49ef-66f1-a8bab6d7aa70">
+      <Execution id="6feb4a2b-c7a3-408f-87e8-e26d0b22b505" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToMinHeap_ExtractsInAscendingOrder" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(200)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="413cabac-855e-c261-2e45-eb40d0c1feef">
+      <Execution id="d10ec96f-37fd-4802-b83f-d3bd80fef01c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(200)" />
+    </UnitTest>
+    <UnitTest name="Union_SecondEmpty_ReturnsCopyOfFirst" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="0cdccafd-69af-713f-d30a-25987725f3fb">
+      <Execution id="95786195-c044-4478-a93f-4d67fec0a980" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Union_SecondEmpty_ReturnsCopyOfFirst" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="d5ac9a03-88e6-30b9-a918-a374554954b1">
+      <Execution id="b37770e5-31a2-45bd-9ae7-81a5fb062262" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="IndexerGet_ValidIndexes_ReturnHeapOrderElements" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="bb6462e4-78e3-458a-f971-32f7638808d6">
+      <Execution id="9e830eef-3ab2-4d4f-af45-62387c2b9aa3" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerGet_ValidIndexes_ReturnHeapOrderElements" />
+    </UnitTest>
+    <UnitTest name="Add_ManyRandomValues_KeepsHeapPropertyAfterEveryInsert" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="15320573-09a0-e9e0-6e16-f0a426f88870">
+      <Execution id="0031a450-5385-469a-99e0-28f9346f6573" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_ManyRandomValues_KeepsHeapPropertyAfterEveryInsert" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_InvalidIndex_Throws(3)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="a0218276-6ac4-b024-559a-6dbda83f1b66">
+      <Execution id="2f2c17bf-037e-4dc5-8ebe-972e52b1a2aa" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_InvalidIndex_Throws(3)" />
+    </UnitTest>
+    <UnitTest name="DefaultConstructor_CreatesEmptyHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="932d2a4b-4ea8-04b6-47b9-883cb66f1d3d">
+      <Execution id="1def74bb-5fee-4cb7-b081-3de822d7181f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="DefaultConstructor_CreatesEmptyHeap" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(16)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="5a19b508-ff12-32cd-557e-bc2c59676648">
+      <Execution id="71b9811a-b59e-4949-9536-0bdc668325fb" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(16)" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_Repeatedly_ReturnsDescendingOrder(33)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="af4a8291-2be7-3e41-768f-47be426f8e72">
+      <Execution id="20723998-14b9-4128-925c-b676e6259bd9" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_Repeatedly_ReturnsDescendingOrder(33)" />
+    </UnitTest>
+    <UnitTest name="Initialize_NonEmptyCollection_OverridesExistingContents" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="4aadaaad-19af-153c-638e-10ff1eec2657">
+      <Execution id="0015e65d-8cef-4d48-8bd4-975dfa324b37" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_NonEmptyCollection_OverridesExistingContents" />
+    </UnitTest>
+    <UnitTest name="Add_ToEmptyHeap_BecomesRoot" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="e755ba3e-ba13-8312-1e88-d5261e111c50">
+      <Execution id="50a34a04-b06e-4b62-9a3f-961519702459" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Add_ToEmptyHeap_BecomesRoot" />
+    </UnitTest>
+    <UnitTest name="ComparerConstructor_CreatesEmptyHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="9f5d4d93-575e-dbdb-0793-b9a2a77ec576">
+      <Execution id="1986d053-72e8-4d4a-9978-e9fb4d19bf78" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ComparerConstructor_CreatesEmptyHeap" />
+    </UnitTest>
+    <UnitTest name="Peek_ReturnsMaxWithoutRemovingIt" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="e4785fbc-48bb-a88a-e1fa-48e70a847bec">
+      <Execution id="9eabb841-5879-4272-baa1-36a59d7c52cc" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Peek_ReturnsMaxWithoutRemovingIt" />
+    </UnitTest>
+    <UnitTest name="Clear_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="97906326-d843-2981-cfc7-9f4c3cee1459">
+      <Execution id="97d48a32-b840-47b0-beb4-83f44ae1775b" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Clear_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(2)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="3b071a7e-ca01-5c66-32e3-cc784fbb4e54">
+      <Execution id="e22f4b49-28ca-4be8-890b-26c148a7573d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(2)" />
+    </UnitTest>
+    <UnitTest name="ToMinHeap_DoesNotAffectOriginalHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="8530ac5e-699f-0c40-b28a-e9c5be27b6d0">
+      <Execution id="a3640d05-a370-4cee-b722-0bc966994d88" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToMinHeap_DoesNotAffectOriginalHeap" />
+    </UnitTest>
+    <UnitTest name="ToArray_ReturnsIndependentCopy" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="76ff5040-dc77-9c98-a5ab-bb1269c1b2b3">
+      <Execution id="93501b2a-aa33-42c9-b57c-b771bb12dcb1" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToArray_ReturnsIndependentCopy" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="30bc0c20-2116-ff30-c6cb-6e13db93a74f">
+      <Execution id="16580b0e-31ca-448f-8ec7-ecfa22617e30" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty" />
+    </UnitTest>
+    <UnitTest name="IndexerGet_IndexGreaterThanCount_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="4b9c0a1c-2994-a528-8425-ccf6114a518f">
+      <Execution id="8bc9d741-181b-48cd-8b0d-7142e3aeb617" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerGet_IndexGreaterThanCount_Throws" />
+    </UnitTest>
+    <UnitTest name="ExtractMax_Repeatedly_ReturnsDescendingOrder(150)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="597b8ab7-c6a4-4371-9f13-5795380813d0">
+      <Execution id="09d1b61e-d812-4e1f-8e2f-ca3173963732" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ExtractMax_Repeatedly_ReturnsDescendingOrder(150)" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_Repeatedly_ReturnsToEmptyAndThenThrows" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="7447f0c4-abbf-587c-1081-61ff8c8f2b06">
+      <Execution id="4790e786-79c5-4704-b016-f1daf9238421" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_Repeatedly_ReturnsToEmptyAndThenThrows" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_SevenElements_ProducesExpectedLayout" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="a0b337e4-48f5-a141-7ae5-1bd88e144fa1">
+      <Execution id="79bc36c6-210a-469b-bca7-28c5991d0a49" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_SevenElements_ProducesExpectedLayout" />
+    </UnitTest>
+    <UnitTest name="ReversedComparerMock_TurnsHeapIntoMinFirstHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="597f220d-0354-e118-cbc9-1454578c4f42">
+      <Execution id="fdcba66c-ee0b-4b94-a308-047533a988bc" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ReversedComparerMock_TurnsHeapIntoMinFirstHeap" />
+    </UnitTest>
+    <UnitTest name="ToList_ReturnsElementsInHeapOrder" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="608f2f9c-7628-5d38-2c17-f845b8f02601">
+      <Execution id="3cfdb2f7-b846-4e41-82b9-4407bde90f37" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToList_ReturnsElementsInHeapOrder" />
+    </UnitTest>
+    <UnitTest name="IndexerSet_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="840738de-dd84-3b06-162a-751f1ed77d00">
+      <Execution id="ffe59391-72e2-4015-bed4-d4c578864064" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="IndexerSet_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(7)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="43914ba5-584f-10b8-a185-da77784bafa7">
+      <Execution id="d9bd2361-0cb9-4d08-a368-92e1d7bd4669" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_RandomData_ProducesValidHeapAndSortedDrain(7)" />
+    </UnitTest>
+    <UnitTest name="ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="c1c5757a-c7f0-8070-9307-0059e1b75aca">
+      <Execution id="bcb20fd5-0863-4168-84c8-377dce2d7227" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap" />
+    </UnitTest>
+    <UnitTest name="Initialize_EmptyCollection_OnEmptyHeap_StaysEmpty" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="79638935-cd36-8813-8bf5-a461dfa5e55a">
+      <Execution id="e9f5c83e-e4c5-48f6-9914-b0d5cf22e240" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_EmptyCollection_OnEmptyHeap_StaysEmpty" />
+    </UnitTest>
+    <UnitTest name="Constructor_NullComparer_FallsBackToDefaultComparer" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="bcbd9f34-46ed-6c94-f8eb-04e20e816c85">
+      <Execution id="518e4d2b-9ac7-42f5-95a6-99228a5b6eee" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Constructor_NullComparer_FallsBackToDefaultComparer" />
+    </UnitTest>
+    <UnitTest name="RemoveMax_EmptyHeap_Throws" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="7982b184-c84d-171e-9bd8-2a69c5810ec7">
+      <Execution id="7d8b27e0-a4ac-4074-9252-53a302494ebb" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="RemoveMax_EmptyHeap_Throws" />
+    </UnitTest>
+    <UnitTest name="Initialize_ThreeElements_LeftIsLargest" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="aed70461-40dc-a9a0-fc51-e75216941186">
+      <Execution id="74048024-6435-46f8-903b-7d079dfd917f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="Initialize_ThreeElements_LeftIsLargest" />
+    </UnitTest>
+    <UnitTest name="CapacityConstructor_PositiveCapacity_CreatesEmptyUsableHeap" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part1/tests/binarymaxheap.tests/bin/debug/net10.0/binarymaxheap.tests.dll" id="fe419978-19ca-2f9f-b4ce-0f2f28a04b51">
+      <Execution id="fda41250-78ca-4838-8a56-0676bde83457" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="UnitTests_for_BMH.BinaryMaxHeapTests" name="CapacityConstructor_PositiveCapacity_CreatesEmptyUsableHeap" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6800fa57-949f-0362-1cc4-28da21b4f9a2" executionId="81c3b5dd-de60-485e-a3ad-9b993c17106d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4785fbc-48bb-a88a-e1fa-48e70a847bec" executionId="9eabb841-5879-4272-baa1-36a59d7c52cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="932d2a4b-4ea8-04b6-47b9-883cb66f1d3d" executionId="1def74bb-5fee-4cb7-b081-3de822d7181f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aed70461-40dc-a9a0-fc51-e75216941186" executionId="74048024-6435-46f8-903b-7d079dfd917f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0218276-6ac4-b024-559a-6dbda83f1b66" executionId="2f2c17bf-037e-4dc5-8ebe-972e52b1a2aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb6462e4-78e3-458a-f971-32f7638808d6" executionId="9e830eef-3ab2-4d4f-af45-62387c2b9aa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23dd25c6-edd8-f3aa-8a9f-0dc466ec6f3f" executionId="974a515c-1fd4-4e4d-8e69-0497c0195a41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="996ad51a-2a66-b2e3-10fc-b02a9e3ea607" executionId="4224cf3e-d8bd-4207-93a4-2025229d5fd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5558e220-0871-0b87-c421-1fd72078d053" executionId="59213568-e56b-45bb-a1b1-ce3b139c923e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b6babad-32e5-2d29-dfc6-74d264baf2ac" executionId="67719c18-c5db-4ef4-9081-75682a24dfd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="315c2f16-796b-f778-f837-6b48eacab406" executionId="9d3337ca-c1a7-4416-9f44-c62fce388b4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3200bc9f-6c54-88ac-e989-39841ac70e82" executionId="c1b28e15-3a8a-4ea7-b67b-c5f265848dc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="597f220d-0354-e118-cbc9-1454578c4f42" executionId="fdcba66c-ee0b-4b94-a308-047533a988bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26ca4b6c-5797-49ef-66f1-a8bab6d7aa70" executionId="6feb4a2b-c7a3-408f-87e8-e26d0b22b505" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac628079-04c0-59ed-dd76-2379f735d4ed" executionId="4f9020ed-bd39-4ff3-92a2-92423a5d9209" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a0deb40-fb2f-aae4-97e4-2a46ee2a023e" executionId="f2408d2d-2d8e-4009-9d97-a9912f6d2999" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a19b508-ff12-32cd-557e-bc2c59676648" executionId="71b9811a-b59e-4949-9536-0bdc668325fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7447f0c4-abbf-587c-1081-61ff8c8f2b06" executionId="4790e786-79c5-4704-b016-f1daf9238421" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cf2f4ae-18dc-9638-1cc1-ed3e47914777" executionId="c06a88ee-3819-4c2d-98d9-7ccca9f2f004" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0dc60515-90e5-f05f-2ece-ae046829fd88" executionId="edd0e02e-9327-4a45-a0b5-cf63b7beb296" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a51c81b7-eddc-c852-24d6-4946ad351a6a" executionId="29a9f0d3-637e-4e74-9d2d-1853f7537811" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aaa8663-4dab-7a78-c7d0-c4aa29f422c4" executionId="a855f6f3-a021-4f72-a4bf-3f95ddc5f6f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcbd9f34-46ed-6c94-f8eb-04e20e816c85" executionId="518e4d2b-9ac7-42f5-95a6-99228a5b6eee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc7165ec-386a-ed3b-bf48-256a6f8c364f" executionId="7a5e187e-e9ea-41c7-b62c-4f25ba39d637" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1fccdc8-eea0-c80c-e5d8-79a7f5f7c07c" executionId="bd99bd32-ae82-451e-9b26-ab6bd0985eff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0b337e4-48f5-a141-7ae5-1bd88e144fa1" executionId="79bc36c6-210a-469b-bca7-28c5991d0a49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="05733d20-c730-c733-69cc-a9d7667c93f2" executionId="633038d0-06a6-4514-af7f-91a829ce0131" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af4a8291-2be7-3e41-768f-47be426f8e72" executionId="20723998-14b9-4128-925c-b676e6259bd9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1c5757a-c7f0-8070-9307-0059e1b75aca" executionId="bcb20fd5-0863-4168-84c8-377dce2d7227" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82a5af67-0700-8aa1-ac9f-5cf61e9fd269" executionId="7a6161a5-b658-43d8-9296-e5bcb89d3974" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb385da4-84be-47c5-8f2e-ef6810a8f0f1" executionId="a43f280d-3284-404f-96c3-9618fd9bd437" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76ff5040-dc77-9c98-a5ab-bb1269c1b2b3" executionId="93501b2a-aa33-42c9-b57c-b771bb12dcb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e68198ee-15f7-9fd6-3fda-4ab1b6822282" executionId="a90ed9d0-e7c7-45bf-b3c7-87195450e07e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b8a185c-780d-46b1-3341-e53cc1a0aa78" executionId="ea23bf20-2a25-4889-9bda-16d88d46f42c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b0dab6c-a66b-e8b3-1eec-7e2ee3945587" executionId="cedd295c-7e18-4285-8a6b-b2c92534769c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7879c37c-2d6b-2469-f984-2be462098c61" executionId="f1b98358-7e5f-424d-b077-e3da8e02e80a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="608f2f9c-7628-5d38-2c17-f845b8f02601" executionId="3cfdb2f7-b846-4e41-82b9-4407bde90f37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26d32ced-b17c-bd31-b250-a8aff42e3e45" executionId="c5a72998-62f7-4ce2-9db6-f204e64d32c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b9c0a1c-2994-a528-8425-ccf6114a518f" executionId="8bc9d741-181b-48cd-8b0d-7142e3aeb617" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed04841e-336c-51e7-6ef4-1301f5a75ab4" executionId="a5e6d9c4-4362-4d43-ac32-028e9403601d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d6a8fa5-4bbb-c147-9672-700bbcc1fbdf" executionId="6a7e5598-37ca-4a30-a7db-2573ad06ba14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15320573-09a0-e9e0-6e16-f0a426f88870" executionId="0031a450-5385-469a-99e0-28f9346f6573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f9d3749-af3e-ebb4-2420-563d5598f8cc" executionId="05bf95d3-4626-43b1-a88c-8e277c5ebf51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43914ba5-584f-10b8-a185-da77784bafa7" executionId="d9bd2361-0cb9-4d08-a368-92e1d7bd4669" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e24faea-3561-97c7-5e9b-a19716dffb35" executionId="32ff5360-03a2-4344-bc13-88d27ab1e778" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="597b8ab7-c6a4-4371-9f13-5795380813d0" executionId="09d1b61e-d812-4e1f-8e2f-ca3173963732" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c27952f-5efb-f785-1f8c-6bca5940c7c7" executionId="9da13046-8c7d-4ebf-968e-2ddfa0bac63f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5ac9a03-88e6-30b9-a918-a374554954b1" executionId="b37770e5-31a2-45bd-9ae7-81a5fb062262" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bce1234b-1099-df53-769b-84efdc23a38a" executionId="8b5efba7-e1c6-4ddc-aff8-103ad145cf34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb89d193-283f-be2c-9839-7f06b8f474af" executionId="46e6357e-bea2-4961-b4b4-17b2869a0aa8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbd12249-4f3e-4870-a287-4bc7bb87b338" executionId="18809c34-aa38-4475-879e-8327b79e0b6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f5d4d93-575e-dbdb-0793-b9a2a77ec576" executionId="1986d053-72e8-4d4a-9978-e9fb4d19bf78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91bf52ee-0dbd-17ec-8462-e6e7b9dad458" executionId="874edac3-de45-40cb-ab6b-2872dd0c06c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30bc0c20-2116-ff30-c6cb-6e13db93a74f" executionId="16580b0e-31ca-448f-8ec7-ecfa22617e30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="104f0541-6d3b-e357-a311-1465a7dc2133" executionId="e8e074e6-5657-41a6-8e9d-d3b7e840a9d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18aa1d92-62a8-7a40-b055-c6e4d056e2ed" executionId="7a7d7701-f66e-475f-9229-444ab9662456" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8530ac5e-699f-0c40-b28a-e9c5be27b6d0" executionId="a3640d05-a370-4cee-b722-0bc966994d88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cdccafd-69af-713f-d30a-25987725f3fb" executionId="95786195-c044-4478-a93f-4d67fec0a980" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a192459b-3825-8664-fce7-a2469bcfec16" executionId="90f22324-7d3c-4bf9-ae49-8de021e3d2bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79638935-cd36-8813-8bf5-a461dfa5e55a" executionId="e9f5c83e-e4c5-48f6-9914-b0d5cf22e240" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c628c02-a68d-e930-0630-c7caf985fb2e" executionId="26acb017-f5da-45fb-a1d1-725fff94f79f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4923bc44-66a7-d7b9-ea17-20d1b2f38525" executionId="6b50539f-3c5a-4dbd-9b2a-647fd1ace5f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e4a43a2-132f-d0dc-e4d7-3561b1ba5fc0" executionId="c1cd45fc-ee60-403c-ad14-51d75ae2c7b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e755ba3e-ba13-8312-1e88-d5261e111c50" executionId="50a34a04-b06e-4b62-9a3f-961519702459" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="824df25d-de1c-bf65-396a-e13dbb2cf175" executionId="cabe931e-d7a5-42a0-8003-1d94aaf8ce44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ef5a37b-e503-2efd-a72f-d930beef779c" executionId="5d9258db-ec5c-40c7-a030-c95629c2bfee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11cbd5aa-14e0-6c27-b396-57e928a72b66" executionId="cab9d8a2-399a-4dd3-b368-03849ef0a011" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52497cff-6304-cf0b-b0a3-297c816dc322" executionId="37e4f95f-e479-43ae-8db3-0d2a8830c4b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b8b3bc5-98a2-a6ad-103e-34e18ee406ed" executionId="ee4940c7-9b99-4e0c-a40a-603293ca79ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec2fb1d8-d354-929e-2a57-a87fd5f64f84" executionId="824a7d36-ee5a-4b48-9183-89297fffd280" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="413cabac-855e-c261-2e45-eb40d0c1feef" executionId="d10ec96f-37fd-4802-b83f-d3bd80fef01c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfddb959-d1a0-7c97-9971-5156a9f78e47" executionId="3204f302-7440-4d2c-9499-28ce4fcec4ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80c435f0-98f4-870d-2c13-092f138de109" executionId="e9b7c621-48f9-4698-adcc-17bbbe7adb01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4aadaaad-19af-153c-638e-10ff1eec2657" executionId="0015e65d-8cef-4d48-8bd4-975dfa324b37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a2c3333-ed3f-41f0-cc9d-1aabcef0fdea" executionId="64aee3f2-81d5-4835-943d-782eceddd12b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe419978-19ca-2f9f-b4ce-0f2f28a04b51" executionId="fda41250-78ca-4838-8a56-0676bde83457" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fb55eeb-01f8-ae5f-ed55-2b3702d97d2c" executionId="c0992b61-8dcb-4dfa-8158-ef8cba58451f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98cc8c6f-b96b-1af3-10d2-8e8860426d3a" executionId="bc3cc665-3a3b-45d3-8681-2e08d24f64ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="355e9a97-98e4-99f6-3f08-326ce4cc24eb" executionId="7993152d-1844-4bda-9fd8-5f936579f2e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67536f9d-ea5b-dd23-df8f-fb18644eef1a" executionId="bfd96a52-28d6-4558-8f8a-292c1cb089aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7982b184-c84d-171e-9bd8-2a69c5810ec7" executionId="7d8b27e0-a4ac-4074-9252-53a302494ebb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6a8725d-cbc2-28b5-9a8b-9d17940315ac" executionId="f87a538b-df5a-46fb-a595-58cc48ef9941" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c80d852-9531-90cc-77bc-1584b4fe6454" executionId="02fd474c-8a04-411a-9ccc-6614e60a3d7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d72df315-9b60-91ce-66d0-51fc9519cb53" executionId="e2acfa1a-8e91-472b-bdd9-5c77ac695972" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b19b860-73cd-61a2-3b2c-44d98fb285b7" executionId="2760942c-e9a1-453a-9a82-80b886e7f7dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a07d315-e4a7-e96a-058a-7e766eab4b22" executionId="70285dd1-5703-4f44-af80-92434338c1be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21eaad40-2a54-19aa-a6cd-dde65c770b04" executionId="d2b73ef4-5e23-491b-88c2-0c4739873fad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97906326-d843-2981-cfc7-9f4c3cee1459" executionId="97d48a32-b840-47b0-beb4-83f44ae1775b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0a69f23-2e65-4a45-9d5b-7a2b1583b753" executionId="9c689fb4-523d-412b-894d-14e6b0804103" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b071a7e-ca01-5c66-32e3-cc784fbb4e54" executionId="e22f4b49-28ca-4be8-890b-26c148a7573d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a4ceb4b-71eb-36dc-e3e9-0b9ed0b8b519" executionId="8dfe9304-c48d-4b1e-8f55-a32c1a71b247" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db14c923-e49a-76bd-ca9b-6db6bbcd6287" executionId="78cb2b5a-ee2d-4ee4-aeb9-0ec9d453525c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="840738de-dd84-3b06-162a-751f1ed77d00" executionId="ffe59391-72e2-4015-bed4-d4c578864064" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0edd7863-26f3-8e0e-790e-fc5f96583bb1" executionId="8667dea4-f22d-4cbb-b414-d15cfa6f6be8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="440cc9cb-475a-26e0-f2c6-64d8b0fa7fee" executionId="990b12e4-00f1-4ec7-880b-c6913094d19c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="95" executed="90" passed="86" failed="4" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started
+Running all tests in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll
+   NUnit3TestExecutor discovered 95 of 95 NUnit test cases using Current Discovery mode, Non-Explicit run
+ToMinHeap_ContainsAllElementsWithMinimumOnTop: Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.
+ToMinHeap_DoesNotAffectOriginalHeap: Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.
+ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap: Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.
+ToMinHeap_ExtractsInAscendingOrder: Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.
+ToMinHeap_PassesTheSameComparerToTheMinHeap: Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.
+Тест "ToMinHeap_ContainsAllElementsWithMinimumOnTop" пропущен в тестовом запуске.
+Тест "ToMinHeap_DoesNotAffectOriginalHeap" пропущен в тестовом запуске.
+Тест "ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap" пропущен в тестовом запуске.
+Тест "ToMinHeap_ExtractsInAscendingOrder" пропущен в тестовом запуске.
+Тест "ToMinHeap_PassesTheSameComparerToTheMinHeap" пропущен в тестовом запуске.
+NUnit Adapter 5.0.0.0: Test execution complete
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="MacBook-Air-Egor" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="MacBook-Air-Egor/coverage.cobertura.xml"></A>
+          </UriAttachment>
+          <UriAttachment>
+            <A href="MacBook-Air-Egor/coverage.opencover.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

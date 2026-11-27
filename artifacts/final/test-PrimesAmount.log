@@ -1,0 +1,8 @@
+$ dotnet test tests/PrimesAmount.Tests --no-build --logger trx --results-directory ../artifacts/final/PrimesAmount
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/PrimesAmount.Tests/bin/Debug/net10.0/PrimesAmount.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/PrimesAmount/_MacBook-Air-Egor_2026-11-21_19_37_10_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено    21, пропущено     0, всего    21, длительность 53 ms. - PrimesAmount.Tests.dll (net10.0)
+
+EXIT CODE: 0

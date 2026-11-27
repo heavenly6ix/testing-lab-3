@@ -1,0 +1,22 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://127.0.0.1:5091
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      unmatched 200 82.3546ms 7c57990b727343e1b4ac08e88e8af7ba
+info: RequestAudit[0]
+      /api/v1/health 200 23.786ms 7ada1da210d141269253a2d78ab5b2c9
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 3.983ms 7335b665617c45aabc0f01f186a76fe3
+info: RequestAudit[0]
+      /api/v1/auth/register 201 294.2247ms d3c8cec787e54eb490de69eae7765bf8
+info: RequestAudit[0]
+      /api/v1/auth/login 200 90.9361ms 35c0256e5097405f8e11d52b0546af18
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 19.6035ms 4557946406b949e69ffc5c84c70b5866
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...

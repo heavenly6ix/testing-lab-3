@@ -1,0 +1,109 @@
+{
+  "label": "audit",
+  "requirement": "F13",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/payments/68dd0c1f-6342-4fd1-9249-4d0fb5a04500/audit -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:43:20 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "039e7a6b81614089b7672aab6709f96a"
+  },
+  "actual_result": [
+    {
+      "paymentId": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+      "action": "create",
+      "at": "2026-11-21T13:43:21.2735930Z",
+      "previous": null,
+      "current": {
+        "subscriptionId": "c78cf038-22db-436b-a49e-4ce297638856",
+        "amount": 10,
+        "currency": "RUB",
+        "date": "2026-11-21",
+        "status": "successful",
+        "isVoided": false,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-21T13:43:21.2720990Z",
+        "updatedAt": "2026-11-21T13:43:21.2720990Z",
+        "id": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+        "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+      },
+      "id": "cd5cc89d-6274-41fc-8b6f-1b411177c6b4",
+      "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+    },
+    {
+      "paymentId": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+      "action": "correct",
+      "at": "2026-11-21T13:43:21.3603200Z",
+      "previous": {
+        "subscriptionId": "c78cf038-22db-436b-a49e-4ce297638856",
+        "amount": 10,
+        "currency": "RUB",
+        "date": "2026-11-21",
+        "status": "successful",
+        "isVoided": false,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-21T13:43:21.2720990Z",
+        "updatedAt": "2026-11-21T13:43:21.2720990Z",
+        "id": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+        "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+      },
+      "current": {
+        "subscriptionId": "c78cf038-22db-436b-a49e-4ce297638856",
+        "amount": 15,
+        "currency": "RUB",
+        "date": "2026-11-21",
+        "status": "successful",
+        "isVoided": false,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-21T13:43:21.2720990Z",
+        "updatedAt": "2026-11-21T13:43:21.3601470Z",
+        "id": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+        "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+      },
+      "id": "8664f260-abf0-46fc-8994-bd2ee20d9a62",
+      "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+    },
+    {
+      "paymentId": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+      "action": "void",
+      "at": "2026-11-21T13:43:21.3677530Z",
+      "previous": {
+        "subscriptionId": "c78cf038-22db-436b-a49e-4ce297638856",
+        "amount": 15,
+        "currency": "RUB",
+        "date": "2026-11-21",
+        "status": "successful",
+        "isVoided": false,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-21T13:43:21.2720990Z",
+        "updatedAt": "2026-11-21T13:43:21.3601470Z",
+        "id": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+        "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+      },
+      "current": {
+        "subscriptionId": "c78cf038-22db-436b-a49e-4ce297638856",
+        "amount": 15,
+        "currency": "RUB",
+        "date": "2026-11-21",
+        "status": "successful",
+        "isVoided": true,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-21T13:43:21.2720990Z",
+        "updatedAt": "2026-11-21T13:43:21.3676060Z",
+        "id": "68dd0c1f-6342-4fd1-9249-4d0fb5a04500",
+        "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+      },
+      "id": "3a3488c9-0f23-4411-b555-b74606be0b6f",
+      "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+    }
+  ],
+  "passed": true
+}

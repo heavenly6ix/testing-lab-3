@@ -1,0 +1,36 @@
+{
+  "label": "history",
+  "requirement": "F12",
+  "request": "curl -i -X GET 'http://127.0.0.1:5087/api/v1/payments?subscriptionId=9896078a-bf6b-4915-96fc-3ed8468a4e5e&from=2026-11-26&to=2026-11-26' -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "fd09878c66eb40689d24862349ebe316"
+  },
+  "actual_result": {
+    "items": [
+      {
+        "subscriptionId": "9896078a-bf6b-4915-96fc-3ed8468a4e5e",
+        "amount": 10,
+        "currency": "RUB",
+        "date": "2026-11-26",
+        "status": "successful",
+        "isVoided": false,
+        "snapshotName": "Updated Music",
+        "snapshotCategory": "Media",
+        "createdAt": "2026-11-26T11:41:43.7030210Z",
+        "updatedAt": "2026-11-26T11:41:43.7030210Z",
+        "id": "eb8ccc99-3428-42d4-b148-b9eb61251eda",
+        "userId": "6f7b1d6f-a1b7-4341-9f6b-981da4734fe4"
+      }
+    ],
+    "total": 1,
+    "page": 1,
+    "pageSize": 20
+  },
+  "passed": true
+}

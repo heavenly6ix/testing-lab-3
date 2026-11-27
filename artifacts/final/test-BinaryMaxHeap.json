@@ -1,0 +1,14 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/BinaryMaxHeap.Tests",
+    "--no-build",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "../artifacts/final/BinaryMaxHeap"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T12:37:12.423691+00:00"
+}

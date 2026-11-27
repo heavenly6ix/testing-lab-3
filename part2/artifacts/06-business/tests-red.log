@@ -1,0 +1,39 @@
+$ ['dotnet', 'test', 'tests/Subscriptions.Application.Tests', '--no-restore', '--logger', 'trx', '--results-directory', 'artifacts/06-business/red']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Application.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Не пройден Login_ShortWrongPassword_IsStillUnauthorized [13 ms]
+  Сообщение об ошибке:
+     Assert.That(fault.Kind, Is.EqualTo(kind))
+  Expected: Unauthorized
+  But was:  Validation
+
+  Трассировка стека:
+     at Subscriptions.Application.Tests.TestContext.Fault(TestDelegate action, FaultKind kind) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 42
+   at Subscriptions.Application.Tests.AuthTests.Login_ShortWrongPassword_IsStillUnauthorized() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/AuthTests.cs:line 35
+
+1)    at Subscriptions.Application.Tests.TestContext.Fault(TestDelegate action, FaultKind kind) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 42
+   at Subscriptions.Application.Tests.AuthTests.Login_ShortWrongPassword_IsStillUnauthorized() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/AuthTests.cs:line 35
+
+
+  Не пройден ChangedFractionalPayloadMustNotBecomeReplay [18 ms]
+  Сообщение об ошибке:
+     Assert.That(caughtException, expression)
+  Expected: <Subscriptions.Application.BusinessFault>
+  But was:  null
+
+  Трассировка стека:
+     at Subscriptions.Application.Tests.TestContext.Fault(TestDelegate action, FaultKind kind) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 42
+   at Subscriptions.Application.Tests.PaymentTests.ChangedFractionalPayloadMustNotBecomeReplay() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/PaymentTests.cs:line 25
+
+1)    at Subscriptions.Application.Tests.TestContext.Fault(TestDelegate action, FaultKind kind) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 42
+   at Subscriptions.Application.Tests.PaymentTests.ChangedFractionalPayloadMustNotBecomeReplay() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/PaymentTests.cs:line 25
+
+
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/06-business/red/_MacBook-Air-Egor_2026-11-21_20_17_47_net10.0.trx
+
+Не пройден!: не пройдено     2, пройдено    76, пропущено     0, всего    78, длительность 238 ms. - Subscriptions.Application.Tests.dll (net10.0)
+
+EXIT CODE: 1

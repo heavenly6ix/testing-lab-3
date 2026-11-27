@@ -1,0 +1,841 @@
+{
+  "tests": {
+    "unit": {
+      "passed": 104,
+      "failed": 0,
+      "skipped": 0,
+      "total": 104,
+      "tests": [
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidUpdateDoesNotChangeSavedObject(\"currency\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "StatusTransitionsArePersistentAndIdempotent",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "List_FiltersStablePaginationArchiveAndOwner",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidUpdateDoesNotChangeSavedObject(\"before-start\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "Create_TrimsAndCapturesAnchor",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_AnnualLeapAnchorReturnsOnLeapYear(2028,29)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCreateLeavesNoTriplet(\"currency\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.CalendarBoundaryTests",
+          "name": "ValidMinimumCalendarDateIsNotMissingInput(\"subscription\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "CorrectionPreservesCurrencyAndSnapshotsAuditPrevious",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Refresh_InvalidStateRejected(\"expired\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Refresh_InvalidStateRejected(\"revoked\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidPassword(\"\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"category\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_InvalidRanges(\"large\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidKeys(null)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "TokenInputsCannotBeEmpty",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"amount-large\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCreateLeavesNoTriplet(\"future\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"name-long\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidKeys(\"has space\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "SuccessDoesNotErasePreviousFailures",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_InvalidRanges(\"reverse\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "ArchivedIsReadOnlyButHistoryStays",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Login_CorrectIssuesPairWithBounds",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.CalendarBoundaryTests",
+          "name": "ValidMinimumCalendarDateIsNotMissingInput(\"analytics\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "OwnershipAllSubscriptionOperations(\"foreign\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Reset_InvalidToken(\"missing-user\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Logout_IdempotentRevokesSessionChainOnly",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCorrectionRollsBack(\"status\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidEmail(\"bad\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(31,2023,2,28)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_AnnualLeapAnchorReturnsOnLeapYear(2025,28)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.CalendarBoundaryTests",
+          "name": "ValidMinimumCalendarDateIsNotMissingInput(\"payment\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Reset_InvalidToken(\"expired\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(28,2024,2,28)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"dates\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.LimiterTests",
+          "name": "ExactRollingWindowRetriesAndSeparatesIps",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"amount-zero\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidKeys(\"ключ\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "DifferentKeyCreatesNew_ChangedPayloadConflicts",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"amount-precision\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_ClampDoesNotDriftAndMayContainTwoOccurrences",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FutureAnnualBeyondWindowAndBeforeFirstOccurrence",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(30,2024,2,29)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCreateLeavesNoTriplet(\"amount\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "CreateAtomicTripletAndOriginalResponseReplay",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Reset_ChangesPasswordConsumesTokenRevokesAllSessions",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_366InclusiveDaysAreAllowed",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Refresh_RotatesAndPreservesAbsoluteExpiry",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_NormalizesAndRejectsDuplicate",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_YearMonthsAndCategoryCurrencyRemainDistinct",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "AccountLimit_ExactRollingWindowPersistsFailures",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_SkipEarlierDayThisMonthAndKeepCurrencies",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(29,2024,2,29)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.LimiterTests",
+          "name": "RollingWindowKeepsRecentEntryAfterOlderEntryExpires",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Login_ShortWrongPassword_IsStillUnauthorized",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCreateLeavesNoTriplet(\"status\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Login_IpAndAccountLimitReturnsLargerRetry",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"period\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidEmail(null)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "UpdateAllFieldsAndAnchor_PreservesHistoricalPayment",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidPagination(1,101)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_OnlyOwnActiveUnarchivedAndFutureSchedules",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(30,2023,2,28)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "ChangedFractionalPayloadMustNotBecomeReplay",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"amount-negative\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidEmail(\"Name <a@b.test>\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_EmptyReturnsZeroAndNoGroups",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Refresh_InvalidStateRejected(\"unknown\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.LimiterTests",
+          "name": "ParallelAdmissionsCannotExceedThirty",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "TransactionPortFailureIsPropagatedWithoutClaimingSuccess",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "OwnershipAppliesToCreateFilterUpdateVoidAudit(\"missing\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidUpdateDoesNotChangeSavedObject(\"today\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Forgot_UnknownDoesNotSend_NewRequestInvalidatesPrevious",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(31,2024,2,29)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"name\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCorrectionRollsBack(\"date\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "HistoryInvalidFilters",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidUpdateDoesNotChangeSavedObject(\"period\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidStatusFilter",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_OversizedInputs",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "HistoryFiltersPagesVoidsAndOwnOnly",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidUpdateDoesNotChangeSavedObject(\"amount\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"currency\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidCreationWritesNothing(\"category-long\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidPassword(null)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidPagination(1,0)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCreateLeavesNoTriplet(\"mismatch\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_YearBoundaryAndExclusiveEnd",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.LimiterTests",
+          "name": "PasswordWhitespaceIsSignificantNotTrimmed",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "OwnershipAllSubscriptionOperations(\"missing\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Login_InvalidCredentials_AreUniform(\"student@example.test\",\"wrong-password\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidPassword(\"short\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Reset_InvalidToken(\"unknown\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.SubscriptionTests",
+          "name": "InvalidPagination(0,20)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "OwnershipAppliesToCreateFilterUpdateVoidAudit(\"foreign\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidCorrectionRollsBack(\"amount\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "TooLongKey",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(29,2023,2,28)",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.PaymentTests",
+          "name": "InvalidKeys(\"\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Login_InvalidCredentials_AreUniform(\"unknown@example.test\",\"wrong-password\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.AuthTests",
+          "name": "Registration_InvalidEmail(\"\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Expenses_ExactDatesCurrenciesStatusesSnapshotsAndOwners",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Application.Tests.ReportingTests",
+          "name": "Forecast_FebruaryAnchors(28,2023,2,28)",
+          "outcome": "Passed"
+        }
+      ]
+    },
+    "api": {
+      "passed": 45,
+      "failed": 0,
+      "skipped": 0,
+      "total": 45,
+      "tests": [
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/subscriptions?status=unknown\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "StartupWithUnavailableDatabaseStillServes503",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "RealDatabaseCannotOpenReturns503AndServerRecovers",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "ConcurrentNormalizedRegistrationsCreateOneUser",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "ForeignResourcesLookAbsentForAllOperations",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "SensitiveValuesNeverAppearInRequestLogs",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "BadPatchesRejected(\"{\\\"userId\\\":\\\"steal\\\"}\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/analytics/expenses?from=2024-01-01&to=2025-01-01\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "JwtChecksRejectInvalidTokens(\"signature\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "ResetSenderExpiryOneUseAndAllRefreshRevoked",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidCreateAndMissingKeyDoNotWrite",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "TransactionFailureReallyRollsBackAllRows(\"AuditRecord\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "OversizeBothLengthAndChunkedAndCorrelationValidation",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "BadPatchesRejected(\"{}\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "IpLimitCountsThirtyAttemptsIncludingBadBodies",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "AccountLimitFiveFailuresThen429AndRollingExpiry",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/subscriptions?userId=someone\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "BadPatchesRejected(\"{\\\"amount\\\":-1}\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "SubscriptionCrudFiltersStatusAndArchive",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "BadPatchesRejected(\"{\\\"name\\\":null}\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "AnalyticsAndForecastUseOwnCurrencySnapshotsAndArchiveRules",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "RegistrationNormalizationDuplicateAndValidation",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "AdvertisedAccessExpiryEqualsSignedJwtExpiry",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "PaymentReplayCorrectionVoidAuditAndHistoricalCurrency",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "JwtChecksRejectInvalidTokens(\"issuer\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "LoginErrorsAreUniformAndBearerRequired",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "TransactionFailureReallyRollsBackAllRows(\"Payment\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "JwtChecksRejectInvalidTokens(\"expired\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "ConcurrentSameKeyCreatesExactlyOneTriplet",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "CorrectionAuditFailureRollsBackPayment",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/analytics/expenses\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/subscriptions/not-uuid\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/subscriptions?page=0\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/analytics/expenses?to=2024-01-01\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/subscriptions?pageSize=101\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/analytics/expenses?from=2024-01-01\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "EarliestHistoricalDateIsValidAndSurvivesSqliteAndJson",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "TransactionFailureReallyRollsBackAllRows(\"IdempotencyRecord\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "RefreshRaceRotationLogoutRevokesChainNotOtherSessions",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/payments?from=bad\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "JwtChecksRejectInvalidTokens(\"subject\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.AuthApiTests",
+          "name": "JwtChecksRejectInvalidTokens(\"audience\")",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "BodylessCommandsDoNotSilentlyAcceptUnknownPayload",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.BusinessApiTests",
+          "name": "InvalidQueriesHaveUnifiedValidation(\"/api/v1/payments?from=2026-02-01&to=2026-01-01\")",
+          "outcome": "Passed"
+        }
+      ]
+    },
+    "infrastructure": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "total": 4,
+      "tests": [
+        {
+          "class": "Subscriptions.Api.Tests.InfrastructureTests",
+          "name": "CryptoSecretsAreRandomOpaqueAndOnlyDigestIsStable",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.InfrastructureTests",
+          "name": "MailboxExpiresAndReplacesPerEmailWithoutPublicInbox",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.InfrastructureTests",
+          "name": "Argon2idUsesDistinctRandomSixteenByteSaltAndVerifies",
+          "outcome": "Passed"
+        },
+        {
+          "class": "Subscriptions.Api.Tests.InfrastructureTests",
+          "name": "UniqueConstraintIsRealAndDoesNotBecome503",
+          "outcome": "Passed"
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "line_percent": 100.0,
+    "branch_percent": 98.54014598540147,
+    "raw": {
+      "line-rate": "1",
+      "branch-rate": "0.9854",
+      "version": "1.9",
+      "timestamp": "1795269408",
+      "lines-covered": "283",
+      "lines-valid": "283",
+      "branches-covered": "270",
+      "branches-valid": "274"
+    },
+    "statement": "statement coverage not directly available",
+    "modules": {
+      "AnalyticsService": {
+        "line_percent": 100.0,
+        "branch_percent": 100.0
+      },
+      "ForecastService": {
+        "line_percent": 100.0,
+        "branch_percent": 100.0
+      }
+    },
+    "opencover_summary": {
+      "numSequencePoints": "283",
+      "visitedSequencePoints": "283",
+      "numBranchPoints": "274",
+      "visitedBranchPoints": "270",
+      "sequenceCoverage": "100",
+      "branchCoverage": "98.54",
+      "maxCyclomaticComplexity": "289",
+      "minCyclomaticComplexity": "289",
+      "visitedClasses": "10",
+      "numClasses": "10",
+      "visitedMethods": "47",
+      "numMethods": "47"
+    }
+  },
+  "smoke": {
+    "base_url": "http://127.0.0.1:5087",
+    "utc": "2026-11-21T13:56:51.557542+00:00",
+    "requests": 31,
+    "passed": 31,
+    "failed": 0,
+    "secrets_redacted": true
+  },
+  "base_url": "http://127.0.0.1:5087"
+}

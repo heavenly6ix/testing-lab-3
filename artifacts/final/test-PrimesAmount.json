@@ -1,0 +1,14 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/PrimesAmount.Tests",
+    "--no-build",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "../artifacts/final/PrimesAmount"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T12:37:10.486205+00:00"
+}

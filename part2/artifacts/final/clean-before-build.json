@@ -1,0 +1,14 @@
+[
+  "src/Subscriptions.Application/obj",
+  "src/Subscriptions.Application/bin",
+  "src/Subscriptions.Domain/obj",
+  "src/Subscriptions.Domain/bin",
+  "src/Subscriptions.Api/obj",
+  "src/Subscriptions.Api/bin",
+  "src/Subscriptions.Infrastructure/obj",
+  "src/Subscriptions.Infrastructure/bin",
+  "tests/Subscriptions.Application.Tests/obj",
+  "tests/Subscriptions.Application.Tests/bin",
+  "tests/Subscriptions.Api.Tests/obj",
+  "tests/Subscriptions.Api.Tests/bin"
+]

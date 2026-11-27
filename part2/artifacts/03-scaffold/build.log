@@ -1,0 +1,15 @@
+$ ['dotnet', 'build', '--no-restore']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Application.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll
+  Subscriptions.Infrastructure -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/bin/Debug/net10.0/Subscriptions.Infrastructure.dll
+  Subscriptions.Api -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/bin/Debug/net10.0/Subscriptions.Api.dll
+  Subscriptions.Api.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:02.55
+
+EXIT CODE: 0

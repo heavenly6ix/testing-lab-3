@@ -1,0 +1,17 @@
+$ dotnet build
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  OrderProcessing -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/OrderProcessing/bin/Debug/net10.0/OrderProcessing.dll
+  PrimesAmount -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/PrimesAmount/bin/Debug/net10.0/PrimesAmount.dll
+  BinaryMaxHeap -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/BinaryMaxHeap/bin/Debug/net10.0/BinaryMaxHeap.dll
+  PrimesAmount.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/PrimesAmount.Tests/bin/Debug/net10.0/PrimesAmount.Tests.dll
+  OrderProcessing.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/OrderProcessing.Tests/bin/Debug/net10.0/OrderProcessing.Tests.dll
+  BinaryMaxHeap.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.08
+
+EXIT CODE: 0

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "curl",
+    "--silent",
+    "--show-error",
+    "--output",
+    "artifacts/final/swagger-ui.html",
+    "--write-out",
+    "%{http_code}",
+    "http://127.0.0.1:5087/swagger/index.html"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:43:21.872453+00:00"
+}

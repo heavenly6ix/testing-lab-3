@@ -1,0 +1,930 @@
+{
+  "before": {
+    "cobertura": {
+      "line-rate": "1",
+      "branch-rate": "1",
+      "version": "1.9",
+      "timestamp": "1795264081",
+      "lines-covered": "120",
+      "lines-valid": "120",
+      "branches-covered": "46",
+      "branches-valid": "46"
+    },
+    "opencover": {
+      "numSequencePoints": "120",
+      "visitedSequencePoints": "120",
+      "numBranchPoints": "46",
+      "visitedBranchPoints": "46",
+      "sequenceCoverage": "100",
+      "branchCoverage": "100",
+      "maxCyclomaticComplexity": "55",
+      "minCyclomaticComplexity": "55",
+      "visitedClasses": "1",
+      "numClasses": "1",
+      "visitedMethods": "20",
+      "numMethods": "20"
+    },
+    "classes": [
+      {
+        "name": "Heaps.BinaryMaxHeap`1",
+        "filename": "Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/BinaryMaxHeap/BinaryMaxHeap.cs",
+        "line-rate": "1",
+        "branch-rate": "1",
+        "complexity": "55"
+      }
+    ],
+    "uncovered_lines": [],
+    "trx": [
+      {
+        "file": "artifacts/coverage/before/results/_MacBook-Air-Egor_2026-11-21_19_28_01_net10.0.trx",
+        "counters": {
+          "total": "95",
+          "executed": "90",
+          "passed": "86",
+          "failed": "4",
+          "error": "0",
+          "timeout": "0",
+          "aborted": "0",
+          "inconclusive": "0",
+          "passedButRunAborted": "0",
+          "notRunnable": "0",
+          "notExecuted": "0",
+          "disconnected": "0",
+          "warning": "0",
+          "completed": "0",
+          "inProgress": "0",
+          "pending": "0"
+        },
+        "skipped": 5,
+        "tests": [
+          {
+            "name": "ToMinHeap_PassesTheSameComparerToTheMinHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "Peek_ReturnsMaxWithoutRemovingIt",
+            "outcome": "Passed"
+          },
+          {
+            "name": "DefaultConstructor_CreatesEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_LeftIsLargest",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(3)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_ValidIndexes_ReturnHeapOrderElements",
+            "outcome": "Failed"
+          },
+          {
+            "name": "RebuildHeap_OnValidHeap_ChangesNothing",
+            "outcome": "Passed"
+          },
+          {
+            "name": "CapacityConstructor_NegativeCapacity_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(4)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_ContainsAllElementsWithMinimumOnTop",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "Clear_HeapIsReusableAfterwards",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_BothHeapsNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ReversedComparerMock_TurnsHeapIntoMinFirstHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_ExtractsInAscendingOrder",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "Union_FirstEmpty_ReturnsCopyOfSecond",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(8)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(16)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_Repeatedly_ReturnsToEmptyAndThenThrows",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_FirstHeapNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_GreaterThanRoot_ComparesAgainstRootThenRebuilds",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(3)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_ReturnsMaxAndRemovesIt",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Constructor_NullComparer_FallsBackToDefaultComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(2)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_SetsBothOriginalReferencesToNull",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_SevenElements_ProducesExpectedLayout",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_AcceptsAnIListOfAnyKind",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(33)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "Initialize_DoesNotModifySourceCollection",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_WithDuplicates_KeepsAllOfThem",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_ReturnsIndependentCopy",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_ValueEqualToRoot_TakesTheGreaterOrEqualBranch",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(15)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_MergesAllElementsIntoNewValidHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(50)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_ReturnsElementsInHeapOrder",
+            "outcome": "Failed"
+          },
+          {
+            "name": "CountAndIsEmpty_TrackAddsAndRemovals",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_IndexGreaterThanCount_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Peek_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_ValueSmallerThanRoot_StoresValueWithoutTouchingRoot",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_ManyRandomValues_KeepsHeapPropertyAfterEveryInsert",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_ValueGreaterThanRoot_PromotesNewMax",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(7)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_ReturnsIndependentCopy",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(150)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_EmptyHeap_ReturnsEmptyList",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_EmptyHeap_ReturnsEmptyArray",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_BothEmpty_ReturnsEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_SevenElements_RequiresRecursiveSiftDown",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ComparerConstructor_CreatesEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SingleElement_NeverInvokesComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty",
+            "outcome": "Failed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_SecondHeapNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_DoesNotAffectOriginalHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "Union_SecondEmpty_ReturnsCopyOfFirst",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_ReturnsElementsInHeapOrder",
+            "outcome": "Failed"
+          },
+          {
+            "name": "Initialize_EmptyCollection_OnEmptyHeap_StaysEmpty",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RebuildHeap_RestoresHeapPropertyAfterIndexerSet",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(100)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_InvokesInjectedComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_ToEmptyHeap_BecomesRoot",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Clear_NonEmptyHeap_RemovesEverything",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_NegativeIndex_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_TwoElements_LeftChildIsLastIndex_IsSwappedUp",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SecondElement_InvokesInjectedComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(200)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_SingleElement_LeavesHeapEmpty",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Constructor_CustomComparer_DeterminesOrdering",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_NonEmptyCollection_OverridesExistingContents",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_SingleElement",
+            "outcome": "Passed"
+          },
+          {
+            "name": "CapacityConstructor_PositiveCapacity_CreatesEmptyUsableHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_RightIsLargest",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_LargerThanMax_BecomesNewMax",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_IndexEqualToCount_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RebuildHeap_EmptyHeap_DoesNotThrow",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_AscendingSequence_ProducesExpectedLayout",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_KeepsDuplicatesFromBothHeaps",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_EmptyCollection_LeavesExistingContentsUntouched",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_Duplicates_AreAllKept",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_TwoElements_LeavesTheSmallerOne",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(-1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Clear_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_ThreeElements_LeftIsLastIndexAfterRemoval_IsSwappedUp",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(2)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_RootAlreadyLargest_NoSwap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(5)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SmallerThanMax_MaxUnchanged",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_SmallerThanRoot_ComparesOnceAndDoesNotRebuild",
+            "outcome": "Passed"
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "cobertura": {
+      "line-rate": "1",
+      "branch-rate": "1",
+      "version": "1.9",
+      "timestamp": "1795264520",
+      "lines-covered": "114",
+      "lines-valid": "114",
+      "branches-covered": "42",
+      "branches-valid": "42"
+    },
+    "opencover": {
+      "numSequencePoints": "114",
+      "visitedSequencePoints": "114",
+      "numBranchPoints": "42",
+      "visitedBranchPoints": "42",
+      "sequenceCoverage": "100",
+      "branchCoverage": "100",
+      "maxCyclomaticComplexity": "51",
+      "minCyclomaticComplexity": "51",
+      "visitedClasses": "1",
+      "numClasses": "1",
+      "visitedMethods": "20",
+      "numMethods": "20"
+    },
+    "classes": [
+      {
+        "name": "Heaps.BinaryMaxHeap`1",
+        "filename": "Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/BinaryMaxHeap/BinaryMaxHeap.cs",
+        "line-rate": "1",
+        "branch-rate": "1",
+        "complexity": "51"
+      }
+    ],
+    "uncovered_lines": [],
+    "trx": [
+      {
+        "file": "artifacts/coverage/after/results/_MacBook-Air-Egor_2026-11-21_19_35_20_net10.0.trx",
+        "counters": {
+          "total": "106",
+          "executed": "101",
+          "passed": "101",
+          "failed": "0",
+          "error": "0",
+          "timeout": "0",
+          "aborted": "0",
+          "inconclusive": "0",
+          "passedButRunAborted": "0",
+          "notRunnable": "0",
+          "notExecuted": "0",
+          "disconnected": "0",
+          "warning": "0",
+          "completed": "0",
+          "inProgress": "0",
+          "pending": "0"
+        },
+        "skipped": 5,
+        "tests": [
+          {
+            "name": "CountAndIsEmpty_TrackAddsAndRemovals",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_SevenElements_RequiresRecursiveSiftDown",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SmallerThanMax_MaxUnchanged",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_ReturnsMaxAndRemovesIt",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SecondElement_InvokesInjectedComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(4)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_SingleElement",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_KeepsDuplicatesFromBothHeaps",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Clear_HeapIsReusableAfterwards",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_ValidIndexes_ReturnHeapOrderElements",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_AliasedInputs_CurrentDestructivePolicyConsumesObjectOnce(False)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_NonEmptyCollection_OverridesExistingContents",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_ToEmptyHeap_BecomesRoot",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_ThreeElements_LeftIsLastIndexAfterRemoval_IsSwappedUp",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_FirstEmpty_ReturnsCopyOfSecond",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(3)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "CapacityConstructor_NegativeCapacity_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_NegativeIndex_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(3)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_SetsBothOriginalReferencesToNull",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_WithDuplicates_KeepsAllOfThem",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Peek_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Clear_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_ReturnsElementsInHeapOrder",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Peek_ReturnsMaxWithoutRemovingIt",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(2)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_AscendingSequence_ProducesExpectedLayout",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_EmptyCollection_ReplacesExistingContents",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_SevenElements_ProducesExpectedLayout",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Clear_NonEmptyHeap_RemovesEverything",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RepeatedIncludingEmpty_AlwaysReplacesState",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_SecondEmpty_ReturnsCopyOfFirst",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Constructor_NullComparer_FallsBackToDefaultComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_Repeatedly_ReturnsToEmptyAndThenThrows",
+            "outcome": "Passed"
+          },
+          {
+            "name": "DefaultConstructor_CreatesEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "MixedOperations_AgreeWithMultisetAfterEveryStep(True)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_LargerThanMax_BecomesNewMax",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RemoveMax_TwoElements_LeavesTheSmallerOne",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_DoesNotAffectOriginalHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "RemoveMax_SingleElement_LeavesHeapEmpty",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RebuildHeap_OnValidHeap_ChangesNothing",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_TwoElements_LeftChildIsLastIndex_IsSwappedUp",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ReversedComparerMock_TurnsHeapIntoMinFirstHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_ReturnsElementsInHeapOrder",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_EmptyCollection_OnEmptyHeap_StaysEmpty",
+            "outcome": "Passed"
+          },
+          {
+            "name": "EqualPriorityItems_AreAllPreservedWithoutAssumingStableOrder",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_RightIsLargest",
+            "outcome": "Passed"
+          },
+          {
+            "name": "NullElements_DefaultReferenceComparerOrdersAndPreservesThem",
+            "outcome": "Passed"
+          },
+          {
+            "name": "CapacityConstructor_PositiveCapacity_CreatesEmptyUsableHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_BothHeapsNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RebuildHeap_RestoresHeapPropertyAfterIndexerSet",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_IndexGreaterThanCount_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_EmptyHeap_ReturnsEmptyArray",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_SingleElement_NeverInvokesComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_Duplicates_AreAllKept",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_ValueEqualToRoot_TakesTheGreaterOrEqualBranch",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Indexer_DecreaseInternalNode_MovesBelowLargerChildren",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerGet_IndexEqualToCount_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_ExtractsInAscendingOrder",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "ComparerConstructor_CreatesEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_RootAlreadyLargest_NoSwap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_GreaterThanRoot_UsesComparerAndPromotesMaximum",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(200)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(150)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_BothEmpty_ReturnsEmptyHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(8)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_MergesAllElementsIntoNewValidHeap",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(50)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Add_ManyRandomValues_KeepsHeapPropertyAfterEveryInsert",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(16)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_PassesTheSameComparerToTheMinHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "IndexerSet_ValueSmallerThanRoot_StoresValueWithoutTouchingRoot",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_AcceptsAnIListOfAnyKind",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_FirstHeapNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_ValueGreaterThanRoot_PromotesNewMax",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToArray_ReturnsIndependentCopy",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_AliasedInputs_CurrentDestructivePolicyConsumesObjectOnce(True)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToMinHeap_ContainsAllElementsWithMinimumOnTop",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap",
+            "outcome": "NotExecuted"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(100)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_RootIndex_ReplacesRootAndKeepsHeapProperty",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_SecondHeapNull_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_ReturnsIndependentCopy",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ToList_EmptyHeap_ReturnsEmptyList",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_SmallerThanRoot_UsesComparerAndPreservesContents",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Union_CustomComparers_CurrentPolicyUsesDefaultInResult",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "MixedOperations_AgreeWithMultisetAfterEveryStep(False)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(7)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_Null_ThrowsArgumentNullAndPreservesPreviousState",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_ThreeElements_LeftIsLargest",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(2)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Indexer_IncreaseBelowRoot_MovesAboveSmallerParent",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Constructor_CustomComparer_DeterminesOrdering",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_EmptyHeap_Throws",
+            "outcome": "Passed"
+          },
+          {
+            "name": "IndexerSet_InvalidIndex_Throws(-1)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "RebuildHeap_EmptyHeap_DoesNotThrow",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(5)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_RandomData_ProducesValidHeapAndSortedDrain(15)",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_DoesNotModifySourceCollection",
+            "outcome": "Passed"
+          },
+          {
+            "name": "Initialize_InvokesInjectedComparer",
+            "outcome": "Passed"
+          },
+          {
+            "name": "ExtractMax_Repeatedly_ReturnsDescendingOrder(33)",
+            "outcome": "Passed"
+          }
+        ]
+      }
+    ]
+  }
+}

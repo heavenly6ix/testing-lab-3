@@ -1,0 +1,8 @@
+$ dotnet test tests/OrderProcessing.Tests --no-build --logger trx --results-directory ../artifacts/final/OrderProcessing
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/OrderProcessing.Tests/bin/Debug/net10.0/OrderProcessing.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/OrderProcessing/_MacBook-Air-Egor_2026-11-21_19_37_11_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено    74, пропущено     0, всего    74, длительность 277 ms. - OrderProcessing.Tests.dll (net10.0)
+
+EXIT CODE: 0

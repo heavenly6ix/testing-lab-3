@@ -1,0 +1,3 @@
+$ ['pdftoppm', '-f', '1', '-singlefile', '-scale-to', '1600', '-png', 'практическое задание 3.pdf', '/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/stage1/assignment-page1']
+
+EXIT CODE: 0

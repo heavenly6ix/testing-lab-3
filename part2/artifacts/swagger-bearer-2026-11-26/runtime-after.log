@@ -1,0 +1,31 @@
+$ ['python3', 'artifacts/swagger-bearer-2026-11-26/verify-runtime.py', 'after']
+{
+  "mode": "after",
+  "protected": 15,
+  "public": 7,
+  "sample_security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "checks": [
+    {
+      "request": "GET health without token",
+      "actual_http": 200
+    },
+    {
+      "request": "POST subscriptions without Authorization",
+      "actual_http": 401
+    },
+    {
+      "request": "POST login without token",
+      "actual_http": 200
+    },
+    {
+      "request": "POST subscriptions with Authorization: Bearer [REDACTED]",
+      "actual_http": 201
+    }
+  ]
+}
+
+EXIT CODE: 0

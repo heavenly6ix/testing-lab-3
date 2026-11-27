@@ -1,0 +1,9 @@
+{
+  "command": [
+    "python3",
+    "artifacts/swagger-bearer-2026-11-26/verify-runtime.py",
+    "before"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-26T15:24:09.423309+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "label": "void",
+  "requirement": "F13",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/payments/eb8ccc99-3428-42d4-b148-b9eb61251eda/void -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "2712e9cc5ebc493abb288566c7919e1c"
+  },
+  "actual_result": {
+    "subscriptionId": "9896078a-bf6b-4915-96fc-3ed8468a4e5e",
+    "amount": 15,
+    "currency": "RUB",
+    "date": "2026-11-26",
+    "status": "successful",
+    "isVoided": true,
+    "snapshotName": "Updated Music",
+    "snapshotCategory": "Media",
+    "createdAt": "2026-11-26T11:41:43.7030210Z",
+    "updatedAt": "2026-11-26T11:41:43.7933700Z",
+    "id": "eb8ccc99-3428-42d4-b148-b9eb61251eda",
+    "userId": "6f7b1d6f-a1b7-4341-9f6b-981da4734fe4"
+  },
+  "passed": true
+}

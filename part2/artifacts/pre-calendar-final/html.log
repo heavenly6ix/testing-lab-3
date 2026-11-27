@@ -1,0 +1,11 @@
+$ ['.tools/reportgenerator', '-reports:artifacts/final/coverage/**/coverage.cobertura.xml', '-targetdir:artifacts/coverage/html', '-reporttypes:Html;JsonSummary;TextSummary']
+2026-11-21T20:43:21: Arguments
+2026-11-21T20:43:21:  -reports:artifacts/final/coverage/**/coverage.cobertura.xml
+2026-11-21T20:43:21:  -targetdir:artifacts/coverage/html
+2026-11-21T20:43:21:  -reporttypes:Html;JsonSummary;TextSummary
+2026-11-21T20:43:22: Writing report file 'artifacts/coverage/html/index.html'
+2026-11-21T20:43:22: Writing report file 'artifacts/coverage/html/Summary.json'
+2026-11-21T20:43:22: Writing report file 'artifacts/coverage/html/Summary.txt'
+2026-11-21T20:43:22: Report generation took 0,1 seconds
+
+EXIT CODE: 0

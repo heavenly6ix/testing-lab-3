@@ -1,0 +1,15 @@
+$ ['dotnet', 'test', 'tests/Subscriptions.Application.Tests', '--no-restore', '--settings', 'coverage.runsettings', '--collect', 'XPlat Code Coverage', '--logger', 'trx', '--results-directory', 'artifacts/14-coverage/final']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Application.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/14-coverage/final/_MacBook-Air-Egor_2026-11-21_20_28_18_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено   105, пропущено     0, всего   105, длительность 278 ms. - Subscriptions.Application.Tests.dll (net10.0)
+
+Вложения:
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/14-coverage/final/a330cf12-5342-4070-abd9-8c137eb9b63a/coverage.cobertura.xml
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/14-coverage/final/a330cf12-5342-4070-abd9-8c137eb9b63a/coverage.opencover.xml
+
+EXIT CODE: 0

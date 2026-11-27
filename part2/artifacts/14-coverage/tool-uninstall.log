@@ -1,0 +1,4 @@
+$ ['dotnet', 'tool', 'uninstall', 'dotnet-reportgenerator-globaltool', '--tool-path', '.tools']
+Инструмент "dotnet-reportgenerator-globaltool" (версия "5.6.1") удален.
+
+EXIT CODE: 0

@@ -1,0 +1,8 @@
+$ ['dotnet', 'restore']
+  Определение проектов для восстановления...
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/Subscriptions.Infrastructure.csproj (за 27,96 с).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/Subscriptions.Api.csproj (за 27,96 с).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/Subscriptions.Api.Tests.csproj (за 27,97 с).
+  Проектов обновлено для восстановления: 3 из 6.
+
+EXIT CODE: 0

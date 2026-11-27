@@ -1,0 +1,14 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Subscriptions.Application.Tests",
+    "--no-restore",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/04-auth/red"
+  ],
+  "exit_code": 1,
+  "utc": "2026-11-21T13:16:08.041251+00:00"
+}

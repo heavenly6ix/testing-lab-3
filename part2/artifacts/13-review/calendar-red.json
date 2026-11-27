@@ -1,0 +1,16 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Subscriptions.Application.Tests",
+    "--no-restore",
+    "--filter",
+    "ValidMinimumCalendarDateIsNotMissingInput",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/13-review/calendar-red"
+  ],
+  "exit_code": 1,
+  "utc": "2026-11-21T13:54:50.070681+00:00"
+}

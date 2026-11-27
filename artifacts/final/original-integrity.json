@@ -1,0 +1,21 @@
+{
+  "unchanged": true,
+  "files_verified": 15,
+  "sha256": {
+    "attahments/.DS_Store": "2d06e24bcbafe2c5b3810981a387e86c7ca6b08141f4645ea87d3c8db2e21393",
+    "attahments/OrderProcessingService.cs": "470fcbfdf2b9149bd7a19a4420716fd2196d9126095139724e3a013eb63adc3e",
+    "attahments/OrderProcessingServiceTests.cs": "59b332517e1d2d9eff5b505cf93dfc7007bd89926b10f7b65a0d0395547148b9",
+    "attahments/PrimesAmount/PrimesAmount.cs": "87e9c38296a7a13d6cf6f0740242296845e72e5b01a95330f835c8180c7c11fc",
+    "attahments/PrimesAmount/PrimeService.cs": "1db5341f8560869ffca16006c3c9acd0ca387ca5f60cfeaeda1e217418fc8b6c",
+    "attahments/BinaryMaxHeap/BinaryMaxHeapTests.cs": "74172ce1d69a2428782647b5b32ec5f1c3527965dc198e1ec7a4dca981d9101f",
+    "attahments/BinaryMaxHeap/.DS_Store": "6f68846e29836bd90fb9c503d131a71165f74c52610db50439278c2b7a3d5c08",
+    "attahments/BinaryMaxHeap/IMaxHeap.cs": "7aedb2da97911272d448806390107e5db34b1dbfed7424a7be67ca50c81f1584",
+    "attahments/BinaryMaxHeap/ArrayList.cs": "e68f7fcc9b6b074a8933f108bffc2ef6ec3f6a74a39826240aa4f3a21fcafe68",
+    "attahments/BinaryMaxHeap/BinaryMaxHeap.cs": "4adf2767f87fe2239214f126d82b198e41e787c87697d571091460a7a83a0f40",
+    "attahments/BinaryMaxHeap/DataStructures/Common/Helpers.cs": "935518297fdaef72413159570619a29f9eb3edf8319fefc98b2e7607f135af38",
+    "attahments/BinaryMaxHeap/DataStructures/Common/Comparers.cs": "57cb0dc442ef0a7f23bd40ef99cc6cb2460c98f320baeeca291b54b0ea3061e5",
+    "attahments/BinaryMaxHeap/DataStructures/Common/PrimesList.cs": "db47d920b05f8adc04e15860795a4d97e40a6c71e6375d4bc5854572595319f9",
+    "attahments/BinaryMaxHeap/Algorithms/Common/Helpers.cs": "642225b4fff8abb80fb94563b61ea469d1ebbce8925b150e555a77f67c8b16e4",
+    "attahments/BinaryMaxHeap/Algorithms/Common/Comparers.cs": "ff72b5fec8d3401569c890c93d5f5408169514f3b62e628a33f3109300d4c7b2"
+  }
+}

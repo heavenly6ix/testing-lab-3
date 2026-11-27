@@ -1,0 +1,20 @@
+{
+  "label": "cancelled-resume",
+  "requirement": "F09",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/subscriptions/702cbbdd-d8ad-4e74-b9c5-bb59cac403fd/resume -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 409,
+  "actual_http": 409,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 15:51:35 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "d20d44246ac444979bc219fe62faf5b8"
+  },
+  "actual_result": {
+    "code": "invalid_state",
+    "message": "Operation conflicts with current state.",
+    "correlationId": "d20d44246ac444979bc219fe62faf5b8"
+  },
+  "passed": true
+}

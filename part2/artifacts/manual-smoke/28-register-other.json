@@ -1,0 +1,20 @@
+{
+  "label": "register-other",
+  "requirement": "F01",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/auth/register -H 'Content-Type: application/json' --data '{\"email\":\"other-eeb906241e0d4fcdb12fddf1dafabb43@example.test\",\"password\":\"[REDACTED]\"}'",
+  "expected": 201,
+  "actual_http": 201,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "Cache-Control": "no-store",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "69cdf676a8ee44d2a7cb72e8c72ac742"
+  },
+  "actual_result": {
+    "id": "3cb1a0e5-bb5b-4da9-baa0-a5787d9bd8a9",
+    "email": "other-eeb906241e0d4fcdb12fddf1dafabb43@example.test"
+  },
+  "passed": true
+}

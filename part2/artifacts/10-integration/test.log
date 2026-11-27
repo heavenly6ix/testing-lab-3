@@ -1,0 +1,19 @@
+$ ['dotnet', 'test', '--no-restore', '--logger', 'trx', '--results-directory', 'artifacts/10-integration/results']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Infrastructure -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/bin/Debug/net10.0/Subscriptions.Infrastructure.dll
+  Subscriptions.Application.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Subscriptions.Api -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/bin/Debug/net10.0/Subscriptions.Api.dll
+  Subscriptions.Api.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/10-integration/results/_MacBook-Air-Egor_2026-11-21_20_26_42_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено   105, пропущено     0, всего   105, длительность 632 ms. - Subscriptions.Application.Tests.dll (net10.0)
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/10-integration/results/_MacBook-Air-Egor_2026-11-21_20_26_46_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено    42, пропущено     0, всего    42, длительность 11 s. - Subscriptions.Api.Tests.dll (net10.0)
+
+EXIT CODE: 0

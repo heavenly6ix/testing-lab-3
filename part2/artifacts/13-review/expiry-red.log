@@ -1,0 +1,48 @@
+$ ['dotnet', 'test', 'tests/Subscriptions.Api.Tests', '--no-restore', '--filter', 'AdvertisedAccessExpiryEqualsSignedJwtExpiry|ConcurrentNormalizedRegistrationsCreateOneUser', '--logger', 'trx', '--results-directory', 'artifacts/13-review/expiry-red']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Infrastructure -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/bin/Debug/net10.0/Subscriptions.Infrastructure.dll
+  Subscriptions.Api -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/bin/Debug/net10.0/Subscriptions.Api.dll
+  Subscriptions.Api.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Не пройден AdvertisedAccessExpiryEqualsSignedJwtExpiry [735 ms]
+  Сообщение об ошибке:
+     Assert.That(pair.GetProperty("accessExpiresAt").GetDateTimeOffset().UtcDateTime, Is.EqualTo(jwt.ValidTo))
+  Expected: 2026-11-21 13:54:25
+  But was:  2026-11-21 13:54:25.982024
+
+  Трассировка стека:
+     at Subscriptions.Api.Tests.AuthApiTests.AdvertisedAccessExpiryEqualsSignedJwtExpiry() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/AuthApiTests.cs:line 88
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at Subscriptions.Api.Tests.AuthApiTests.AdvertisedAccessExpiryEqualsSignedJwtExpiry() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/AuthApiTests.cs:line 88
+
+
+  Стандартные выходные сообщения:
+ info: Microsoft.Hosting.Lifetime[0]
+       Application started. Press Ctrl+C to shut down.
+ info: Microsoft.Hosting.Lifetime[0]
+       Hosting environment: Development
+ info: Microsoft.Hosting.Lifetime[0]
+       Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+ info: RequestAudit[0]
+       /api/v1/auth/register 201 213.4421ms b299556120334469a9c9dee1f7b4b48d
+ info: RequestAudit[0]
+       /api/v1/auth/login 200 136.6585ms 5fbe4a8260f240e486790f92de8e7175
+ info: Microsoft.Hosting.Lifetime[0]
+       Application is shutting down...
+
+
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/13-review/expiry-red/_MacBook-Air-Egor_2026-11-21_20_39_27_net10.0.trx
+
+Не пройден!: не пройдено     1, пройдено     1, пропущено     0, всего     2, длительность 997 ms. - Subscriptions.Api.Tests.dll (net10.0)
+
+EXIT CODE: 1

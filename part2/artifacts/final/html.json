@@ -1,0 +1,10 @@
+{
+  "command": [
+    ".tools/reportgenerator",
+    "-reports:artifacts/final/coverage/**/coverage.cobertura.xml",
+    "-targetdir:artifacts/coverage/html",
+    "-reporttypes:Html;JsonSummary;TextSummary"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:56:51.911478+00:00"
+}

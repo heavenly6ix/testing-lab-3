@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4b3f4065-d3d3-4490-a07a-895db2d0253f" name="@MacBook-Air-Egor 2026-11-21 20:35:43" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-21T20:35:43.8448270+07:00" queuing="2026-11-21T20:35:43.8448270+07:00" start="2026-11-21T20:35:42.9741540+07:00" finish="2026-11-21T20:35:43.8469870+07:00" />
+  <TestSettings name="default" id="88bce957-32e2-4b1d-8917-8f33f3111214">
+    <Deployment runDeploymentRoot="_MacBook-Air-Egor_2026-11-21_20_35_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="3b3e28cf-524b-4cef-ad37-ad4c16728400" testId="fb796252-9978-ecd6-719a-54b913163c12" testName="StartupWithUnavailableDatabaseStillServes503" computerName="MacBook-Air-Egor" duration="00:00:00.5254590" startTime="2026-11-21T20:35:43.2551390+07:00" endTime="2026-11-21T20:35:43.7805390+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b3e28cf-524b-4cef-ad37-ad4c16728400">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/health 503 24.9099ms 864595ea6e074c078aa3356d2b386769
+info: RequestAudit[0]
+      /api/v1/health 200 6.6079ms 3a95e0ad3217442b9237d5e35997884f
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="StartupWithUnavailableDatabaseStillServes503" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="fb796252-9978-ecd6-719a-54b913163c12">
+      <Execution id="3b3e28cf-524b-4cef-ad37-ad4c16728400" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="StartupWithUnavailableDatabaseStillServes503" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="fb796252-9978-ecd6-719a-54b913163c12" executionId="3b3e28cf-524b-4cef-ad37-ad4c16728400" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started
+Running selected tests in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/health 503 24.9099ms 864595ea6e074c078aa3356d2b386769
+info: RequestAudit[0]
+      /api/v1/health 200 6.6079ms 3a95e0ad3217442b9237d5e35997884f
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+NUnit Adapter 5.0.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,14 @@
+{
+  "label": "archive",
+  "requirement": "F10",
+  "request": "curl -i -X DELETE http://127.0.0.1:5087/api/v1/subscriptions/9896078a-bf6b-4915-96fc-3ed8468a4e5e -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 204,
+  "actual_http": 204,
+  "response_headers": {
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "X-Correlation-ID": "b4c6ee5db360411b81205e77875f368f"
+  },
+  "actual_result": null,
+  "passed": true
+}

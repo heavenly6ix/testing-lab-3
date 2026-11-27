@@ -1,0 +1,4 @@
+<RunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName="XPlat Code Coverage"><Configuration>
+<Format>cobertura,opencover</Format><Include>[Subscriptions.Application]*</Include>
+<ExcludeByFile>**/Contracts.cs</ExcludeByFile><SkipAutoProps>true</SkipAutoProps>
+</Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>

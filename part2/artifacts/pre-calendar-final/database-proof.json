@@ -1,0 +1,14 @@
+{
+  "exists": true,
+  "size_bytes": 28672,
+  "integrity": "ok",
+  "records_by_kind": {
+    "AuditRecord": 3,
+    "IdempotencyRecord": 1,
+    "LoginFailures": 1,
+    "Payment": 1,
+    "Session": 2,
+    "Subscription": 1,
+    "UserAccount": 2
+  }
+}

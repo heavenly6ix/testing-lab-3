@@ -1,0 +1,12 @@
+{
+  "command": [
+    "dotnet",
+    "tool",
+    "uninstall",
+    "dotnet-reportgenerator-globaltool",
+    "--tool-path",
+    ".tools"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:30:58.397579+00:00"
+}

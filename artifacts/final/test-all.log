@@ -1,0 +1,31 @@
+$ dotnet test --logger trx --results-directory ../artifacts/final/all
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  BinaryMaxHeap -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/BinaryMaxHeap/bin/Debug/net10.0/BinaryMaxHeap.dll
+  PrimesAmount -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/PrimesAmount/bin/Debug/net10.0/PrimesAmount.dll
+  OrderProcessing -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/src/OrderProcessing/bin/Debug/net10.0/OrderProcessing.dll
+  BinaryMaxHeap.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll
+  OrderProcessing.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/OrderProcessing.Tests/bin/Debug/net10.0/OrderProcessing.Tests.dll
+  PrimesAmount.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/PrimesAmount.Tests/bin/Debug/net10.0/PrimesAmount.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll (.NETCoreApp,Version=v10.0)
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/OrderProcessing.Tests/bin/Debug/net10.0/OrderProcessing.Tests.dll (.NETCoreApp,Version=v10.0)
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/PrimesAmount.Tests/bin/Debug/net10.0/PrimesAmount.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/all/_MacBook-Air-Egor_2026-11-21_19_36_53_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено    21, пропущено     0, всего    21, длительность 89 ms. - PrimesAmount.Tests.dll (net10.0)
+  Пропущен ToMinHeap_ContainsAllElementsWithMinimumOnTop [11 ms]
+  Пропущен ToMinHeap_DoesNotAffectOriginalHeap [< 1 ms]
+  Пропущен ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap [< 1 ms]
+  Пропущен ToMinHeap_ExtractsInAscendingOrder [< 1 ms]
+  Пропущен ToMinHeap_PassesTheSameComparerToTheMinHeap [< 1 ms]
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/all/_MacBook-Air-Egor_2026-11-21_19_36_53_net10.0[1].trx
+
+Пройден!   : не пройдено     0, пройдено   101, пропущено     5, всего   106, длительность 144 ms. - BinaryMaxHeap.Tests.dll (net10.0)
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/all/_MacBook-Air-Egor_2026-11-21_19_36_54_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено    74, пропущено     0, всего    74, длительность 333 ms. - OrderProcessing.Tests.dll (net10.0)
+
+EXIT CODE: 0

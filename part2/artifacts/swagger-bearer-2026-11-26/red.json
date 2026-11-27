@@ -1,0 +1,15 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Subscriptions.Api.Tests",
+    "--filter",
+    "FullyQualifiedName~OpenApiSecurityTests",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/swagger-bearer-2026-11-26/red-results"
+  ],
+  "exit_code": 1,
+  "utc": "2026-11-26T15:23:25.425433+00:00"
+}

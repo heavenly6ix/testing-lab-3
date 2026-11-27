@@ -1,0 +1,17 @@
+$ dotnet test tests/BinaryMaxHeap.Tests --no-build --settings heap.runsettings --collect XPlat Code Coverage --logger trx --results-directory ../artifacts/final/heap-coverage
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part1/tests/BinaryMaxHeap.Tests/bin/Debug/net10.0/BinaryMaxHeap.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Пропущен ToMinHeap_ContainsAllElementsWithMinimumOnTop [8 ms]
+  Пропущен ToMinHeap_DoesNotAffectOriginalHeap [< 1 ms]
+  Пропущен ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap [< 1 ms]
+  Пропущен ToMinHeap_ExtractsInAscendingOrder [< 1 ms]
+  Пропущен ToMinHeap_PassesTheSameComparerToTheMinHeap [< 1 ms]
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/heap-coverage/_MacBook-Air-Egor_2026-11-21_19_38_50_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено   101, пропущено     5, всего   106, длительность 81 ms. - BinaryMaxHeap.Tests.dll (net10.0)
+
+Вложения:
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/heap-coverage/9ae28f35-56fa-47fb-8ff3-18a9f7dc9fc1/coverage.cobertura.xml
+  /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/artifacts/final/heap-coverage/9ae28f35-56fa-47fb-8ff3-18a9f7dc9fc1/coverage.opencover.xml
+
+EXIT CODE: 0

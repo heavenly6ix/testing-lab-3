@@ -1,0 +1,22 @@
+{
+  "label": "invalid-login",
+  "requirement": "F02",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/auth/login -H 'Content-Type: application/json' --data '{\"email\":\"smoke-36baa9e504e44d2faeb1f48207a639a2@example.test\",\"password\":\"[REDACTED]\"}'",
+  "expected": 401,
+  "actual_http": 401,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:56:50 GMT",
+    "Server": "Kestrel",
+    "Cache-Control": "no-store",
+    "Transfer-Encoding": "chunked",
+    "WWW-Authenticate": "Bearer",
+    "X-Correlation-ID": "7105cc08aecd406d8c127df34969fe93"
+  },
+  "actual_result": {
+    "code": "unauthorized",
+    "message": "Invalid credentials or token.",
+    "correlationId": "7105cc08aecd406d8c127df34969fe93"
+  },
+  "passed": true
+}

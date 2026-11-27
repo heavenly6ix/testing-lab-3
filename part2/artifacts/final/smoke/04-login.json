@@ -1,0 +1,22 @@
+{
+  "label": "login",
+  "requirement": "F02",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/auth/login -H 'Content-Type: application/json' --data '{\"email\":\"smoke-36baa9e504e44d2faeb1f48207a639a2@example.test\",\"password\":\"[REDACTED]\"}'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:56:50 GMT",
+    "Server": "Kestrel",
+    "Cache-Control": "no-store",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "ff7f3eef85464f0b9b1ec18de83389c0"
+  },
+  "actual_result": {
+    "accessToken": "[REDACTED]",
+    "refreshToken": "[REDACTED]",
+    "accessExpiresAt": "2026-11-21T14:11:50.0000000Z",
+    "refreshExpiresAt": "2026-12-21T13:56:50.3213280Z"
+  },
+  "passed": true
+}

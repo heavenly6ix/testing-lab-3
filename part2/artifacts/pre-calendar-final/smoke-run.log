@@ -1,0 +1,35 @@
+$ ['python3', 'scripts/smoke.py', '--out', 'artifacts/final/smoke']
+health: expected 200, actual 200, correlation=True
+register: expected 201, actual 201, correlation=True
+duplicate: expected 409, actual 409, correlation=True
+login: expected 200, actual 200, correlation=True
+invalid-login: expected 401, actual 401, correlation=True
+unauthorized: expected 401, actual 401, correlation=True
+create-subscription: expected 201, actual 201, correlation=True
+get: expected 200, actual 200, correlation=True
+list: expected 200, actual 200, correlation=True
+update: expected 200, actual 200, correlation=True
+create-payment: expected 201, actual 201, correlation=True
+replay: expected 201, actual 201, correlation=True
+conflict: expected 409, actual 409, correlation=True
+history: expected 200, actual 200, correlation=True
+analytics: expected 200, actual 200, correlation=True
+empty-analytics: expected 200, actual 200, correlation=True
+forecast: expected 200, actual 200, correlation=True
+pause: expected 200, actual 200, correlation=True
+resume: expected 200, actual 200, correlation=True
+correct: expected 200, actual 200, correlation=True
+void: expected 200, actual 200, correlation=True
+audit: expected 200, actual 200, correlation=True
+void-excluded: expected 200, actual 200, correlation=True
+cancel: expected 200, actual 200, correlation=True
+cancelled-resume: expected 409, actual 409, correlation=True
+archive: expected 204, actual 204, correlation=True
+archived-history: expected 200, actual 200, correlation=True
+register-other: expected 201, actual 201, correlation=True
+login-other: expected 200, actual 200, correlation=True
+foreign-resource: expected 404, actual 404, correlation=True
+openapi: expected 200, actual 200, correlation=True
+Real curl requests: 31; status checks passed: 31; failed: 0
+
+EXIT CODE: 0

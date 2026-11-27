@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "generatedon": "2026-11-21T13:56:51Z",
+    "parser": "MultiReport (2x Cobertura)",
+    "assemblies": 1,
+    "classes": 10,
+    "files": 8,
+    "coveredlines": 283,
+    "uncoveredlines": 0,
+    "coverablelines": 283,
+    "totallines": 385,
+    "linecoverage": 100,
+    "coveredbranches": 270,
+    "totalbranches": 274,
+    "branchcoverage": 98.5,
+    "coveredmethods": 47,
+    "fullcoveredmethods": 47,
+    "totalmethods": 47,
+    "methodcoverage": 100,
+    "fullmethodcoverage": 100
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "Subscriptions.Application", "classes": 10, "coverage": 100, "coveredlines": 283, "coverablelines": 283, "totallines": 477, "branchcoverage": 98.5, "coveredbranches": 270, "totalbranches": 274, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 47, "fullcoveredmethods": 47, "totalmethods": 47, "classesinassembly": [
+        { "name": "Subscriptions.Application.AnalyticsService", "coverage": 100, "coveredlines": 13, "coverablelines": 13, "totallines": 29, "branchcoverage": 100, "coveredbranches": 8, "totalbranches": 8, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 2, "fullcoveredmethods": 2, "totalmethods": 2 },
+        { "name": "Subscriptions.Application.AuthService", "coverage": 100, "coveredlines": 88, "coverablelines": 88, "totallines": 102, "branchcoverage": 97, "coveredbranches": 66, "totalbranches": 68, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 7, "fullcoveredmethods": 7, "totalmethods": 7 },
+        { "name": "Subscriptions.Application.BusinessFault", "coverage": 100, "coveredlines": 6, "coverablelines": 6, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 6, "fullcoveredmethods": 6, "totalmethods": 6 },
+        { "name": "Subscriptions.Application.ForecastService", "coverage": 100, "coveredlines": 26, "coverablelines": 26, "totallines": 33, "branchcoverage": 100, "coveredbranches": 18, "totalbranches": 18, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 1, "fullcoveredmethods": 1, "totalmethods": 1 },
+        { "name": "Subscriptions.Application.LoginIpLimiter", "coverage": 100, "coveredlines": 15, "coverablelines": 15, "totallines": 22, "branchcoverage": 100, "coveredbranches": 12, "totalbranches": 12, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 2, "fullcoveredmethods": 2, "totalmethods": 2 },
+        { "name": "Subscriptions.Application.MoneyTotals", "coverage": 100, "coveredlines": 5, "coverablelines": 5, "totallines": 29, "branchcoverage": 100, "coveredbranches": 2, "totalbranches": 2, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 1, "fullcoveredmethods": 1, "totalmethods": 1 },
+        { "name": "Subscriptions.Application.PaymentService", "coverage": 100, "coveredlines": 53, "coverablelines": 53, "totallines": 62, "branchcoverage": 95.8, "coveredbranches": 46, "totalbranches": 48, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 6, "fullcoveredmethods": 6, "totalmethods": 6 },
+        { "name": "Subscriptions.Application.Rules", "coverage": 100, "coveredlines": 37, "coverablelines": 37, "totallines": 63, "branchcoverage": 100, "coveredbranches": 68, "totalbranches": 68, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 15, "fullcoveredmethods": 15, "totalmethods": 15 },
+        { "name": "Subscriptions.Application.StorageUnavailableException", "coverage": 100, "coveredlines": 1, "coverablelines": 1, "totallines": 28, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 1, "fullcoveredmethods": 1, "totalmethods": 1 },
+        { "name": "Subscriptions.Application.SubscriptionService", "coverage": 100, "coveredlines": 39, "coverablelines": 39, "totallines": 46, "branchcoverage": 100, "coveredbranches": 50, "totalbranches": 50, "methodcoverage": 100, "fullmethodcoverage": 100, "coveredmethods": 6, "fullcoveredmethods": 6, "totalmethods": 6 } ] } ]
+  }
+}

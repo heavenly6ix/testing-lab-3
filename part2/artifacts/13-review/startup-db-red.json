@@ -1,0 +1,16 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Subscriptions.Api.Tests",
+    "--no-restore",
+    "--filter",
+    "StartupWithUnavailableDatabaseStillServes503",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/13-review/startup-db-red"
+  ],
+  "exit_code": 1,
+  "utc": "2026-11-21T13:34:01.333093+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "label": "get",
+  "requirement": "F07",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/subscriptions/c78cf038-22db-436b-a49e-4ce297638856 -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:43:20 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "01b81b332e7140ccb03410f6111c7d1c"
+  },
+  "actual_result": {
+    "name": "Music",
+    "amount": 10,
+    "currency": "RUB",
+    "billingPeriod": "monthly",
+    "category": "Media",
+    "startDate": "2020-01-01",
+    "nextPaymentDate": "2026-11-21",
+    "originalBillingDay": 21,
+    "originalBillingMonth": 11,
+    "status": "active",
+    "archived": false,
+    "id": "c78cf038-22db-436b-a49e-4ce297638856",
+    "userId": "880b1371-aeb7-4dcb-a922-5adefe4d3368"
+  },
+  "passed": true
+}

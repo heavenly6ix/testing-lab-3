@@ -1,0 +1,13 @@
+{
+  "command": [
+    "dotnet",
+    "tool",
+    "install",
+    "dotnet-reportgenerator-globaltool",
+    "--tool-path",
+    ".tools",
+    "--allow-roll-forward"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:28:33.822506+00:00"
+}

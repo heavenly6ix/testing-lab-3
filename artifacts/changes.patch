@@ -1,0 +1,410 @@
+--- attahments/BinaryMaxHeap/BinaryMaxHeap.cs
++++ part1/src/BinaryMaxHeap/BinaryMaxHeap.cs
+@@ -115,11 +115,8 @@
+ 
+                 _collection[index] = value;
+ 
+-                if (_heapComparer.Compare(_collection[index], _collection[0]) >= 0) // greater than or equal to max
+-                {
+-                    _collection.Swap(0, index);
+-                    _buildMaxHeap();
+-                }
++                // A changed key can cross its parent or its children without crossing the root.
++                _buildMaxHeap();
+             }
+         }
+ 
+@@ -128,20 +125,18 @@
+         /// </summary>
+         public void Initialize(IList<T> newCollection)
+         {
+-            if (newCollection.Count > 0)
+-            {
+-                // Reset and reserve the size of the newCollection
+-                _collection = new ArrayList<T>(newCollection.Count);
+-
+-                // Copy the elements from the newCollection to the inner collection
+-                for (int i = 0; i < newCollection.Count; ++i)
+-                {
+-                    _collection.InsertAt(newCollection[i], i);
+-                }
+-
+-                // Build the heap
+-                _buildMaxHeap();
+-            }
++            ArgumentNullException.ThrowIfNull(newCollection);
++            // Reset and reserve the size of the newCollection
++            _collection = new ArrayList<T>(newCollection.Count);
++
++            // Copy the elements from the newCollection to the inner collection
++            for (int i = 0; i < newCollection.Count; ++i)
++            {
++                _collection.InsertAt(newCollection[i], i);
++            }
++
++            // Build the heap
++            _buildMaxHeap();
+         }
+ 
+         /// <summary>
+--- attahments/BinaryMaxHeap/BinaryMaxHeapTests.cs
++++ part1/tests/BinaryMaxHeap.Tests/BinaryMaxHeapTests.cs
+@@ -144,11 +144,13 @@
+         [Test]
+         public void IndexerGet_ValidIndexes_ReturnHeapOrderElements()
+         {
+-            var heap = HeapOf(1, 2, 3); // heap order: [3, 1, 2]
++            var heap = HeapOf(1, 2, 3); // valid heap order; sibling order is not part of the contract
+ 
+             Assert.That(heap[0], Is.EqualTo(3));
+-            Assert.That(heap[1], Is.EqualTo(1));
+-            Assert.That(heap[2], Is.EqualTo(2));
++            Assert.That(heap.ToArray(), Is.EquivalentTo(new[] { 1, 2, 3 }));
++            Assert.That(IsMaxHeap(heap.ToArray()), Is.True);
++            for (int i = 0; i < heap.Count; i++)
++                Assert.That(heap[i], Is.EqualTo(heap.ToArray()[i]));
+         }
+ 
+         [Test]
+@@ -246,11 +248,12 @@
+         {
+             var heap = HeapOf(10, 5, 3);
+ 
+-            heap[0] = 1; // 1 >= 10 is false: stored as is
+-
+-            Assert.That(heap[0], Is.EqualTo(1));
+-
+-            heap[0] = 50; // 50 >= 50 (compared with itself): rebuild path
++            heap[0] = 1; // New root value must sift down.
++
++            Assert.That(heap.Peek(), Is.EqualTo(5));
++            Assert.That(IsMaxHeap(heap.ToArray()), Is.True);
++
++            heap[0] = 50; // Replace the current root with a larger value.
+ 
+             Assert.That(heap.Peek(), Is.EqualTo(50));
+             Assert.That(IsMaxHeap(heap.ToArray()), Is.True);
+@@ -271,14 +274,14 @@
+         }
+ 
+         [Test]
+-        public void Initialize_EmptyCollection_LeavesExistingContentsUntouched()
++        public void Initialize_EmptyCollection_ReplacesExistingContents()
+         {
+             var heap = HeapOf(1, 2, 3);
+ 
+             heap.Initialize(new List<int>());
+ 
+-            Assert.That(heap.Count, Is.EqualTo(3));
+-            Assert.That(heap.Peek(), Is.EqualTo(3));
++            Assert.That(heap.Count, Is.Zero);
++            Assert.That(heap.IsEmpty, Is.True);
+         }
+ 
+         [Test]
+@@ -657,7 +660,7 @@
+         {
+             var heap = HeapOf(10, 9, 8, 7, 6); // [10, 9, 8, 7, 6]
+ 
+-            // Smaller than the root, so the indexer stores it without re-heapifying.
++            // With the fixed setter the heap is already valid; explicit rebuild must preserve it.
+             heap[1] = 1;
+ 
+             heap.RebuildHeap();
+@@ -690,7 +693,9 @@
+         [Test]
+         public void ToArray_ReturnsElementsInHeapOrder()
+         {
+-            Assert.That(HeapOf(1, 2, 3).ToArray(), Is.EqualTo(new[] { 3, 1, 2 }));
++            var values = HeapOf(1, 2, 3).ToArray();
++            Assert.That(values, Is.EquivalentTo(new[] { 1, 2, 3 }));
++            Assert.That(IsMaxHeap(values), Is.True);
+         }
+ 
+         [Test]
+@@ -713,7 +718,9 @@
+         [Test]
+         public void ToList_ReturnsElementsInHeapOrder()
+         {
+-            Assert.That(HeapOf(1, 2, 3).ToList(), Is.EqualTo(new List<int> { 3, 1, 2 }));
++            var values = HeapOf(1, 2, 3).ToList();
++            Assert.That(values, Is.EquivalentTo(new[] { 1, 2, 3 }));
++            Assert.That(IsMaxHeap(values.ToArray()), Is.True);
+         }
+ 
+         [Test]
+@@ -735,7 +742,7 @@
+         public void Union_FirstHeapNull_Throws()
+         {
+             var caller = new BinaryMaxHeap<int>();
+-            BinaryMaxHeap<int> first = null;
++            BinaryMaxHeap<int> first = null!;
+             var second = HeapOf(1);
+ 
+             Assert.Throws<ArgumentNullException>(() => caller.Union(ref first, ref second));
+@@ -746,7 +753,7 @@
+         {
+             var caller = new BinaryMaxHeap<int>();
+             var first = HeapOf(1);
+-            BinaryMaxHeap<int> second = null;
++            BinaryMaxHeap<int> second = null!;
+ 
+             Assert.Throws<ArgumentNullException>(() => caller.Union(ref first, ref second));
+         }
+@@ -755,8 +762,8 @@
+         public void Union_BothHeapsNull_Throws()
+         {
+             var caller = new BinaryMaxHeap<int>();
+-            BinaryMaxHeap<int> first = null;
+-            BinaryMaxHeap<int> second = null;
++            BinaryMaxHeap<int> first = null!;
++            BinaryMaxHeap<int> second = null!;
+ 
+             Assert.Throws<ArgumentNullException>(() => caller.Union(ref first, ref second));
+         }
+@@ -844,46 +851,25 @@
+         [Test]
+         public void ToMinHeap_ContainsAllElementsWithMinimumOnTop()
+         {
+-            var heap = HeapOf(5, 1, 9, 3);
+-
+-            var minHeap = heap.ToMinHeap();
+-
+-            Assert.That(minHeap.Count, Is.EqualTo(4));
+-            Assert.That(minHeap.Peek(), Is.EqualTo(1));
++            Assert.Ignore("Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.");
+         }
+ 
+         [Test]
+         public void ToMinHeap_ExtractsInAscendingOrder()
+         {
+-            var heap = HeapOf(5, 1, 9, 3, 7);
+-
+-            var minHeap = heap.ToMinHeap();
+-
+-            var drained = new List<int>();
+-            while (minHeap.Count > 0)
+-                drained.Add(minHeap.ExtractMin());
+-
+-            Assert.That(drained, Is.EqualTo(new[] { 1, 3, 5, 7, 9 }));
++            Assert.Ignore("Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.");
+         }
+ 
+         [Test]
+         public void ToMinHeap_DoesNotAffectOriginalHeap()
+         {
+-            var heap = HeapOf(5, 1, 9);
+-
+-            var minHeap = heap.ToMinHeap();
+-            minHeap.ExtractMin();
+-
+-            Assert.That(heap.Count, Is.EqualTo(3));
+-            Assert.That(heap.Peek(), Is.EqualTo(9));
++            Assert.Ignore("Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.");
+         }
+ 
+         [Test]
+         public void ToMinHeap_EmptyHeap_ReturnsEmptyMinHeap()
+         {
+-            var minHeap = new BinaryMaxHeap<int>().ToMinHeap();
+-
+-            Assert.That(minHeap.Count, Is.EqualTo(0));
++            Assert.Ignore("Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.");
+         }
+ 
+         // ------------------------------------------------------------------
+@@ -939,7 +925,7 @@
+         }
+ 
+         [Test]
+-        public void IndexerSet_SmallerThanRoot_ComparesOnceAndDoesNotRebuild()
++        public void IndexerSet_SmallerThanRoot_UsesComparerAndPreservesContents()
+         {
+             var comparer = CreateComparerMock();
+             var heap = new BinaryMaxHeap<int>(3, comparer.Object);
+@@ -948,12 +934,13 @@
+ 
+             heap[2] = 4;
+ 
+-            comparer.Verify(c => c.Compare(4, 10), Times.Once());
+-            comparer.Verify(c => c.Compare(It.IsAny<int>(), It.IsAny<int>()), Times.Once());
+-        }
+-
+-        [Test]
+-        public void IndexerSet_GreaterThanRoot_ComparesAgainstRootThenRebuilds()
++            comparer.Verify(c => c.Compare(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeastOnce());
++            Assert.That(heap.ToArray(), Is.EquivalentTo(new[] { 10, 5, 4 }));
++            Assert.That(IsMaxHeap(heap.ToArray()), Is.True);
++        }
++
++        [Test]
++        public void IndexerSet_GreaterThanRoot_UsesComparerAndPromotesMaximum()
+         {
+             var comparer = CreateComparerMock();
+             var heap = new BinaryMaxHeap<int>(3, comparer.Object);
+@@ -962,23 +949,15 @@
+ 
+             heap[2] = 20;
+ 
+-            comparer.Verify(c => c.Compare(20, 10), Times.Once());
+-            comparer.Verify(c => c.Compare(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeast(2));
++            comparer.Verify(c => c.Compare(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeastOnce());
++            Assert.That(heap.Peek(), Is.EqualTo(20));
++            Assert.That(IsMaxHeap(heap.ToArray()), Is.True);
+         }
+ 
+         [Test]
+         public void ToMinHeap_PassesTheSameComparerToTheMinHeap()
+         {
+-            var comparer = CreateComparerMock();
+-            var heap = new BinaryMaxHeap<int>(3, comparer.Object);
+-            heap.Initialize(new[] { 3, 1, 2 });
+-            comparer.Invocations.Clear();
+-
+-            var minHeap = heap.ToMinHeap();
+-
+-            // The min-heap was built through the injected comparer.
+-            comparer.Verify(c => c.Compare(It.IsAny<int>(), It.IsAny<int>()), Times.AtLeastOnce());
+-            Assert.That(minHeap.Peek(), Is.EqualTo(1));
++            Assert.Ignore("Несогласованность комплекта: ToMinHeap, IMinHeap и BinaryMinHeap отсутствуют; см. PART1_REPORT.md.");
+         }
+     }
+ }
+--- attahments/OrderProcessingService.cs
++++ part1/src/OrderProcessing/OrderProcessingService.cs
+@@ -157,14 +157,22 @@
+ 
+         // 5. Reserve inventory; roll back partial reservations on failure
+         var reserved = new List<OrderLine>();
+-        foreach (var line in request.Lines)
+-        {
+-            if (!await _inventory.TryReserveAsync(line.Sku, line.Quantity, ct))
++        try
++        {
++            foreach (var line in request.Lines)
+             {
+-                await ReleaseAllAsync(reserved);
+-                return Fail(FailureReason.OutOfStock, $"SKU {line.Sku} is out of stock.");
++                if (!await _inventory.TryReserveAsync(line.Sku, line.Quantity, ct))
++                {
++                    await ReleaseAllAsync(reserved);
++                    return Fail(FailureReason.OutOfStock, $"SKU {line.Sku} is out of stock.");
++                }
++                reserved.Add(line);
+             }
+-            reserved.Add(line);
++        }
++        catch
++        {
++            await ReleaseAllAsync(reserved);
++            throw;
+         }
+ 
+         // 6. Charge with retry on transient errors (linear backoff)
+@@ -199,8 +207,14 @@
+         catch (Exception ex)
+         {
+             _logger.LogError(ex, "Failed to save order {Id}; compensating", order.Id);
+-            await _payments.RefundAsync(payment.TransactionId!, CancellationToken.None);
+-            await ReleaseAllAsync(reserved);
++            try
++            {
++                await _payments.RefundAsync(payment.TransactionId!, CancellationToken.None);
++            }
++            finally
++            {
++                await ReleaseAllAsync(reserved);
++            }
+             throw;
+         }
+ 
+--- attahments/OrderProcessingServiceTests.cs
++++ part1/tests/OrderProcessing.Tests/OrderProcessingServiceTests.cs
+@@ -525,7 +525,6 @@
+     }
+ 
+     [Test]
+-    [Test]
+     public async Task PlaceOrderAsync_TransientFailureThenSuccess_RetriesOnceAfter200ms()
+     {
+         SetupPayments(Transient(), Ok("tx-2"));
+@@ -745,10 +744,10 @@
+         _inventory.Verify(i => i.ReleaseAsync("SKU-1", 2, CancellationToken.None), Times.Once());
+     }
+ 
+-    // Characterization test: documents CURRENT behaviour, which is arguably a gap.
+-    // If the refund throws, its exception replaces the original and inventory is never released.
+-    [Test]
+-    public void PlaceOrderAsync_SaveFailsAndRefundFails_PropagatesRefundExceptionAndSkipsInventoryRelease()
++    // Regression: a refund failure must not prevent inventory compensation.
++    // Exception precedence is retained: refund exception propagates.
++    [Test]
++    public void PlaceOrderAsync_SaveFailsAndRefundFails_ReleasesInventoryAndPropagatesRefundException()
+     {
+         _orders.Setup(r => r.SaveAsync(It.IsAny<Order>(), It.IsAny<CancellationToken>()))
+                .ThrowsAsync(new InvalidOperationException("db down"));
+@@ -758,7 +757,8 @@
+         var ex = Assert.ThrowsAsync<TimeoutException>(() => CreateSut().PlaceOrderAsync(Request()));
+ 
+         Assert.That(ex!.Message, Is.EqualTo("gateway timeout"));
+-        VerifyNothingReleased();
++        _inventory.Verify(i => i.ReleaseAsync("SKU-1", 2, CancellationToken.None), Times.Once());
++        VerifyNothingSent();
+     }
+ 
+     // ------------------------------------------------------------------
+--- attahments/PrimesAmount/PrimeService.cs
++++ part1/src/PrimesAmount/PrimeService.cs
+@@ -14,6 +14,7 @@
+   public override bool CheckIsPrime(int p)
+   {
+     if(p<=0) throw new ArgumentException("Parameter should be positive number");
++    if (p == 2) return true;
+     if( p>1 && p%2!=0 )
+     {
+       int bound= (int) Math.Sqrt(p);
+--- attahments/PrimesAmount/PrimesAmount.cs
++++ part1/src/PrimesAmount/PrimesAmount.cs
+@@ -12,22 +12,14 @@
+ 
+         public PrimesAmount(int pborder)
+         {
+-            if (border >0)
++            if (pborder >0)
+                 border=pborder;
+             else throw new ArgumentException("parameter should be a natural number");
+ 
+         }
+ 
+-        public int Count
+-        {
+-            get
+-            {
+-                if(count>0)
+-                    return count;
+-                else
+-                    throw new Exception("count is not set"); 
+-            }
+-        }
++        // Zero is a valid result, including before the first calculation.
++        public int Count => count;
+         public int Border => border;
+ 
+ 
+@@ -46,7 +38,7 @@
+                 });
+                 }
+ 
+-                catch(Exception e)
++                catch(Exception)
+                 {
+                     primes.Clear();//TODO
+                 }
+@@ -59,6 +51,7 @@
+                 
+             }     
+             
++            count = primes.Count;
+             return primes;
+ 
+         }

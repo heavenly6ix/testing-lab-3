@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "check": "build_exit0",
+      "passed": true
+    },
+    {
+      "check": "test_exit0",
+      "passed": true
+    },
+    {
+      "check": "runtime-before_exit0",
+      "passed": true
+    },
+    {
+      "check": "runtime-after_exit0",
+      "passed": true
+    },
+    {
+      "check": "red_failed_before_fix",
+      "passed": true
+    },
+    {
+      "check": "before_empty_security_confirmed",
+      "passed": true
+    },
+    {
+      "check": "after_named_bearer_on_every_protected_operation",
+      "passed": true
+    },
+    {
+      "check": "public_operations_remain_public",
+      "passed": true
+    },
+    {
+      "check": "updated_doc_links_resolve",
+      "passed": true
+    },
+    {
+      "check": "no_raw_jwt_in_new_artifacts",
+      "passed": true
+    },
+    {
+      "check": "first_part_and_business_unchanged",
+      "passed": true
+    }
+  ],
+  "missing_links": [],
+  "raw_jwt_file_matches": []
+}

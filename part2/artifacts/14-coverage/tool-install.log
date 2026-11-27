@@ -1,0 +1,6 @@
+$ ['dotnet', 'tool', 'install', 'dotnet-reportgenerator-globaltool', '--tool-path', '.tools', '--allow-roll-forward']
+Пропуск проверки подписи пакета NuGet.
+Вы можете вызвать это средство с помощью следующей команды: reportgenerator
+Средство "dotnet-reportgenerator-globaltool" (версии "5.6.1") успешно установлено.
+
+EXIT CODE: 0

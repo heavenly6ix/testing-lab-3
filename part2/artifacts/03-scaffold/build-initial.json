@@ -1,0 +1,9 @@
+{
+  "command": [
+    "dotnet",
+    "build",
+    "--no-restore"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:10:05.562142+00:00"
+}

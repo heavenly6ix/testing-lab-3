@@ -1,0 +1,5 @@
+$ ['.tools/reportgenerator', '-reports:artifacts/14-coverage/final/**/coverage.cobertura.xml', '-targetdir:artifacts/14-coverage/html', '-reporttypes:Html;JsonSummary;TextSummary']
+It's invalid to use both `rollForward` and one of `rollForwardOnNoCandidateFx` or `applyPatches` in the same runtime config.
+Invalid runtimeconfig.json [/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/.tools/.store/dotnet-reportgenerator-globaltool/5.6.1/dotnet-reportgenerator-globaltool/5.6.1/tools/net10.0/any/ReportGenerator.runtimeconfig.json] [/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/.tools/.store/dotnet-reportgenerator-globaltool/5.6.1/dotnet-reportgenerator-globaltool/5.6.1/tools/net10.0/any/ReportGenerator.runtimeconfig.dev.json]
+
+EXIT CODE: 147

@@ -1,0 +1,20 @@
+{
+  "label": "conflict",
+  "requirement": "F11",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/subscriptions/702cbbdd-d8ad-4e74-b9c5-bb59cac403fd/payments -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN' -H 'Idempotency-Key: smoke-key' --data '{\"amount\":11,\"currency\":\"RUB\",\"date\":\"2026-11-26\",\"status\":\"successful\"}'",
+  "expected": 409,
+  "actual_http": 409,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 15:51:35 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "1e3d209e05bb49359d91e07bbc6e9b0f"
+  },
+  "actual_result": {
+    "code": "idempotency_conflict",
+    "message": "Operation conflicts with current state.",
+    "correlationId": "1e3d209e05bb49359d91e07bbc6e9b0f"
+  },
+  "passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "src/Subscriptions.Application/Ports.cs": "966b4aeb1332cbf1a5bdfb54a63a56c70b32abe27723e127c857b953b727ab4c",
+  "src/Subscriptions.Application/Rules.cs": "c830ea170d135093686ce6f4019335e9ac24fd6591270a1ab7230f17b42094af",
+  "src/Subscriptions.Application/PaymentService.cs": "e4d2019680edb22042d1b408978327bf8910b995b4e3c7f87d354e79685df3f1",
+  "src/Subscriptions.Application/AnalyticsService.cs": "66d3b6c3e650b88b5981dc7e524d3846384286d25ac6b46480269db287934596",
+  "src/Subscriptions.Application/SubscriptionService.cs": "e4703435a938ce2f081ad8c1a6b6dca561f5e11ddd47ab1fcfe07254feac2fdb",
+  "src/Subscriptions.Application/AuthService.cs": "5f6863825d969de22b15876476ade3566343ad488b61162a8930268d7addd7ab",
+  "src/Subscriptions.Application/ForecastService.cs": "f3ee83f5e93eec3b043c24c8b9075969eda2b5ebe688c93bb5adb6d0a5f81d8d",
+  "src/Subscriptions.Application/Contracts.cs": "2e083ecf93fe86c7520f6a8132ebbd25caeb3c2f7fa3f3064f5c5a0025a38067",
+  "src/Subscriptions.Application/LoginIpLimiter.cs": "5a387d2570c9e4e685c3e6326f65c92350d0a4185faca4bec45e6378b397d8fa",
+  "src/Subscriptions.Domain/Models.cs": "97215dfb17df679881bbf6bfd89464fa9d91edb5c4d95610810144a92ab9d08c",
+  "src/Subscriptions.Infrastructure/Security.cs": "da3352def2c0252130729d069218119c23c03f76c8bdafc195264c1cb0486317",
+  "src/Subscriptions.Infrastructure/SqliteStore.cs": "69ae9d7d87967f1e2c43372c6b51037fb86fb333029a5940c693512be2ec6a68",
+  "src/Subscriptions.Api/Program.cs": "47cdfd483645b7283b287b705f3902cb9739d689dcaba343559ca5fd444533e4",
+  "src/Subscriptions.Api/ApiRoutes.cs": "14278e1866d451e5c912e34d31909b02e60c8dc0b34bf9546448da740b2996db",
+  "src/Subscriptions.Api/Transport.cs": "aa00f33ff4d849fb73d8d941c35ac4ccfdcef0c8c4e54aebd7deab0d20fec188"
+}

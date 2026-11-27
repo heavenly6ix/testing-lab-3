@@ -1,0 +1,20 @@
+{
+  "label": "foreign-resource",
+  "requirement": "Q05",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/subscriptions/634a5006-ecca-4759-a08d-83333b8993eb -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 404,
+  "actual_http": 404,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:29:28 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "2aa094b0b66241c9a0cf2dfcbe5b1a11"
+  },
+  "actual_result": {
+    "code": "not_found",
+    "message": "Resource not found.",
+    "correlationId": "2aa094b0b66241c9a0cf2dfcbe5b1a11"
+  },
+  "passed": true
+}

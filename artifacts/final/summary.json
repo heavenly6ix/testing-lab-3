@@ -1,0 +1,41 @@
+{
+  "projects": {
+    "PrimesAmount": {
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0,
+      "total": 21,
+      "trx": "artifacts/final/PrimesAmount/_MacBook-Air-Egor_2026-11-21_19_37_10_net10.0.trx"
+    },
+    "OrderProcessing": {
+      "passed": 74,
+      "failed": 0,
+      "skipped": 0,
+      "total": 74,
+      "trx": "artifacts/final/OrderProcessing/_MacBook-Air-Egor_2026-11-21_19_37_11_net10.0.trx"
+    },
+    "BinaryMaxHeap": {
+      "passed": 101,
+      "failed": 0,
+      "skipped": 5,
+      "total": 106,
+      "trx": "artifacts/final/BinaryMaxHeap/_MacBook-Air-Egor_2026-11-21_19_37_12_net10.0.trx"
+    }
+  },
+  "total": {
+    "passed": 196,
+    "failed": 0,
+    "skipped": 5,
+    "total": 201
+  },
+  "heap_coverage": {
+    "line-rate": "1",
+    "branch-rate": "1",
+    "version": "1.9",
+    "timestamp": "1795264731",
+    "lines-covered": "114",
+    "lines-valid": "114",
+    "branches-covered": "42",
+    "branches-valid": "42"
+  }
+}

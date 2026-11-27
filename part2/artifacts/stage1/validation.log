@@ -1,0 +1,17 @@
+Stage 1 documentation validation
+UTC: 2026-11-21T13:02:30.979317+00:00
+PASS review_covers_all_requirement_ids {"rows": 35, "missing": []}
+PASS final_requirements_has_one_section_per_id {"sections": 35, "missing": []}
+PASS source_requirements_keeps_all_ids {"ids": 35}
+PASS planned_positive_negative_cases_cover_f01_f15 {"rows": 15, "execution": "not started"}
+PASS original_request_copied_byte_for_byte {"original_sha256": "80f80091524551e35c864c784ab8760e6357be0437674249123bc08a3dcbd618", "copied_sha256": "80f80091524551e35c864c784ab8760e6357be0437674249123bc08a3dcbd618"}
+PASS real_prompt_is_present_verbatim {"prompt": "P001"}
+PASS source_requirements_is_verbatim_excerpt {"excerpt": "purpose and F/N/Q/R"}
+PASS api_and_backend_not_generated {"stage": "1 only"}
+PASS all_materials_outside_part2_unchanged {"files": 770, "changed": [], "scope": "part1, root reports, original artifacts, attahments, PDF and other preexisting files"}
+PASS pdf_was_read_and_rendered {"pages": 1}
+PASS relative_document_links_resolve {"missing": []}
+PASS classification_is_exhaustive_disjoint {"unchanged": 5, "clarified": 25, "educational": 1, "production": 4}
+Document checks: 12 passed, 0 failed
+No build, unit/API/smoke/coverage results are claimed for part2.
+EXIT CODE: 0

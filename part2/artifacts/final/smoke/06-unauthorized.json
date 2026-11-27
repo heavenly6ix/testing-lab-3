@@ -1,0 +1,21 @@
+{
+  "label": "unauthorized",
+  "requirement": "Q05",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/subscriptions -H 'Content-Type: application/json'",
+  "expected": 401,
+  "actual_http": 401,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:56:50 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "WWW-Authenticate": "Bearer",
+    "X-Correlation-ID": "39011353849444efaa65a9c4491efdca"
+  },
+  "actual_result": {
+    "code": "unauthorized",
+    "message": "Authentication required.",
+    "correlationId": "39011353849444efaa65a9c4491efdca"
+  },
+  "passed": true
+}

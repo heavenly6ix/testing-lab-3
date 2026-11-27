@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "scripts/smoke.py",
+    "--out",
+    "artifacts/final/smoke"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:43:21.815678+00:00"
+}

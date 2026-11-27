@@ -1,0 +1,105 @@
+{
+  "utc": "2026-11-21T13:02:30.979317+00:00",
+  "stage": 1,
+  "kind": "documentation checks, not application tests",
+  "checks": [
+    {
+      "check": "review_covers_all_requirement_ids",
+      "passed": true,
+      "details": {
+        "rows": 35,
+        "missing": []
+      }
+    },
+    {
+      "check": "final_requirements_has_one_section_per_id",
+      "passed": true,
+      "details": {
+        "sections": 35,
+        "missing": []
+      }
+    },
+    {
+      "check": "source_requirements_keeps_all_ids",
+      "passed": true,
+      "details": {
+        "ids": 35
+      }
+    },
+    {
+      "check": "planned_positive_negative_cases_cover_f01_f15",
+      "passed": true,
+      "details": {
+        "rows": 15,
+        "execution": "not started"
+      }
+    },
+    {
+      "check": "original_request_copied_byte_for_byte",
+      "passed": true,
+      "details": {
+        "original_sha256": "80f80091524551e35c864c784ab8760e6357be0437674249123bc08a3dcbd618",
+        "copied_sha256": "80f80091524551e35c864c784ab8760e6357be0437674249123bc08a3dcbd618"
+      }
+    },
+    {
+      "check": "real_prompt_is_present_verbatim",
+      "passed": true,
+      "details": {
+        "prompt": "P001"
+      }
+    },
+    {
+      "check": "source_requirements_is_verbatim_excerpt",
+      "passed": true,
+      "details": {
+        "excerpt": "purpose and F/N/Q/R"
+      }
+    },
+    {
+      "check": "api_and_backend_not_generated",
+      "passed": true,
+      "details": {
+        "stage": "1 only"
+      }
+    },
+    {
+      "check": "all_materials_outside_part2_unchanged",
+      "passed": true,
+      "details": {
+        "files": 770,
+        "changed": [],
+        "scope": "part1, root reports, original artifacts, attahments, PDF and other preexisting files"
+      }
+    },
+    {
+      "check": "pdf_was_read_and_rendered",
+      "passed": true,
+      "details": {
+        "pages": 1
+      }
+    },
+    {
+      "check": "relative_document_links_resolve",
+      "passed": true,
+      "details": {
+        "missing": []
+      }
+    },
+    {
+      "check": "classification_is_exhaustive_disjoint",
+      "passed": true,
+      "details": {
+        "unchanged": 5,
+        "clarified": 25,
+        "educational": 1,
+        "production": 4
+      }
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "dotnet_build": "not applicable: project generation intentionally not started",
+  "application_tests": "not implemented or run",
+  "outside_part2_unchanged": true
+}

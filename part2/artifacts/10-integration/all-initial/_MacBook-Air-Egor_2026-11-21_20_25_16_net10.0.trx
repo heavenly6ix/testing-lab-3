@@ -1,0 +1,1966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9f1fe04f-cfbd-42a9-8bd2-fdf8e63489fd" name="@MacBook-Air-Egor 2026-11-21 20:25:16" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-21T20:25:16.0823350+07:00" queuing="2026-11-21T20:25:16.0823350+07:00" start="2026-11-21T20:25:14.2989140+07:00" finish="2026-11-21T20:25:25.1137100+07:00" />
+  <TestSettings name="default" id="c185b31c-0758-4247-8853-c10829fd645a">
+    <Deployment runDeploymentRoot="_MacBook-Air-Egor_2026-11-21_20_25_16" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8974b766-fced-41a4-b312-f12779fa6381" testId="628bcdf3-f0fc-42b3-92f7-893c06fefc43" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?userId=someone&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2687250" startTime="2026-11-21T20:25:21.9073500+07:00" endTime="2026-11-21T20:25:22.1760590+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8974b766-fced-41a4-b312-f12779fa6381">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 81.8864ms d4863dc7f248488c9a61def8ae363aed
+info: RequestAudit[0]
+      /api/v1/auth/login 200 96.9471ms aab791195a434bcdae8078925220312d
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.4229ms a577cc45bf76439089d0edae4bb794d0
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75f0652a-bb58-4d37-8a3a-984cb50d3c5a" testId="c77f0eca-80e6-7262-f1db-3629c5ceddff" testName="ResetSenderExpiryOneUseAndAllRefreshRevoked" computerName="MacBook-Air-Egor" duration="00:00:00.5237510" startTime="2026-11-21T20:25:17.5788260+07:00" endTime="2026-11-21T20:25:18.1025450+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75f0652a-bb58-4d37-8a3a-984cb50d3c5a">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1222ms 95df0f5cb3a94fcba81ca24ef966c5da
+info: RequestAudit[0]
+      /api/v1/auth/login 200 115.0723ms e07cf7f43ee04253ad23c8d67a2e562e
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 4.175ms 1ff8ea1eb5994bf08958780a9714aee0
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 0.3761ms 1eb278bf730e40b3b8d2c8707a6d7544
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 204 78.564ms a32d353a50614bafbcdfc890d565bf23
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 400 0.8671ms a3617533d3204750ac66d3399c373b66
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 0.3706ms dc2db7c422c04b8d93cf5165d513db3f
+info: RequestAudit[0]
+      /api/v1/auth/login 401 72.87ms 42b60a634672457e858486dcf6f188a9
+info: RequestAudit[0]
+      /api/v1/auth/login 200 81.5014ms 71beb93f4996487d95135baf8f03bd36
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 1.0968ms ff3df82411394c63aaea7e006ec5fee4
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 400 0.4375ms 895a697b086f44b78da6ec7ebe63c1f2
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="df08dade-4d66-450b-94dc-8bea8a7fd075" testId="52492804-9394-50d8-5f4a-fd0a9e24a860" testName="RefreshRaceRotationLogoutRevokesChainNotOtherSessions" computerName="MacBook-Air-Egor" duration="00:00:00.3290580" startTime="2026-11-21T20:25:16.9355990+07:00" endTime="2026-11-21T20:25:17.2646370+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df08dade-4d66-450b-94dc-8bea8a7fd075">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1669ms 2359868f3fe34c3885a9c9a0ceaf9546
+info: RequestAudit[0]
+      /api/v1/auth/login 200 73.3628ms c36c66c821a74ed596aba11a0e4ad9d9
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.4724ms 0aca7a81c59e4c6ea6f8fed6462cb068
+info: RequestAudit[0]
+      /api/v1/auth/refresh 200 2.1226ms 6402050afa7847ddbf4c9c1161ccb241
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 2.7104ms e30d09d9a09249299cd024d0950a0c91
+info: RequestAudit[0]
+      /api/v1/auth/logout 204 1.412ms 5a9f06dd43fa4cae9fee964b97718366
+info: RequestAudit[0]
+      /api/v1/auth/logout 204 0.7508ms 89bd36894c2243048d383ce5fbe2206a
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 0.3576ms 848538d4395445bda7feddb8f05a2cec
+info: RequestAudit[0]
+      /api/v1/auth/refresh 200 0.6987ms 2577b0c58dd0487388260eedc5a31805
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4aee78f2-2e61-4419-bf2d-ce495ad925bf" testId="fc504724-e53e-27ef-c666-350990b3b398" testName="AccountLimitFiveFailuresThen429AndRollingExpiry" computerName="MacBook-Air-Egor" duration="00:00:01.2281320" startTime="2026-11-21T20:25:14.6412700+07:00" endTime="2026-11-21T20:25:15.8693030+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4aee78f2-2e61-4419-bf2d-ce495ad925bf">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/login 401 211.157ms 3674a4abddec44f29af1cec345f59337
+info: RequestAudit[0]
+      /api/v1/auth/login 401 76.3682ms 96f9ac7666bd4c4e9b328cd7828111f6
+info: RequestAudit[0]
+      /api/v1/auth/login 401 71.162ms 1a180bc3776b4977ba844052f6dd4e86
+info: RequestAudit[0]
+      /api/v1/auth/login 401 105.7882ms 87fdb0e06e12466792b2e50ce6475547
+info: RequestAudit[0]
+      /api/v1/auth/login 401 155.815ms 2235d52cf2be4012b799ed7b922691aa
+info: RequestAudit[0]
+      /api/v1/auth/login 429 0.7038ms 38d18075f3b648eea9936a4a7d8caddc
+info: RequestAudit[0]
+      /api/v1/auth/login 401 77.1204ms 4ee3affc1a9b42ac97d89fdd6590341b
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce4d293c-e4ae-4eeb-95ba-cdb38c311c10" testId="006b96f4-c6c2-0d68-8afa-05eb91863ee6" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=2026-02-01&amp;to=2026-01-01&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2358640" startTime="2026-11-21T20:25:22.4129840+07:00" endTime="2026-11-21T20:25:22.6488330+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce4d293c-e4ae-4eeb-95ba-cdb38c311c10">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.216ms e90bbaa8a21241c2b3e34e9e4d36b949
+info: RequestAudit[0]
+      /api/v1/auth/login 200 71.8714ms 5b0078466f4a4e789d3c42db972e31c0
+info: RequestAudit[0]
+      /api/v1/payments/ 400 1.8456ms 6c1217b3a7304afcb7030b8554e56791
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8f30b833-05f3-4e6c-a147-1176aada9692" testId="9195e7bb-647d-b99f-ce57-a2b6fef3b4f8" testName="PaymentReplayCorrectionVoidAuditAndHistoricalCurrency" computerName="MacBook-Air-Egor" duration="00:00:00.2644190" startTime="2026-11-21T20:25:23.5692620+07:00" endTime="2026-11-21T20:25:23.8336660+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f30b833-05f3-4e6c-a147-1176aada9692">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.2773ms c7b6c078f34a44b0872fd875afa9923e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.8843ms 14d1c2d52f0f44b5b9a2db0e7569ba00
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1666ms 1bebcaaaaaab487190ba3fee46c197d3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.8645ms ae9e45ecc51f441f96ca90d972783493
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7605ms f6ee5699f7a64b09bf7b5c90f1f10e14
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 409 0.9415ms 4f33d2936df748daa726598c69ac2204
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7677ms a363901404584350bf664f5e4215e4c5
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 0.791ms b297e9cc8ad04cf68e3d65c2a1b00cc4
+info: RequestAudit[0]
+      /api/v1/payments/{id} 200 0.6198ms 9325341f89a84acfb787e669e115bfde
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 200 0.574ms 9e07e00305574b79af029680e0d0980d
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 200 0.2315ms 65810f645e5b4bfe92069290cc10fafe
+info: RequestAudit[0]
+      /api/v1/payments/{id} 409 0.2915ms 6de15607dd6c4832a94808c882efd277
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 200 1.2403ms b20140cf06004c46be179fe952c75f5a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.9364ms c9eb767c3b4043d2be180ef232ddaa0b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.3327ms dba0924f0e254c1289b8e231a61faba7
+info: RequestAudit[0]
+      /api/v1/payments/ 200 0.7437ms 5bd3d14fdda147e9af7ad9d8fa2655e9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e24d5913-c5fa-4b24-848e-45c29ebb52e8" testId="e66f7ce2-4935-9d31-f3d6-11d3bcec0d26" testName="CorrectionAuditFailureRollsBackPayment" computerName="MacBook-Air-Egor" duration="00:00:00.2614110" startTime="2026-11-21T20:25:19.9161050+07:00" endTime="2026-11-21T20:25:20.1775000+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e24d5913-c5fa-4b24-848e-45c29ebb52e8">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.8547ms 1bd4739615b8421b80c15bb5fed5f57d
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.9918ms e38ee21a142a4d198fab4b251ac0177e
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.145ms d2d7884a3bda49aca01e9a096c1d1bae
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7787ms 648a40cce0b44c8c85ee649f950e268f
+info: RequestAudit[0]
+      /api/v1/payments/{id} 500 2.1916ms 40450477b97e45d9b0bf1dd99c71b0d8
+info: RequestAudit[0]
+      /api/v1/payments/ 200 3.1451ms 8d04ceef3d4f47b49d9ebc04ce20322c
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 200 1.2623ms 224f2bd1de724cb9b71ee3548a83421a
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d42a903-457e-4a41-91c8-93c219ffe5a2" testId="50ebff92-adfe-15d1-0b92-a0b034c0de08" testName="TransactionFailureReallyRollsBackAllRows(&quot;IdempotencyRecord&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2496820" startTime="2026-11-21T20:25:24.5948350+07:00" endTime="2026-11-21T20:25:24.8445020+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d42a903-457e-4a41-91c8-93c219ffe5a2">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 85.8011ms 0b0c55995f8c454a899a8107fc3b8526
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3135ms 1b8514e974104a0cae9580c9679cd7e4
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.691ms 171e580db61c4629956d9237fa85ac1b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 1.0528ms df0ab5c5a76e469e88d9b9e213a906f1
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.142ms e4ce5c63d0804505abf341fb22a49e2a
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff965760-0c10-4cd1-97fa-05d7311bed92" testId="f8993f88-e4ce-22a4-ec6e-43c532f1d459" testName="BadPatchesRejected(&quot;{\&quot;amount\&quot;:-1}&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2481970" startTime="2026-11-21T20:25:19.4078370+07:00" endTime="2026-11-21T20:25:19.6560200+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff965760-0c10-4cd1-97fa-05d7311bed92">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.9441ms 2284bb780a214cfcbbeedda7564d9838
+info: RequestAudit[0]
+      /api/v1/auth/login 200 83.4342ms 46efd17b5b384c0cab8d4cdd3d09b31a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1695ms 3667f3ca152a47dd877aa34fae1325ac
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 1.8798ms 123255b66976430bb46b3951961a499b
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2af3eb6d-f8c2-4711-a786-1f2cea517494" testId="b5b70c93-bb40-1df4-56a8-cc52678a1fbe" testName="TransactionFailureReallyRollsBackAllRows(&quot;AuditRecord&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2395190" startTime="2026-11-21T20:25:24.8445180+07:00" endTime="2026-11-21T20:25:25.0840230+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2af3eb6d-f8c2-4711-a786-1f2cea517494">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 71.1414ms 8e9b894e92b8471da769b64f964fafe5
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3175ms d8f62723e85043afb06ef3f744c9ae28
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1021ms d573975c5faa48248226e2692d76ebc4
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 0.9479ms 6b4a96ae68b142529580c0b88bacc41a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.0809ms 3e846af3c24d44d5a66cb309367f3622
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="852a739c-c1ab-49fd-a323-a1fb9243214f" testId="da624d9a-33f6-e56e-ffc8-071a04846f6e" testName="SensitiveValuesNeverAppearInRequestLogs" computerName="MacBook-Air-Egor" duration="00:00:00.2494560" startTime="2026-11-21T20:25:18.1025650+07:00" endTime="2026-11-21T20:25:18.3520070+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="852a739c-c1ab-49fd-a323-a1fb9243214f">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.2772ms d1d72e29898c493e9607dc3bd4340f92
+info: RequestAudit[0]
+      /api/v1/auth/login 200 83.6327ms 827d019563004cb3b544726b25364da3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6d5fd7d-6d21-4162-8921-572a6c5b7998" testId="197dae67-43c5-bd76-2e4f-137fd308542f" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?page=0&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2551760" startTime="2026-11-21T20:25:21.1252770+07:00" endTime="2026-11-21T20:25:21.3804370+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6d5fd7d-6d21-4162-8921-572a6c5b7998">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 91.5267ms 9ac84ad8b0104770ad6ff10a204862dc
+info: RequestAudit[0]
+      /api/v1/auth/login 200 75.9242ms 9824b7d57b8c460eb230a677e7e7e217
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.8285ms cdcb4170bfcc499f933a83d3fe20b8ac
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5e8fb933-3a43-469c-a2ad-a00b53669ab9" testId="4c7f44a4-1244-0c0d-ed2a-ae7677fd7c2f" testName="OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader" computerName="MacBook-Air-Egor" duration="00:00:00.1695840" startTime="2026-11-21T20:25:23.1368240+07:00" endTime="2026-11-21T20:25:23.3063970+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e8fb933-3a43-469c-a2ad-a00b53669ab9">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      unmatched 200 18.6909ms d00a79ed0fb042eba52ce65b2ed45059
+info: RequestAudit[0]
+      unmatched 200 50.6303ms 1689cd3384744f6f9de207d8493fcc07
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+        <ErrorInfo>
+          <Message>  Assert.That(paths.EnumerateObject().Count(), Is.EqualTo(17))
+  Expected: 17
+  But was:  19
+</Message>
+          <StackTrace>   at Subscriptions.Api.Tests.BusinessApiTests.OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/BusinessApiTests.cs:line 90
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at Subscriptions.Api.Tests.BusinessApiTests.OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/BusinessApiTests.cs:line 90
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2230b53-3043-4826-b993-c7a3c4396306" testId="a43a33ef-d490-cd3f-ff0e-630b8b8372f0" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?pageSize=101&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2570120" startTime="2026-11-21T20:25:20.8682500+07:00" endTime="2026-11-21T20:25:21.1252460+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2230b53-3043-4826-b993-c7a3c4396306">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 95.5357ms 78853785569d44779c764caa36b5ffae
+info: RequestAudit[0]
+      /api/v1/auth/login 200 74.332ms 127173dec7b44b56b2c1831e9d941822
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 2.0378ms 387cc173b0904983a78bb726f480726c
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4d3bfce-9a2d-4b29-8f53-f0ddf61728c3" testId="0ed3c137-eeb4-1a2e-4777-e1df218ceb77" testName="JwtChecksRejectInvalidTokens(&quot;issuer&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0885180" startTime="2026-11-21T20:25:16.0920180+07:00" endTime="2026-11-21T20:25:16.1805310+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4d3bfce-9a2d-4b29-8f53-f0ddf61728c3">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 4.719ms bea8c9c03ec54690b3ae9a7fc3ebce67
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b56d9ff7-1331-47f0-bb38-4e937421c26d" testId="a157f9f2-e7c7-7af4-fd55-cbb56e49b410" testName="AnalyticsAndForecastUseOwnCurrencySnapshotsAndArchiveRules" computerName="MacBook-Air-Egor" duration="00:00:00.2751940" startTime="2026-11-21T20:25:18.3527100+07:00" endTime="2026-11-21T20:25:18.6278870+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b56d9ff7-1331-47f0-bb38-4e937421c26d">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 78.0143ms 642b987e0a254c09946b6feda6c1924f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 78.3503ms 32c74ff46a0a45ab9752336a14ebca96
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 7.2817ms a263b5f63b6a44d28566cbebcc210fcc
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 4.0857ms ef42cf3a5588463ebb9bbb059866d3df
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.7485ms fd2070bfb76e450f9c98c28c4e34f256
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 8.6612ms c2081f3da89144289c05533cd5c073d3
+info: RequestAudit[0]
+      /api/v1/analytics/forecast 200 1.7229ms 3c980920fb5f47ea8f1634b4028c733b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.9759ms e0131437efba413bbb7e0581ea7aeca1
+info: RequestAudit[0]
+      /api/v1/analytics/forecast 200 0.4375ms 5ec9abec36a942f6808a8c34827431b0
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 200 0.8833ms 583673463127490892d07c38628870bb
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.7365ms 0e4f1a8d49b74bb5a5784018da8f2c43
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.4548ms e888e2437398436cbc08ab68adafb7ed
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.582ms 0752b8a9403a4c6c928bbf2937630733
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ef38a8f4-b745-4d74-92c6-9b013559f9a5" testId="53bdcc7f-a24e-a636-b859-26a3919e5496" testName="TransactionFailureReallyRollsBackAllRows(&quot;Payment&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2519710" startTime="2026-11-21T20:25:24.3428620+07:00" endTime="2026-11-21T20:25:24.5948170+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef38a8f4-b745-4d74-92c6-9b013559f9a5">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.1858ms 0e9aa390eda240c2aa98d0906699fa9f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.6145ms 6de0b168e6c94cfdb668b027d757240a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1155ms f7abf3e1dcaf4c9dae26cc76b67817d6
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 0.9176ms 79cf3c42e7cb4440ab8a077841edbb48
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.0549ms de7ced1796ec4278b5566b110ab252f3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="347188d7-7b82-4896-8778-ab737d068dfb" testId="76b39bec-e2de-12fd-ab3a-e48497f9d0c6" testName="JwtChecksRejectInvalidTokens(&quot;subject&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0862540" startTime="2026-11-21T20:25:16.3563510+07:00" endTime="2026-11-21T20:25:16.4426000+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="347188d7-7b82-4896-8778-ab737d068dfb">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 2.8276ms f59b4642172840febb5e05d4e8bcac88
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="64f7be00-9608-4e3a-a289-2dd7e1254f23" testId="cdec8f0a-5e44-0264-ccbf-10da561dac81" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions/not-uuid&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2412920" startTime="2026-11-21T20:25:21.6660550+07:00" endTime="2026-11-21T20:25:21.9073320+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64f7be00-9608-4e3a-a289-2dd7e1254f23">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.6489ms c476d42e32834e65a09aaf48fc9c3285
+info: RequestAudit[0]
+      /api/v1/auth/login 200 80.4081ms 1e4f53774e3b45cbb6897a2bff1be53d
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 1.6431ms d063b2552792453f9ff911fbb0ce8fb1
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ab5a27a0-8625-4baa-9292-3944dab8d219" testId="d383e195-4a47-4922-73a6-532428fd94bc" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2540330" startTime="2026-11-21T20:25:22.8827790+07:00" endTime="2026-11-21T20:25:23.1367960+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab5a27a0-8625-4baa-9292-3944dab8d219">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 95.1024ms 1f566f8ff19f412eb04b4e62c07cc5e4
+info: RequestAudit[0]
+      /api/v1/auth/login 200 71.4885ms df5f4c50e7294b66a210902a4bd3712e
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 400 1.7611ms ad0bd48a624945a884de92e9299b6e06
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75dc579c-ce78-49d7-acf8-1ce3b7754ff9" testId="cd535b29-dcf0-05ff-dc5c-36bff5e485d4" testName="BadPatchesRejected(&quot;{\&quot;userId\&quot;:\&quot;steal\&quot;}&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2782160" startTime="2026-11-21T20:25:19.1296200+07:00" endTime="2026-11-21T20:25:19.4078200+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75dc579c-ce78-49d7-acf8-1ce3b7754ff9">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.8571ms 45f5f9aba3fd42fd84154420bc0f27e0
+info: RequestAudit[0]
+      /api/v1/auth/login 200 114.1645ms da0b656c768f4847b4efd2a84025ebdd
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2987ms 22f40ee4eb8c49c4ae1518fed3b5d54f
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.7556ms 2c6dce3f8a2943599fcb711b2214661f
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="610e2cc4-37a1-4a0a-87a2-641338e2b493" testId="262835d9-8abc-9fa8-0c03-d9a7b40496ff" testName="OversizeBothLengthAndChunkedAndCorrelationValidation" computerName="MacBook-Air-Egor" duration="00:00:00.2628100" startTime="2026-11-21T20:25:23.3064430+07:00" endTime="2026-11-21T20:25:23.5692370+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="610e2cc4-37a1-4a0a-87a2-641338e2b493">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.6207ms 3703767645d64c7f817250e81521d24a
+info: RequestAudit[0]
+      /api/v1/auth/login 200 99.0591ms 5f5cc1e39dca4615b97142076e4b0caa
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 413 1.3771ms 31478c09dbb74403a7ef5d48515778e4
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 413 1.0814ms 78b252107c004cf3a09a0cfa9ec0ed56
+info: RequestAudit[0]
+      /api/v1/health 200 0.8116ms my-correlation-123
+info: RequestAudit[0]
+      /api/v1/health 200 0.2941ms 05f44016968c4c23bf7ca5db9104d1fd
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fe6bbf2b-137b-4e78-936e-078c0549719c" testId="b67e513c-04b2-35d6-e672-7ae78c63c319" testName="RealDatabaseCannotOpenReturns503AndServerRecovers" computerName="MacBook-Air-Egor" duration="00:00:00.2481680" startTime="2026-11-21T20:25:23.8336820+07:00" endTime="2026-11-21T20:25:24.0818350+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe6bbf2b-137b-4e78-936e-078c0549719c">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.6052ms 7dba2ac1728f41149b49f714d17f0cf1
+info: RequestAudit[0]
+      /api/v1/auth/login 200 78.8892ms 56ce9235782641e5ae96f7091077ff9f
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 503 2.505ms af58dc12b0d0436bb18cc1e9929d9f7d
+info: RequestAudit[0]
+      /api/v1/health 503 0.1948ms 9ee82a0ae34548e786d44e247c531145
+info: RequestAudit[0]
+      /api/v1/health 200 0.3053ms 90b2e5a7f1dd4b1ca5828d105eed7017
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 3.1622ms a0e0e0992f5540cfa77bb00214e6176e
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a1e080f-5701-4698-a5f2-824ad740ed6d" testId="ffc930cb-3b1d-68da-66b6-a8e29d0acff4" testName="RegistrationNormalizationDuplicateAndValidation" computerName="MacBook-Air-Egor" duration="00:00:00.3141460" startTime="2026-11-21T20:25:17.2646670+07:00" endTime="2026-11-21T20:25:17.5787940+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a1e080f-5701-4698-a5f2-824ad740ed6d">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 79.0769ms f5d1f7c07c45451683eb382d6bb74666
+info: RequestAudit[0]
+      /api/v1/auth/register 409 89.6809ms 742945323b2e43eeb0f9ae0411722a99
+info: RequestAudit[0]
+      /api/v1/auth/register 400 2.0572ms 7dd7d23392084291b7e1be38c2724236
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="91199f7c-eb87-466e-9ac7-d3c0d88afdd2" testId="d778f177-205e-9bc8-ac75-62314e5b550c" testName="JwtChecksRejectInvalidTokens(&quot;signature&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.1108190" startTime="2026-11-21T20:25:15.9811770+07:00" endTime="2026-11-21T20:25:16.0919890+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91199f7c-eb87-466e-9ac7-d3c0d88afdd2">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 12.0445ms d32b7cbd5a424c059c11255cc2d2cda4
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1bfd866e-641a-41f3-8814-a839f1bb7a2c" testId="e39d9855-e5e1-eea7-826c-e01759f57af0" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=bad&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2368950" startTime="2026-11-21T20:25:22.1760790+07:00" endTime="2026-11-21T20:25:22.4129600+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bfd866e-641a-41f3-8814-a839f1bb7a2c">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.7744ms 601d7d761e5c40c59308d68b40dc59be
+info: RequestAudit[0]
+      /api/v1/auth/login 200 75.1749ms 1ee9095d3ed04f51b0f4ab111950caeb
+info: RequestAudit[0]
+      /api/v1/payments/ 400 1.7396ms 74c2c9b00ee545ca92d8adf8535625e9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="df3d743c-d0c6-41e1-a7fc-c4dce10f7c1d" testId="662f050f-0b5d-e3b4-31f1-fbfc979e6426" testName="ForeignResourcesLookAbsentForAllOperations" computerName="MacBook-Air-Egor" duration="00:00:00.4428230" startTime="2026-11-21T20:25:20.1775200+07:00" endTime="2026-11-21T20:25:20.6203160+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df3d743c-d0c6-41e1-a7fc-c4dce10f7c1d">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 77.5535ms e476a7d8d06e4eac9bb2800a32fe690c
+info: RequestAudit[0]
+      /api/v1/auth/login 200 94.7058ms 77543075d86b4de29fd6327538eb344b
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1176ms 9b10ee525f97452b821e2a0709f9c94e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7756ms 83337d4dfcb94af480ad0dba9ed24ef6
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.0016ms 7bc7f6687dc245818e020ba2b88af586
+info: RequestAudit[0]
+      /api/v1/auth/login 200 91.4997ms f110893311574318844e62e96c5abd66
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 1.4774ms b25219579ff84de195c6fe4e4b4b57b9
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 0.8628ms 9fe75b4b72264767b3c3752d8b254580
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 404 0.2921ms 08f8172ddc2241c7a10e33e195373de3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 404 0.2997ms 3bdc2145b80f454289b172dd9b27d49a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 404 0.2805ms c9dd5821937141beb2430b2bdddd4598
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 0.2845ms 7ec51670677e477d888fc691a6810e91
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 404 0.3059ms 8f9b304f7279451db5c1aaf452f7d3f6
+info: RequestAudit[0]
+      /api/v1/payments/ 404 0.6486ms 34dc199e0b4b4d79a3dda6a1ca12f298
+info: RequestAudit[0]
+      /api/v1/payments/{id} 404 0.2932ms 3b30eed9a20d4de695e240bc5ca052bc
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 404 0.4493ms e47d059bee7e4e1499b68c0527b18193
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 404 0.2685ms d6afc5a7854844cf8151f38722b6255d
+info: RequestAudit[0]
+      /api/v1/payments/ 200 0.2454ms ea3a06fac51e496bbe549915cb792d30
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ae0c837-2295-4f08-ba6b-e0efee956f28" testId="e1f66c6c-b7f2-455c-573f-eb4e15c7128b" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses?from=2024-01-01&amp;to=2025-01-01&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2339180" startTime="2026-11-21T20:25:22.6488500+07:00" endTime="2026-11-21T20:25:22.8827530+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ae0c837-2295-4f08-ba6b-e0efee956f28">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.793ms 0155b006cacf47e494b19e6e563a0f98
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.6631ms edcc4358c7a145929767050bae4501e8
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 400 1.8151ms 90d6cf3b4cc94ec5beec519a93ba6706
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="148a9b51-b1d0-4000-a188-bbe0549d0676" testId="4f219c08-ca77-8940-d1cd-73d783915fb6" testName="ConcurrentSameKeyCreatesExactlyOneTriplet" computerName="MacBook-Air-Egor" duration="00:00:00.2600540" startTime="2026-11-21T20:25:19.6560490+07:00" endTime="2026-11-21T20:25:19.9160870+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="148a9b51-b1d0-4000-a188-bbe0549d0676">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.7745ms 8871261ef1204c1786a5dbcf11c0c68e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.583ms 337236be739f4afc8602b0a9d5c138d9
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2222ms f002c2b994f347e7a4437168eb18a372
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.9436ms 2a40398600e84588af662539eca36639
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.774ms 053c5826ec1049dea6a600f4db95c27e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.4107ms ce69728063aa4498936af25c9d303254
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.2455ms 2042840a2bc34a5ca70df25ad7ca7195
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.349ms 535c8446eea0437a95039c3ccdd6f7b0
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.6158ms ed0ea1bcef0543bc882f67aac43dc8cd
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.7242ms cc582a40641740cf855904eae24c6e11
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.8926ms dc48ed51179249a8b79e78fdddefd655
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e4084668-7bf1-4b04-8073-29b10960d63e" testId="7aa44b06-64d8-2900-565c-b8fd1ff7223c" testName="SubscriptionCrudFiltersStatusAndArchive" computerName="MacBook-Air-Egor" duration="00:00:00.2609760" startTime="2026-11-21T20:25:24.0818670+07:00" endTime="2026-11-21T20:25:24.3428270+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4084668-7bf1-4b04-8073-29b10960d63e">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.4854ms 3dc6b0fefa8f43aea72ec1a77e5d32c7
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.6929ms 9b323a45bcbe4a1ca2d9caf853ec7471
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.0826ms e2696e72b0af4423b2b555b159ec397a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.5546ms b45062843cb94b11a65b1f4789a1e2ba
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 1.6702ms 7e50a63327b94b3184323586d2878532
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.6056ms 9de6b5dc869044ff8b8c3ffa8ec11eda
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.5744ms 9290ada135a64b56808361d70a628b7f
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 200 0.5432ms 1b30ea2745ba4c5a955a4e914ce7c85b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 200 0.5965ms 733fe03289824397bf2c7571832287f3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 200 0.5088ms ae5271da471f4b30b54d92e887236c70
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 409 0.4994ms eefec4acb88f44ce9c751a391ccbeb6e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.5534ms c139318f0ee74dd9afc2d9dd000af5fe
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.762ms d4eb2d897dce4253adc45a2e0a1d3402
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.2541ms 50a1b3132e404c86bc852431e6d2bf0a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.2322ms 2802742318f947ef80241cf017790903
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 0.2085ms f4f0907674c04ae2806ef3d90d8b2fdb
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3bf1c969-7bff-445f-8604-b88b0306dfa1" testId="93f97d50-04f9-9716-e577-ce5c247720fa" testName="InvalidCreateAndMissingKeyDoNotWrite" computerName="MacBook-Air-Egor" duration="00:00:00.2478860" startTime="2026-11-21T20:25:20.6203370+07:00" endTime="2026-11-21T20:25:20.8682080+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bf1c969-7bff-445f-8604-b88b0306dfa1">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 79.0405ms b77f02aa310a4aed95ca74ba6e722b6e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 74.2122ms 7645b4c2d8d042f8be71325d40e9751a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 2.0202ms df12daddcd4d475c846e9f1497ae87d3
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 0.8701ms eb62237db1e44218b70c77138babaa56
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 400 0.7253ms f0be6dca2916448caa3d09e459f1e66d
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 400 0.4657ms ae963f37b5c04597b3319659c0b92ccf
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="554b7f93-9c1d-40b0-aa8c-91b653123908" testId="983a6e43-888f-1038-5d2c-b218de6501f5" testName="LoginErrorsAreUniformAndBearerRequired" computerName="MacBook-Air-Egor" duration="00:00:00.4922280" startTime="2026-11-21T20:25:16.4433810+07:00" endTime="2026-11-21T20:25:16.9355790+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="554b7f93-9c1d-40b0-aa8c-91b653123908">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 98.7569ms c48db46309c24db5a95ca6d6944cbf2f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 107.4252ms 75974ebd2eba443695b6fb4719a140a8
+info: RequestAudit[0]
+      /api/v1/auth/login 401 90.1595ms e4a872483da34e26a1600376247b66d0
+info: RequestAudit[0]
+      /api/v1/auth/login 401 107.7768ms c09f2950da424f0d839ba5751eabbf33
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.1983ms 5cb88f7a028f461da9c242457d865bb1
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2b178428-c471-4650-ae7a-d300823df5b5" testId="2f675cc2-f09b-ed09-6e2d-8eb4e3dd1909" testName="BadPatchesRejected(&quot;{\&quot;name\&quot;:null}&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2418460" startTime="2026-11-21T20:25:18.8877670+07:00" endTime="2026-11-21T20:25:19.1295990+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b178428-c471-4650-ae7a-d300823df5b5">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.5705ms 8209c6f82aa6473e97a8734532bf5d5d
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3441ms fc484d3ba44746bfa327ec255b39314e
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.553ms d3b96488a8a34a2ba9399d93d0fecb24
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.4775ms 39d14ffed9da4d6abc6a8a01948c34bf
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e317487e-355f-4447-9835-0c917aa719bd" testId="ecd4f17e-7521-1f0a-2554-c480db6244fe" testName="JwtChecksRejectInvalidTokens(&quot;expired&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0830719" startTime="2026-11-21T20:25:16.2732560+07:00" endTime="2026-11-21T20:25:16.3563230+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e317487e-355f-4447-9835-0c917aa719bd">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.6771ms 04863d5c5b0142ef9636614a100c38f9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a1c3f05-ba04-4e7a-91b4-8403c189b69c" testId="d3706d10-bf5f-9f88-5ba3-ca344ad6add0" testName="BadPatchesRejected(&quot;{}&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2589640" startTime="2026-11-21T20:25:18.6279280+07:00" endTime="2026-11-21T20:25:18.8868760+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a1c3f05-ba04-4e7a-91b4-8403c189b69c">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1359ms 3ea7236057644968bc19db4c98cfbb9f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 97.1765ms 0d9e1eb4c760425ba054adf52aa779c7
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2512ms b118e160e45c4988a2979e342b832fd3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.6182ms 5486ea7d01414c3186356a3f6e779ac3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e5919790-d56f-480f-a483-34cb4e1fc7f7" testId="648a9528-3e00-b1c7-aea8-a1514d0c438e" testName="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?status=unknown&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.2855890" startTime="2026-11-21T20:25:21.3804630+07:00" endTime="2026-11-21T20:25:21.6660340+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5919790-d56f-480f-a483-34cb4e1fc7f7">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 84.0986ms 261cbc9636a24b7eba28bb947c778236
+info: RequestAudit[0]
+      /api/v1/auth/login 200 113.0159ms 222c1122ffed4d5d9576e0632023e3af
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.7134ms 2eff66f147c24531815e25563ec54999
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0b5aa73a-a893-4fb7-baa1-6305a889c48d" testId="8573e406-0958-4c34-66b8-1e2ae1b9af71" testName="IpLimitCountsThirtyAttemptsIncludingBadBodies" computerName="MacBook-Air-Egor" duration="00:00:00.1112120" startTime="2026-11-21T20:25:15.8699140+07:00" endTime="2026-11-21T20:25:15.9811190+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b5aa73a-a893-4fb7-baa1-6305a889c48d">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/login 400 2.5865ms d4b683d5520f485986d21e748d610c8d
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.2572ms 3745b1aa45e640d19873bc8264e562d3
+info: RequestAudit[0]
+      /api/v1/auth/login 400 1.5745ms 71668b9da6584d3f9946e0b39b43af6b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1556ms 59db2f0727a744439d093bf12dbf66de
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1878ms 6616ed9d6f924ffb8854e4ddb2ef393b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1653ms 2b654a8752344a5c8dde09df1dc5dea1
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1464ms 4cb2fc54319446aca6b473816f4c90fd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1513ms a1f8c3cf9c9941419fd0f571529d2ffd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1466ms 3a4ad052fb9d47c0bff3c7be50e9e68f
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1339ms 7b5d3f3733c04be8bce0855f560b7d49
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1452ms a9489acb565746838c4c1945a934f322
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1317ms 8e43e3311c1a4cc48646b5b758a03801
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1502ms 52768b6c68e14433baeb72a855002283
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1484ms e5a78c3fb48b45ecb45776a8bb8eb566
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1339ms c30cea41b5d749a792fe375fa8b6673a
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1302ms 8b2bbeff9a3f4562a0c774069775e1de
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1566ms 7e89f52e62104f82ace1b6e8e2fc67fb
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1561ms cdeb7aa8d37f44479cc0d1c1f874ad5b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1419ms 981294fc06be4137bf488eaf269193ba
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1461ms de35d17dc29141d98a930bd288bcb95a
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1761ms c4cd119e46ea44aaa1460007442e0479
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1336ms c27f2ec1b6b14971b10aa4b97a4c8851
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1393ms c40362cce9e144b4b78da72af60ebc4d
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1759ms 532dd94fc5714836b77d5cd3bbb9b0ef
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.136ms e2d02c269e4240839195bb69910e1d20
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1328ms d0914a52cd3745f9a1f817e106980ffd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.139ms c4d601288ece46f5b2eccbabb24ed60b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1492ms c1e3aae30014406d9eab2a1f452a1f29
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1318ms 356eaf8134b846a8b7c9ad868a758894
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1345ms 303ef3b46fa848f5a45e16f1e300827b
+info: RequestAudit[0]
+      /api/v1/auth/login 429 0.1793ms a6406fd166f54f288c8dfc651ac1cece
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1298ms 60b768602d3743f98f3596ea23145e22
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="533df0a9-603f-4d82-8294-cf7266150100" testId="00894ef3-bf37-65a3-0e41-9ed284ba9154" testName="JwtChecksRejectInvalidTokens(&quot;audience&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0926630" startTime="2026-11-21T20:25:16.1805630+07:00" endTime="2026-11-21T20:25:16.2732200+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="533df0a9-603f-4d82-8294-cf7266150100">
+      <Output>
+        <StdOut>info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.8583ms 7b2926c02d604963b0143f4dc440a353
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ResetSenderExpiryOneUseAndAllRefreshRevoked" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="c77f0eca-80e6-7262-f1db-3629c5ceddff">
+      <Execution id="75f0652a-bb58-4d37-8a3a-984cb50d3c5a" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="ResetSenderExpiryOneUseAndAllRefreshRevoked" />
+    </UnitTest>
+    <UnitTest name="OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="4c7f44a4-1244-0c0d-ed2a-ae7677fd7c2f">
+      <Execution id="5e8fb933-3a43-469c-a2ad-a00b53669ab9" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="OpenApiAndSwaggerExposeSchemasSecurityAndIdempotencyHeader" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=bad&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="e39d9855-e5e1-eea7-826c-e01759f57af0">
+      <Execution id="1bfd866e-641a-41f3-8814-a839f1bb7a2c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=bad&quot;)" />
+    </UnitTest>
+    <UnitTest name="BadPatchesRejected(&quot;{}&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="d3706d10-bf5f-9f88-5ba3-ca344ad6add0">
+      <Execution id="5a1c3f05-ba04-4e7a-91b4-8403c189b69c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="BadPatchesRejected(&quot;{}&quot;)" />
+    </UnitTest>
+    <UnitTest name="JwtChecksRejectInvalidTokens(&quot;audience&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="00894ef3-bf37-65a3-0e41-9ed284ba9154">
+      <Execution id="533df0a9-603f-4d82-8294-cf7266150100" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="JwtChecksRejectInvalidTokens(&quot;audience&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=2026-02-01&amp;to=2026-01-01&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="006b96f4-c6c2-0d68-8afa-05eb91863ee6">
+      <Execution id="ce4d293c-e4ae-4eeb-95ba-cdb38c311c10" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/payments?from=2026-02-01&amp;to=2026-01-01&quot;)" />
+    </UnitTest>
+    <UnitTest name="SubscriptionCrudFiltersStatusAndArchive" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="7aa44b06-64d8-2900-565c-b8fd1ff7223c">
+      <Execution id="e4084668-7bf1-4b04-8073-29b10960d63e" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="SubscriptionCrudFiltersStatusAndArchive" />
+    </UnitTest>
+    <UnitTest name="BadPatchesRejected(&quot;{\&quot;name\&quot;:null}&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="2f675cc2-f09b-ed09-6e2d-8eb4e3dd1909">
+      <Execution id="2b178428-c471-4650-ae7a-d300823df5b5" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="BadPatchesRejected(&quot;{\&quot;name\&quot;:null}&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?userId=someone&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="628bcdf3-f0fc-42b3-92f7-893c06fefc43">
+      <Execution id="8974b766-fced-41a4-b312-f12779fa6381" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?userId=someone&quot;)" />
+    </UnitTest>
+    <UnitTest name="OversizeBothLengthAndChunkedAndCorrelationValidation" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="262835d9-8abc-9fa8-0c03-d9a7b40496ff">
+      <Execution id="610e2cc4-37a1-4a0a-87a2-641338e2b493" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="OversizeBothLengthAndChunkedAndCorrelationValidation" />
+    </UnitTest>
+    <UnitTest name="IpLimitCountsThirtyAttemptsIncludingBadBodies" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="8573e406-0958-4c34-66b8-1e2ae1b9af71">
+      <Execution id="0b5aa73a-a893-4fb7-baa1-6305a889c48d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="IpLimitCountsThirtyAttemptsIncludingBadBodies" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses?from=2024-01-01&amp;to=2025-01-01&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="e1f66c6c-b7f2-455c-573f-eb4e15c7128b">
+      <Execution id="4ae0c837-2295-4f08-ba6b-e0efee956f28" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses?from=2024-01-01&amp;to=2025-01-01&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?page=0&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="197dae67-43c5-bd76-2e4f-137fd308542f">
+      <Execution id="d6d5fd7d-6d21-4162-8921-572a6c5b7998" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?page=0&quot;)" />
+    </UnitTest>
+    <UnitTest name="BadPatchesRejected(&quot;{\&quot;userId\&quot;:\&quot;steal\&quot;}&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="cd535b29-dcf0-05ff-dc5c-36bff5e485d4">
+      <Execution id="75dc579c-ce78-49d7-acf8-1ce3b7754ff9" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="BadPatchesRejected(&quot;{\&quot;userId\&quot;:\&quot;steal\&quot;}&quot;)" />
+    </UnitTest>
+    <UnitTest name="AnalyticsAndForecastUseOwnCurrencySnapshotsAndArchiveRules" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="a157f9f2-e7c7-7af4-fd55-cbb56e49b410">
+      <Execution id="b56d9ff7-1331-47f0-bb38-4e937421c26d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="AnalyticsAndForecastUseOwnCurrencySnapshotsAndArchiveRules" />
+    </UnitTest>
+    <UnitTest name="JwtChecksRejectInvalidTokens(&quot;signature&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="d778f177-205e-9bc8-ac75-62314e5b550c">
+      <Execution id="91199f7c-eb87-466e-9ac7-d3c0d88afdd2" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="JwtChecksRejectInvalidTokens(&quot;signature&quot;)" />
+    </UnitTest>
+    <UnitTest name="RegistrationNormalizationDuplicateAndValidation" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="ffc930cb-3b1d-68da-66b6-a8e29d0acff4">
+      <Execution id="6a1e080f-5701-4698-a5f2-824ad740ed6d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="RegistrationNormalizationDuplicateAndValidation" />
+    </UnitTest>
+    <UnitTest name="LoginErrorsAreUniformAndBearerRequired" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="983a6e43-888f-1038-5d2c-b218de6501f5">
+      <Execution id="554b7f93-9c1d-40b0-aa8c-91b653123908" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="LoginErrorsAreUniformAndBearerRequired" />
+    </UnitTest>
+    <UnitTest name="ForeignResourcesLookAbsentForAllOperations" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="662f050f-0b5d-e3b4-31f1-fbfc979e6426">
+      <Execution id="df3d743c-d0c6-41e1-a7fc-c4dce10f7c1d" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="ForeignResourcesLookAbsentForAllOperations" />
+    </UnitTest>
+    <UnitTest name="ConcurrentSameKeyCreatesExactlyOneTriplet" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="4f219c08-ca77-8940-d1cd-73d783915fb6">
+      <Execution id="148a9b51-b1d0-4000-a188-bbe0549d0676" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="ConcurrentSameKeyCreatesExactlyOneTriplet" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions/not-uuid&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="cdec8f0a-5e44-0264-ccbf-10da561dac81">
+      <Execution id="64f7be00-9608-4e3a-a289-2dd7e1254f23" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions/not-uuid&quot;)" />
+    </UnitTest>
+    <UnitTest name="TransactionFailureReallyRollsBackAllRows(&quot;Payment&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="53bdcc7f-a24e-a636-b859-26a3919e5496">
+      <Execution id="ef38a8f4-b745-4d74-92c6-9b013559f9a5" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="TransactionFailureReallyRollsBackAllRows(&quot;Payment&quot;)" />
+    </UnitTest>
+    <UnitTest name="BadPatchesRejected(&quot;{\&quot;amount\&quot;:-1}&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="f8993f88-e4ce-22a4-ec6e-43c532f1d459">
+      <Execution id="ff965760-0c10-4cd1-97fa-05d7311bed92" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="BadPatchesRejected(&quot;{\&quot;amount\&quot;:-1}&quot;)" />
+    </UnitTest>
+    <UnitTest name="PaymentReplayCorrectionVoidAuditAndHistoricalCurrency" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="9195e7bb-647d-b99f-ce57-a2b6fef3b4f8">
+      <Execution id="8f30b833-05f3-4e6c-a147-1176aada9692" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="PaymentReplayCorrectionVoidAuditAndHistoricalCurrency" />
+    </UnitTest>
+    <UnitTest name="JwtChecksRejectInvalidTokens(&quot;issuer&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="0ed3c137-eeb4-1a2e-4777-e1df218ceb77">
+      <Execution id="f4d3bfce-9a2d-4b29-8f53-f0ddf61728c3" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="JwtChecksRejectInvalidTokens(&quot;issuer&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="d383e195-4a47-4922-73a6-532428fd94bc">
+      <Execution id="ab5a27a0-8625-4baa-9292-3944dab8d219" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/analytics/expenses&quot;)" />
+    </UnitTest>
+    <UnitTest name="RefreshRaceRotationLogoutRevokesChainNotOtherSessions" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="52492804-9394-50d8-5f4a-fd0a9e24a860">
+      <Execution id="df08dade-4d66-450b-94dc-8bea8a7fd075" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="RefreshRaceRotationLogoutRevokesChainNotOtherSessions" />
+    </UnitTest>
+    <UnitTest name="JwtChecksRejectInvalidTokens(&quot;subject&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="76b39bec-e2de-12fd-ab3a-e48497f9d0c6">
+      <Execution id="347188d7-7b82-4896-8778-ab737d068dfb" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="JwtChecksRejectInvalidTokens(&quot;subject&quot;)" />
+    </UnitTest>
+    <UnitTest name="TransactionFailureReallyRollsBackAllRows(&quot;IdempotencyRecord&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="50ebff92-adfe-15d1-0b92-a0b034c0de08">
+      <Execution id="4d42a903-457e-4a41-91c8-93c219ffe5a2" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="TransactionFailureReallyRollsBackAllRows(&quot;IdempotencyRecord&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?pageSize=101&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="a43a33ef-d490-cd3f-ff0e-630b8b8372f0">
+      <Execution id="f2230b53-3043-4826-b993-c7a3c4396306" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?pageSize=101&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?status=unknown&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="648a9528-3e00-b1c7-aea8-a1514d0c438e">
+      <Execution id="e5919790-d56f-480f-a483-34cb4e1fc7f7" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidQueriesHaveUnifiedValidation(&quot;/api/v1/subscriptions?status=unknown&quot;)" />
+    </UnitTest>
+    <UnitTest name="SensitiveValuesNeverAppearInRequestLogs" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="da624d9a-33f6-e56e-ffc8-071a04846f6e">
+      <Execution id="852a739c-c1ab-49fd-a323-a1fb9243214f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="SensitiveValuesNeverAppearInRequestLogs" />
+    </UnitTest>
+    <UnitTest name="InvalidCreateAndMissingKeyDoNotWrite" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="93f97d50-04f9-9716-e577-ce5c247720fa">
+      <Execution id="3bf1c969-7bff-445f-8604-b88b0306dfa1" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="InvalidCreateAndMissingKeyDoNotWrite" />
+    </UnitTest>
+    <UnitTest name="RealDatabaseCannotOpenReturns503AndServerRecovers" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="b67e513c-04b2-35d6-e672-7ae78c63c319">
+      <Execution id="fe6bbf2b-137b-4e78-936e-078c0549719c" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="RealDatabaseCannotOpenReturns503AndServerRecovers" />
+    </UnitTest>
+    <UnitTest name="JwtChecksRejectInvalidTokens(&quot;expired&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="ecd4f17e-7521-1f0a-2554-c480db6244fe">
+      <Execution id="e317487e-355f-4447-9835-0c917aa719bd" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="JwtChecksRejectInvalidTokens(&quot;expired&quot;)" />
+    </UnitTest>
+    <UnitTest name="TransactionFailureReallyRollsBackAllRows(&quot;AuditRecord&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="b5b70c93-bb40-1df4-56a8-cc52678a1fbe">
+      <Execution id="2af3eb6d-f8c2-4711-a786-1f2cea517494" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="TransactionFailureReallyRollsBackAllRows(&quot;AuditRecord&quot;)" />
+    </UnitTest>
+    <UnitTest name="CorrectionAuditFailureRollsBackPayment" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="e66f7ce2-4935-9d31-f3d6-11d3bcec0d26">
+      <Execution id="e24d5913-c5fa-4b24-848e-45c29ebb52e8" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.BusinessApiTests" name="CorrectionAuditFailureRollsBackPayment" />
+    </UnitTest>
+    <UnitTest name="AccountLimitFiveFailuresThen429AndRollingExpiry" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.api.tests/bin/debug/net10.0/subscriptions.api.tests.dll" id="fc504724-e53e-27ef-c666-350990b3b398">
+      <Execution id="4aee78f2-2e61-4419-bf2d-ce495ad925bf" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Api.Tests.AuthApiTests" name="AccountLimitFiveFailuresThen429AndRollingExpiry" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="628bcdf3-f0fc-42b3-92f7-893c06fefc43" executionId="8974b766-fced-41a4-b312-f12779fa6381" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c77f0eca-80e6-7262-f1db-3629c5ceddff" executionId="75f0652a-bb58-4d37-8a3a-984cb50d3c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52492804-9394-50d8-5f4a-fd0a9e24a860" executionId="df08dade-4d66-450b-94dc-8bea8a7fd075" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc504724-e53e-27ef-c666-350990b3b398" executionId="4aee78f2-2e61-4419-bf2d-ce495ad925bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="006b96f4-c6c2-0d68-8afa-05eb91863ee6" executionId="ce4d293c-e4ae-4eeb-95ba-cdb38c311c10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9195e7bb-647d-b99f-ce57-a2b6fef3b4f8" executionId="8f30b833-05f3-4e6c-a147-1176aada9692" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e66f7ce2-4935-9d31-f3d6-11d3bcec0d26" executionId="e24d5913-c5fa-4b24-848e-45c29ebb52e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50ebff92-adfe-15d1-0b92-a0b034c0de08" executionId="4d42a903-457e-4a41-91c8-93c219ffe5a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8993f88-e4ce-22a4-ec6e-43c532f1d459" executionId="ff965760-0c10-4cd1-97fa-05d7311bed92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5b70c93-bb40-1df4-56a8-cc52678a1fbe" executionId="2af3eb6d-f8c2-4711-a786-1f2cea517494" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da624d9a-33f6-e56e-ffc8-071a04846f6e" executionId="852a739c-c1ab-49fd-a323-a1fb9243214f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="197dae67-43c5-bd76-2e4f-137fd308542f" executionId="d6d5fd7d-6d21-4162-8921-572a6c5b7998" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c7f44a4-1244-0c0d-ed2a-ae7677fd7c2f" executionId="5e8fb933-3a43-469c-a2ad-a00b53669ab9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a43a33ef-d490-cd3f-ff0e-630b8b8372f0" executionId="f2230b53-3043-4826-b993-c7a3c4396306" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ed3c137-eeb4-1a2e-4777-e1df218ceb77" executionId="f4d3bfce-9a2d-4b29-8f53-f0ddf61728c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a157f9f2-e7c7-7af4-fd55-cbb56e49b410" executionId="b56d9ff7-1331-47f0-bb38-4e937421c26d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53bdcc7f-a24e-a636-b859-26a3919e5496" executionId="ef38a8f4-b745-4d74-92c6-9b013559f9a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76b39bec-e2de-12fd-ab3a-e48497f9d0c6" executionId="347188d7-7b82-4896-8778-ab737d068dfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdec8f0a-5e44-0264-ccbf-10da561dac81" executionId="64f7be00-9608-4e3a-a289-2dd7e1254f23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d383e195-4a47-4922-73a6-532428fd94bc" executionId="ab5a27a0-8625-4baa-9292-3944dab8d219" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd535b29-dcf0-05ff-dc5c-36bff5e485d4" executionId="75dc579c-ce78-49d7-acf8-1ce3b7754ff9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="262835d9-8abc-9fa8-0c03-d9a7b40496ff" executionId="610e2cc4-37a1-4a0a-87a2-641338e2b493" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b67e513c-04b2-35d6-e672-7ae78c63c319" executionId="fe6bbf2b-137b-4e78-936e-078c0549719c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffc930cb-3b1d-68da-66b6-a8e29d0acff4" executionId="6a1e080f-5701-4698-a5f2-824ad740ed6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d778f177-205e-9bc8-ac75-62314e5b550c" executionId="91199f7c-eb87-466e-9ac7-d3c0d88afdd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e39d9855-e5e1-eea7-826c-e01759f57af0" executionId="1bfd866e-641a-41f3-8814-a839f1bb7a2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="662f050f-0b5d-e3b4-31f1-fbfc979e6426" executionId="df3d743c-d0c6-41e1-a7fc-c4dce10f7c1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1f66c6c-b7f2-455c-573f-eb4e15c7128b" executionId="4ae0c837-2295-4f08-ba6b-e0efee956f28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f219c08-ca77-8940-d1cd-73d783915fb6" executionId="148a9b51-b1d0-4000-a188-bbe0549d0676" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7aa44b06-64d8-2900-565c-b8fd1ff7223c" executionId="e4084668-7bf1-4b04-8073-29b10960d63e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93f97d50-04f9-9716-e577-ce5c247720fa" executionId="3bf1c969-7bff-445f-8604-b88b0306dfa1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="983a6e43-888f-1038-5d2c-b218de6501f5" executionId="554b7f93-9c1d-40b0-aa8c-91b653123908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f675cc2-f09b-ed09-6e2d-8eb4e3dd1909" executionId="2b178428-c471-4650-ae7a-d300823df5b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecd4f17e-7521-1f0a-2554-c480db6244fe" executionId="e317487e-355f-4447-9835-0c917aa719bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3706d10-bf5f-9f88-5ba3-ca344ad6add0" executionId="5a1c3f05-ba04-4e7a-91b4-8403c189b69c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="648a9528-3e00-b1c7-aea8-a1514d0c438e" executionId="e5919790-d56f-480f-a483-34cb4e1fc7f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8573e406-0958-4c34-66b8-1e2ae1b9af71" executionId="0b5aa73a-a893-4fb7-baa1-6305a889c48d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="00894ef3-bf37-65a3-0e41-9ed284ba9154" executionId="533df0a9-603f-4d82-8294-cf7266150100" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="38" executed="38" passed="37" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started
+Running all tests in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+   NUnit3TestExecutor discovered 38 of 38 NUnit test cases using Current Discovery mode, Non-Explicit run
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/login 401 211.157ms 3674a4abddec44f29af1cec345f59337
+info: RequestAudit[0]
+      /api/v1/auth/login 401 76.3682ms 96f9ac7666bd4c4e9b328cd7828111f6
+info: RequestAudit[0]
+      /api/v1/auth/login 401 71.162ms 1a180bc3776b4977ba844052f6dd4e86
+info: RequestAudit[0]
+      /api/v1/auth/login 401 105.7882ms 87fdb0e06e12466792b2e50ce6475547
+info: RequestAudit[0]
+      /api/v1/auth/login 401 155.815ms 2235d52cf2be4012b799ed7b922691aa
+info: RequestAudit[0]
+      /api/v1/auth/login 429 0.7038ms 38d18075f3b648eea9936a4a7d8caddc
+info: RequestAudit[0]
+      /api/v1/auth/login 401 77.1204ms 4ee3affc1a9b42ac97d89fdd6590341b
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/login 400 2.5865ms d4b683d5520f485986d21e748d610c8d
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.2572ms 3745b1aa45e640d19873bc8264e562d3
+info: RequestAudit[0]
+      /api/v1/auth/login 400 1.5745ms 71668b9da6584d3f9946e0b39b43af6b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1556ms 59db2f0727a744439d093bf12dbf66de
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1878ms 6616ed9d6f924ffb8854e4ddb2ef393b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1653ms 2b654a8752344a5c8dde09df1dc5dea1
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1464ms 4cb2fc54319446aca6b473816f4c90fd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1513ms a1f8c3cf9c9941419fd0f571529d2ffd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1466ms 3a4ad052fb9d47c0bff3c7be50e9e68f
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1339ms 7b5d3f3733c04be8bce0855f560b7d49
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1452ms a9489acb565746838c4c1945a934f322
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1317ms 8e43e3311c1a4cc48646b5b758a03801
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1502ms 52768b6c68e14433baeb72a855002283
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1484ms e5a78c3fb48b45ecb45776a8bb8eb566
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1339ms c30cea41b5d749a792fe375fa8b6673a
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1302ms 8b2bbeff9a3f4562a0c774069775e1de
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1566ms 7e89f52e62104f82ace1b6e8e2fc67fb
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1561ms cdeb7aa8d37f44479cc0d1c1f874ad5b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1419ms 981294fc06be4137bf488eaf269193ba
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1461ms de35d17dc29141d98a930bd288bcb95a
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1761ms c4cd119e46ea44aaa1460007442e0479
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1336ms c27f2ec1b6b14971b10aa4b97a4c8851
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1393ms c40362cce9e144b4b78da72af60ebc4d
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1759ms 532dd94fc5714836b77d5cd3bbb9b0ef
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.136ms e2d02c269e4240839195bb69910e1d20
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1328ms d0914a52cd3745f9a1f817e106980ffd
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.139ms c4d601288ece46f5b2eccbabb24ed60b
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1492ms c1e3aae30014406d9eab2a1f452a1f29
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1318ms 356eaf8134b846a8b7c9ad868a758894
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1345ms 303ef3b46fa848f5a45e16f1e300827b
+info: RequestAudit[0]
+      /api/v1/auth/login 429 0.1793ms a6406fd166f54f288c8dfc651ac1cece
+info: RequestAudit[0]
+      /api/v1/auth/login 400 0.1298ms 60b768602d3743f98f3596ea23145e22
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 12.0445ms d32b7cbd5a424c059c11255cc2d2cda4
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 4.719ms bea8c9c03ec54690b3ae9a7fc3ebce67
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.8583ms 7b2926c02d604963b0143f4dc440a353
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.6771ms 04863d5c5b0142ef9636614a100c38f9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 2.8276ms f59b4642172840febb5e05d4e8bcac88
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 98.7569ms c48db46309c24db5a95ca6d6944cbf2f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 107.4252ms 75974ebd2eba443695b6fb4719a140a8
+info: RequestAudit[0]
+      /api/v1/auth/login 401 90.1595ms e4a872483da34e26a1600376247b66d0
+info: RequestAudit[0]
+      /api/v1/auth/login 401 107.7768ms c09f2950da424f0d839ba5751eabbf33
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 0.1983ms 5cb88f7a028f461da9c242457d865bb1
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1669ms 2359868f3fe34c3885a9c9a0ceaf9546
+info: RequestAudit[0]
+      /api/v1/auth/login 200 73.3628ms c36c66c821a74ed596aba11a0e4ad9d9
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.4724ms 0aca7a81c59e4c6ea6f8fed6462cb068
+info: RequestAudit[0]
+      /api/v1/auth/refresh 200 2.1226ms 6402050afa7847ddbf4c9c1161ccb241
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 2.7104ms e30d09d9a09249299cd024d0950a0c91
+info: RequestAudit[0]
+      /api/v1/auth/logout 204 1.412ms 5a9f06dd43fa4cae9fee964b97718366
+info: RequestAudit[0]
+      /api/v1/auth/logout 204 0.7508ms 89bd36894c2243048d383ce5fbe2206a
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 0.3576ms 848538d4395445bda7feddb8f05a2cec
+info: RequestAudit[0]
+      /api/v1/auth/refresh 200 0.6987ms 2577b0c58dd0487388260eedc5a31805
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 79.0769ms f5d1f7c07c45451683eb382d6bb74666
+info: RequestAudit[0]
+      /api/v1/auth/register 409 89.6809ms 742945323b2e43eeb0f9ae0411722a99
+info: RequestAudit[0]
+      /api/v1/auth/register 400 2.0572ms 7dd7d23392084291b7e1be38c2724236
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1222ms 95df0f5cb3a94fcba81ca24ef966c5da
+info: RequestAudit[0]
+      /api/v1/auth/login 200 115.0723ms e07cf7f43ee04253ad23c8d67a2e562e
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 4.175ms 1ff8ea1eb5994bf08958780a9714aee0
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 0.3761ms 1eb278bf730e40b3b8d2c8707a6d7544
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 204 78.564ms a32d353a50614bafbcdfc890d565bf23
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 400 0.8671ms a3617533d3204750ac66d3399c373b66
+info: RequestAudit[0]
+      /api/v1/auth/refresh 401 0.3706ms dc2db7c422c04b8d93cf5165d513db3f
+info: RequestAudit[0]
+      /api/v1/auth/login 401 72.87ms 42b60a634672457e858486dcf6f188a9
+info: RequestAudit[0]
+      /api/v1/auth/login 200 81.5014ms 71beb93f4996487d95135baf8f03bd36
+info: RequestAudit[0]
+      /api/v1/auth/password/forgot 202 1.0968ms ff3df82411394c63aaea7e006ec5fee4
+info: RequestAudit[0]
+      /api/v1/auth/password/reset 400 0.4375ms 895a697b086f44b78da6ec7ebe63c1f2
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.2772ms d1d72e29898c493e9607dc3bd4340f92
+info: RequestAudit[0]
+      /api/v1/auth/login 200 83.6327ms 827d019563004cb3b544726b25364da3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 78.0143ms 642b987e0a254c09946b6feda6c1924f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 78.3503ms 32c74ff46a0a45ab9752336a14ebca96
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 7.2817ms a263b5f63b6a44d28566cbebcc210fcc
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 4.0857ms ef42cf3a5588463ebb9bbb059866d3df
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.7485ms fd2070bfb76e450f9c98c28c4e34f256
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 8.6612ms c2081f3da89144289c05533cd5c073d3
+info: RequestAudit[0]
+      /api/v1/analytics/forecast 200 1.7229ms 3c980920fb5f47ea8f1634b4028c733b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.9759ms e0131437efba413bbb7e0581ea7aeca1
+info: RequestAudit[0]
+      /api/v1/analytics/forecast 200 0.4375ms 5ec9abec36a942f6808a8c34827431b0
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 200 0.8833ms 583673463127490892d07c38628870bb
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.7365ms 0e4f1a8d49b74bb5a5784018da8f2c43
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.4548ms e888e2437398436cbc08ab68adafb7ed
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.582ms 0752b8a9403a4c6c928bbf2937630733
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.1359ms 3ea7236057644968bc19db4c98cfbb9f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 97.1765ms 0d9e1eb4c760425ba054adf52aa779c7
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2512ms b118e160e45c4988a2979e342b832fd3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.6182ms 5486ea7d01414c3186356a3f6e779ac3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.5705ms 8209c6f82aa6473e97a8734532bf5d5d
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3441ms fc484d3ba44746bfa327ec255b39314e
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.553ms d3b96488a8a34a2ba9399d93d0fecb24
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.4775ms 39d14ffed9da4d6abc6a8a01948c34bf
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.8571ms 45f5f9aba3fd42fd84154420bc0f27e0
+info: RequestAudit[0]
+      /api/v1/auth/login 200 114.1645ms da0b656c768f4847b4efd2a84025ebdd
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2987ms 22f40ee4eb8c49c4ae1518fed3b5d54f
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 0.7556ms 2c6dce3f8a2943599fcb711b2214661f
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 73.9441ms 2284bb780a214cfcbbeedda7564d9838
+info: RequestAudit[0]
+      /api/v1/auth/login 200 83.4342ms 46efd17b5b384c0cab8d4cdd3d09b31a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1695ms 3667f3ca152a47dd877aa34fae1325ac
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 1.8798ms 123255b66976430bb46b3951961a499b
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.7745ms 8871261ef1204c1786a5dbcf11c0c68e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.583ms 337236be739f4afc8602b0a9d5c138d9
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.2222ms f002c2b994f347e7a4437168eb18a372
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.9436ms 2a40398600e84588af662539eca36639
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.774ms 053c5826ec1049dea6a600f4db95c27e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.4107ms ce69728063aa4498936af25c9d303254
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.2455ms 2042840a2bc34a5ca70df25ad7ca7195
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.349ms 535c8446eea0437a95039c3ccdd6f7b0
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.6158ms ed0ea1bcef0543bc882f67aac43dc8cd
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.7242ms cc582a40641740cf855904eae24c6e11
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.8926ms dc48ed51179249a8b79e78fdddefd655
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.8547ms 1bd4739615b8421b80c15bb5fed5f57d
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.9918ms e38ee21a142a4d198fab4b251ac0177e
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.145ms d2d7884a3bda49aca01e9a096c1d1bae
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7787ms 648a40cce0b44c8c85ee649f950e268f
+info: RequestAudit[0]
+      /api/v1/payments/{id} 500 2.1916ms 40450477b97e45d9b0bf1dd99c71b0d8
+info: RequestAudit[0]
+      /api/v1/payments/ 200 3.1451ms 8d04ceef3d4f47b49d9ebc04ce20322c
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 200 1.2623ms 224f2bd1de724cb9b71ee3548a83421a
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 77.5535ms e476a7d8d06e4eac9bb2800a32fe690c
+info: RequestAudit[0]
+      /api/v1/auth/login 200 94.7058ms 77543075d86b4de29fd6327538eb344b
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1176ms 9b10ee525f97452b821e2a0709f9c94e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7756ms 83337d4dfcb94af480ad0dba9ed24ef6
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.0016ms 7bc7f6687dc245818e020ba2b88af586
+info: RequestAudit[0]
+      /api/v1/auth/login 200 91.4997ms f110893311574318844e62e96c5abd66
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 1.4774ms b25219579ff84de195c6fe4e4b4b57b9
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 0.8628ms 9fe75b4b72264767b3c3752d8b254580
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 404 0.2921ms 08f8172ddc2241c7a10e33e195373de3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 404 0.2997ms 3bdc2145b80f454289b172dd9b27d49a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 404 0.2805ms c9dd5821937141beb2430b2bdddd4598
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 0.2845ms 7ec51670677e477d888fc691a6810e91
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 404 0.3059ms 8f9b304f7279451db5c1aaf452f7d3f6
+info: RequestAudit[0]
+      /api/v1/payments/ 404 0.6486ms 34dc199e0b4b4d79a3dda6a1ca12f298
+info: RequestAudit[0]
+      /api/v1/payments/{id} 404 0.2932ms 3b30eed9a20d4de695e240bc5ca052bc
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 404 0.4493ms e47d059bee7e4e1499b68c0527b18193
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 404 0.2685ms d6afc5a7854844cf8151f38722b6255d
+info: RequestAudit[0]
+      /api/v1/payments/ 200 0.2454ms ea3a06fac51e496bbe549915cb792d30
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 79.0405ms b77f02aa310a4aed95ca74ba6e722b6e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 74.2122ms 7645b4c2d8d042f8be71325d40e9751a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 2.0202ms df12daddcd4d475c846e9f1497ae87d3
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 0.8701ms eb62237db1e44218b70c77138babaa56
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 400 0.7253ms f0be6dca2916448caa3d09e459f1e66d
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 400 0.4657ms ae963f37b5c04597b3319659c0b92ccf
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 95.5357ms 78853785569d44779c764caa36b5ffae
+info: RequestAudit[0]
+      /api/v1/auth/login 200 74.332ms 127173dec7b44b56b2c1831e9d941822
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 2.0378ms 387cc173b0904983a78bb726f480726c
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 91.5267ms 9ac84ad8b0104770ad6ff10a204862dc
+info: RequestAudit[0]
+      /api/v1/auth/login 200 75.9242ms 9824b7d57b8c460eb230a677e7e7e217
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.8285ms cdcb4170bfcc499f933a83d3fe20b8ac
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 84.0986ms 261cbc9636a24b7eba28bb947c778236
+info: RequestAudit[0]
+      /api/v1/auth/login 200 113.0159ms 222c1122ffed4d5d9576e0632023e3af
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.7134ms 2eff66f147c24531815e25563ec54999
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.6489ms c476d42e32834e65a09aaf48fc9c3285
+info: RequestAudit[0]
+      /api/v1/auth/login 200 80.4081ms 1e4f53774e3b45cbb6897a2bff1be53d
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 400 1.6431ms d063b2552792453f9ff911fbb0ce8fb1
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 81.8864ms d4863dc7f248488c9a61def8ae363aed
+info: RequestAudit[0]
+      /api/v1/auth/login 200 96.9471ms aab791195a434bcdae8078925220312d
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 400 1.4229ms a577cc45bf76439089d0edae4bb794d0
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.7744ms 601d7d761e5c40c59308d68b40dc59be
+info: RequestAudit[0]
+      /api/v1/auth/login 200 75.1749ms 1ee9095d3ed04f51b0f4ab111950caeb
+info: RequestAudit[0]
+      /api/v1/payments/ 400 1.7396ms 74c2c9b00ee545ca92d8adf8535625e9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 74.216ms e90bbaa8a21241c2b3e34e9e4d36b949
+info: RequestAudit[0]
+      /api/v1/auth/login 200 71.8714ms 5b0078466f4a4e789d3c42db972e31c0
+info: RequestAudit[0]
+      /api/v1/payments/ 400 1.8456ms 6c1217b3a7304afcb7030b8554e56791
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.793ms 0155b006cacf47e494b19e6e563a0f98
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.6631ms edcc4358c7a145929767050bae4501e8
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 400 1.8151ms 90d6cf3b4cc94ec5beec519a93ba6706
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 95.1024ms 1f566f8ff19f412eb04b4e62c07cc5e4
+info: RequestAudit[0]
+      /api/v1/auth/login 200 71.4885ms df5f4c50e7294b66a210902a4bd3712e
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 400 1.7611ms ad0bd48a624945a884de92e9299b6e06
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      unmatched 200 18.6909ms d00a79ed0fb042eba52ce65b2ed45059
+info: RequestAudit[0]
+      unmatched 200 50.6303ms 1689cd3384744f6f9de207d8493fcc07
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.6207ms 3703767645d64c7f817250e81521d24a
+info: RequestAudit[0]
+      /api/v1/auth/login 200 99.0591ms 5f5cc1e39dca4615b97142076e4b0caa
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 413 1.3771ms 31478c09dbb74403a7ef5d48515778e4
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 413 1.0814ms 78b252107c004cf3a09a0cfa9ec0ed56
+info: RequestAudit[0]
+      /api/v1/health 200 0.8116ms my-correlation-123
+info: RequestAudit[0]
+      /api/v1/health 200 0.2941ms 05f44016968c4c23bf7ca5db9104d1fd
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.2773ms c7b6c078f34a44b0872fd875afa9923e
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.8843ms 14d1c2d52f0f44b5b9a2db0e7569ba00
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1666ms 1bebcaaaaaab487190ba3fee46c197d3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.8645ms ae9e45ecc51f441f96ca90d972783493
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7605ms f6ee5699f7a64b09bf7b5c90f1f10e14
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 409 0.9415ms 4f33d2936df748daa726598c69ac2204
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.7677ms a363901404584350bf664f5e4215e4c5
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 0.791ms b297e9cc8ad04cf68e3d65c2a1b00cc4
+info: RequestAudit[0]
+      /api/v1/payments/{id} 200 0.6198ms 9325341f89a84acfb787e669e115bfde
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 200 0.574ms 9e07e00305574b79af029680e0d0980d
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 200 0.2315ms 65810f645e5b4bfe92069290cc10fafe
+info: RequestAudit[0]
+      /api/v1/payments/{id} 409 0.2915ms 6de15607dd6c4832a94808c882efd277
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 200 1.2403ms b20140cf06004c46be179fe952c75f5a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.9364ms c9eb767c3b4043d2be180ef232ddaa0b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 0.3327ms dba0924f0e254c1289b8e231a61faba7
+info: RequestAudit[0]
+      /api/v1/payments/ 200 0.7437ms 5bd3d14fdda147e9af7ad9d8fa2655e9
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 75.6052ms 7dba2ac1728f41149b49f714d17f0cf1
+info: RequestAudit[0]
+      /api/v1/auth/login 200 78.8892ms 56ce9235782641e5ae96f7091077ff9f
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 503 2.505ms af58dc12b0d0436bb18cc1e9929d9f7d
+info: RequestAudit[0]
+      /api/v1/health 503 0.1948ms 9ee82a0ae34548e786d44e247c531145
+info: RequestAudit[0]
+      /api/v1/health 200 0.3053ms 90b2e5a7f1dd4b1ca5828d105eed7017
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 3.1622ms a0e0e0992f5540cfa77bb00214e6176e
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.4854ms 3dc6b0fefa8f43aea72ec1a77e5d32c7
+info: RequestAudit[0]
+      /api/v1/auth/login 200 87.6929ms 9b323a45bcbe4a1ca2d9caf853ec7471
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.0826ms e2696e72b0af4423b2b555b159ec397a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.5546ms b45062843cb94b11a65b1f4789a1e2ba
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 1.6702ms 7e50a63327b94b3184323586d2878532
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.6056ms 9de6b5dc869044ff8b8c3ffa8ec11eda
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 0.5744ms 9290ada135a64b56808361d70a628b7f
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 200 0.5432ms 1b30ea2745ba4c5a955a4e914ce7c85b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 200 0.5965ms 733fe03289824397bf2c7571832287f3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 200 0.5088ms ae5271da471f4b30b54d92e887236c70
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 409 0.4994ms eefec4acb88f44ce9c751a391ccbeb6e
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.5534ms c139318f0ee74dd9afc2d9dd000af5fe
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 0.762ms d4eb2d897dce4253adc45a2e0a1d3402
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.2541ms 50a1b3132e404c86bc852431e6d2bf0a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 0.2322ms 2802742318f947ef80241cf017790903
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 0.2085ms f4f0907674c04ae2806ef3d90d8b2fdb
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 72.1858ms 0e9aa390eda240c2aa98d0906699fa9f
+info: RequestAudit[0]
+      /api/v1/auth/login 200 85.6145ms 6de0b168e6c94cfdb668b027d757240a
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1155ms f7abf3e1dcaf4c9dae26cc76b67817d6
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 0.9176ms 79cf3c42e7cb4440ab8a077841edbb48
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.0549ms de7ced1796ec4278b5566b110ab252f3
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 85.8011ms 0b0c55995f8c454a899a8107fc3b8526
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3135ms 1b8514e974104a0cae9580c9679cd7e4
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.691ms 171e580db61c4629956d9237fa85ac1b
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 1.0528ms df0ab5c5a76e469e88d9b9e213a906f1
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.142ms e4ce5c63d0804505abf341fb22a49e2a
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/auth/register 201 71.1414ms 8e9b894e92b8471da769b64f964fafe5
+info: RequestAudit[0]
+      /api/v1/auth/login 200 72.3175ms d8f62723e85043afb06ef3f744c9ae28
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 2.1021ms d573975c5faa48248226e2692d76ebc4
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 500 0.9479ms 6b4a96ae68b142529580c0b88bacc41a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.0809ms 3e846af3c24d44d5a66cb309367f3622
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+
+NUnit Adapter 5.0.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

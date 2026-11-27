@@ -1,0 +1,25 @@
+{
+  "label": "empty-analytics",
+  "requirement": "F14",
+  "request": "curl -i -X GET 'http://127.0.0.1:5087/api/v1/analytics/expenses?from=2001-01-01&to=2001-01-01' -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "550a4cf31b294605873392801be6b5d1"
+  },
+  "actual_result": {
+    "totals": {
+      "RUB": 0,
+      "USD": 0,
+      "EUR": 0
+    },
+    "byMonth": [],
+    "byCategory": [],
+    "bySubscription": []
+  },
+  "passed": true
+}

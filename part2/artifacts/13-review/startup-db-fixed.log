@@ -1,0 +1,13 @@
+$ ['dotnet', 'test', 'tests/Subscriptions.Api.Tests', '--no-restore', '--filter', 'StartupWithUnavailableDatabaseStillServes503', '--logger', 'trx', '--results-directory', 'artifacts/13-review/startup-db-fixed']
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Infrastructure -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/bin/Debug/net10.0/Subscriptions.Infrastructure.dll
+  Subscriptions.Api -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/bin/Debug/net10.0/Subscriptions.Api.dll
+  Subscriptions.Api.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/13-review/startup-db-fixed/_MacBook-Air-Egor_2026-11-21_20_35_43_net10.0.trx
+
+Пройден!   : не пройдено     0, пройдено     1, пропущено     0, всего     1, длительность 525 ms. - Subscriptions.Api.Tests.dll (net10.0)
+
+EXIT CODE: 0

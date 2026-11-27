@@ -1,0 +1,20 @@
+{
+  "label": "register",
+  "requirement": "F01",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/auth/register -H 'Content-Type: application/json' --data '{\"email\":\"smoke-cd07b72a5a134eccb0d3198f9b1c92f4@example.test\",\"password\":\"[REDACTED]\"}'",
+  "expected": 201,
+  "actual_http": 201,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:29:27 GMT",
+    "Server": "Kestrel",
+    "Cache-Control": "no-store",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "b8c582ebc67d413fa4ee41d75f2103a1"
+  },
+  "actual_result": {
+    "id": "b45d3cba-9550-4452-9f11-4f904b0e6cf7",
+    "email": "smoke-cd07b72a5a134eccb0d3198f9b1c92f4@example.test"
+  },
+  "passed": true
+}

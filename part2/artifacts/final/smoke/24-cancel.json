@@ -1,0 +1,30 @@
+{
+  "label": "cancel",
+  "requirement": "F09",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/subscriptions/987fa36d-1125-4ff5-9dca-18ed0860e603/cancel -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:56:50 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "0743e2cc67fc494e8af6e023b3a5151e"
+  },
+  "actual_result": {
+    "name": "Updated Music",
+    "amount": 12,
+    "currency": "RUB",
+    "billingPeriod": "monthly",
+    "category": "Media",
+    "startDate": "2020-01-01",
+    "nextPaymentDate": "2026-11-21",
+    "originalBillingDay": 21,
+    "originalBillingMonth": 11,
+    "status": "cancelled",
+    "archived": false,
+    "id": "987fa36d-1125-4ff5-9dca-18ed0860e603",
+    "userId": "d6c3def3-5d37-46fc-bce8-ec6515151f94"
+  },
+  "passed": true
+}

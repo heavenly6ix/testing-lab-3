@@ -1,0 +1,13 @@
+# Методика coverage и границы метрик
+
+Измеряются реальные unit tests Subscriptions.Application.Tests с VSTest17.14.1, NUnit4.3.2, Coverlet collector6.0.4 на .NET10/macOS arm64. Фильтр `[Subscriptions.Application]*`: здесь находится вся ручная бизнес-логика, включая validation, owner-check, auth, state transitions, idempotency, IP-window, analytics и forecast. Domain — пассивные persistence records и простые projections для индексов, без расчётных алгоритмов. Его generated record methods, как и DTO Contracts.cs, не объявляются бизнес-покрытием. Api/Program, SQLite/crypto adapters, generated/bin/obj и test helpers не входят в этот знаменатель; их проверяют API/infrastructure tests отдельно. `SkipAutoProps=true`; ни один сервис или сложная ветвь не исключены.
+
+Сохраняются Cobertura и OpenCover **одного и того же реального прогона**, а не разные проценты из чужих работ. ReportGenerator5.6.1 строит HTML и Summary из Cobertura. Отдельно рассчитываются показатели AnalyticsService (включая его lambdas) и ForecastService; общий процент не подменяет Q02 каждого модуля.
+
+Точная формулировка: **statement coverage not directly available**. Coverlet заявляет line/branch/method; OpenCover export содержит sequence points, но это не отдельный точный счётчик C# statements/IL instructions. Смена формата сама по себе не превращает line в statement. ReportGenerator тоже не восстанавливает отсутствующую независимую метрику. [Официальный Coverlet README](https://github.com/coverlet-coverage/coverlet).
+
+Проверен также документированный кандидат dotnet-coverage: есть static instrumentation для всех платформ, dynamic перечислен для macOS x64 (не текущего arm64), форматы coverage/xml/cobertura. Это возможность отдельного block/instrumentation измерения, не доказательство точной statement-метрики здесь. Второй инструмент не запускался, его значения не выдумываются. [Microsoft dotnet-coverage](https://learn.microsoft.com/en-us/dotnet/core/additional-tools/dotnet-coverage).
+
+Поэтому >80% branch можно проверить непосредственно; >90% statement из PDF остаётся **не подтверждено отдельной метрикой**, даже если line>90%. В итоговой сводке приводятся line/branch и это ограничение. Q02 Analytics/Forecast≥90% branch проверяется непосредственно. Высокий процент не доказывает отсутствие дефектов, production throughput или качество инфраструктуры.
+
+Инструментальная проблема: первая установка ReportGenerator с --allow-roll-forward создала конфликт собственной runtimeconfig и закончилась exit147. Переустановка той же5.6.1 без флага исправила запуск; реальный HTML построен. Эти логи сохранены, не заменены заявлением «первый запуск прошёл».

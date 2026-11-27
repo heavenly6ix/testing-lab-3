@@ -1,0 +1,18 @@
+{
+  "label": "health",
+  "requirement": "R05",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/health -H 'Content-Type: application/json'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:42 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "5df141aa78a74544853ba7e15aac01c8"
+  },
+  "actual_result": {
+    "status": "ok"
+  },
+  "passed": true
+}

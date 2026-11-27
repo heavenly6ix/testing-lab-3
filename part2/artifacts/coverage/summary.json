@@ -1,0 +1,39 @@
+{
+  "line_percent": 100.0,
+  "branch_percent": 98.54014598540147,
+  "raw": {
+    "line-rate": "1",
+    "branch-rate": "0.9854",
+    "version": "1.9",
+    "timestamp": "1795269408",
+    "lines-covered": "283",
+    "lines-valid": "283",
+    "branches-covered": "270",
+    "branches-valid": "274"
+  },
+  "statement": "statement coverage not directly available",
+  "modules": {
+    "AnalyticsService": {
+      "line_percent": 100.0,
+      "branch_percent": 100.0
+    },
+    "ForecastService": {
+      "line_percent": 100.0,
+      "branch_percent": 100.0
+    }
+  },
+  "opencover_summary": {
+    "numSequencePoints": "283",
+    "visitedSequencePoints": "283",
+    "numBranchPoints": "274",
+    "visitedBranchPoints": "270",
+    "sequenceCoverage": "100",
+    "branchCoverage": "98.54",
+    "maxCyclomaticComplexity": "289",
+    "minCyclomaticComplexity": "289",
+    "visitedClasses": "10",
+    "numClasses": "10",
+    "visitedMethods": "47",
+    "numMethods": "47"
+  }
+}

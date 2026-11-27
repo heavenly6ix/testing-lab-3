@@ -1,0 +1,14 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/OrderProcessing.Tests",
+    "--no-build",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "../artifacts/final/OrderProcessing"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T12:37:11.576264+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-21T14:00:32.749934+00:00",
+  "removed_generated_only": [
+    "src/Subscriptions.Application/obj",
+    "src/Subscriptions.Application/bin",
+    "src/Subscriptions.Domain/obj",
+    "src/Subscriptions.Domain/bin",
+    "src/Subscriptions.Api/obj",
+    "src/Subscriptions.Api/bin",
+    "src/Subscriptions.Infrastructure/obj",
+    "src/Subscriptions.Infrastructure/bin",
+    "tests/Subscriptions.Application.Tests/obj",
+    "tests/Subscriptions.Application.Tests/bin",
+    "tests/Subscriptions.Api.Tests/obj",
+    "tests/Subscriptions.Api.Tests/bin",
+    ".tools",
+    "artifacts/pre-calendar-final/development.db",
+    "artifacts/11-runtime/development.db",
+    "artifacts/final/development.db",
+    "artifacts/14-coverage/html"
+  ],
+  "server_stopped": true,
+  "canonical_html_retained": true
+}

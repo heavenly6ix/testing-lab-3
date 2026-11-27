@@ -1,0 +1,13 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "--no-build",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/swagger-bearer-2026-11-26/test-results"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-26T15:24:54.666315+00:00"
+}

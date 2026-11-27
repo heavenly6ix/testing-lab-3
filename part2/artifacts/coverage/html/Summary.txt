@@ -1,0 +1,32 @@
+Summary
+  Generated on: 21.11.2026 - 20:56:51
+  Coverage date: 21.11.2026 - 20:56:48
+  Parser: MultiReport (2x Cobertura)
+  Assemblies: 1
+  Classes: 10
+  Files: 8
+  Line coverage: 100%
+  Covered lines: 283
+  Uncovered lines: 0
+  Coverable lines: 283
+  Total lines: 385
+  Branch coverage: 98.5% (270 of 274)
+  Covered branches: 270
+  Total branches: 274
+  Method coverage: 100% (47 of 47)
+  Full method coverage: 100% (47 of 47)
+  Covered methods: 47
+  Fully covered methods: 47
+  Total methods: 47
+
+Subscriptions.Application                                  100%
+  Subscriptions.Application.AnalyticsService               100%
+  Subscriptions.Application.AuthService                    100%
+  Subscriptions.Application.BusinessFault                  100%
+  Subscriptions.Application.ForecastService                100%
+  Subscriptions.Application.LoginIpLimiter                 100%
+  Subscriptions.Application.MoneyTotals                    100%
+  Subscriptions.Application.PaymentService                 100%
+  Subscriptions.Application.Rules                          100%
+  Subscriptions.Application.StorageUnavailableException    100%
+  Subscriptions.Application.SubscriptionService            100%

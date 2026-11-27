@@ -1,0 +1,12 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "../artifacts/final/all"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T12:36:54.254342+00:00"
+}

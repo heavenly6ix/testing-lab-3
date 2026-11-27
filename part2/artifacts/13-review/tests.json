@@ -1,0 +1,13 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "--no-build",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/13-review/results"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:33:09.940358+00:00"
+}

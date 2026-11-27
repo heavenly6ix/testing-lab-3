@@ -1,0 +1,10 @@
+$ ['dotnet', 'restore']
+  Определение проектов для восстановления...
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/Subscriptions.Domain.csproj (за 41 мс).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/Subscriptions.Application.csproj (за 46 мс).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/Subscriptions.Infrastructure.csproj (за 3,45 с).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/Subscriptions.Api.csproj (за 3,45 с).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/Subscriptions.Application.Tests.csproj (за 3,46 с).
+  Восстановлен /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/Subscriptions.Api.Tests.csproj (за 3,46 с).
+
+EXIT CODE: 0

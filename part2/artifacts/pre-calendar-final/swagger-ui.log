@@ -1,0 +1,3 @@
+$ ['curl', '--silent', '--show-error', '--output', 'artifacts/final/swagger-ui.html', '--write-out', '%{http_code}', 'http://127.0.0.1:5087/swagger/index.html']
+200
+EXIT CODE: 0

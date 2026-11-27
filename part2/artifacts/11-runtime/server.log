@@ -1,0 +1,74 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://127.0.0.1:5087
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+info: RequestAudit[0]
+      /api/v1/health 200 24.504ms 31911df3fc0742afb5deb8d3fc9c405c
+info: RequestAudit[0]
+      /api/v1/auth/register 201 298.3287ms b8c582ebc67d413fa4ee41d75f2103a1
+info: RequestAudit[0]
+      /api/v1/auth/register 409 143.1756ms 962589fd194c4f88b60db52b7bf59f26
+info: RequestAudit[0]
+      /api/v1/auth/login 200 145.2825ms d40e62cb63ad46ada9ae789ec79a8e74
+info: RequestAudit[0]
+      /api/v1/auth/login 401 136.9499ms fb87b9ce13ae4f7aaf173872e73ecef1
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 401 2.498ms e92b4e4efdfa4e81b9b1775e09ad4963
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 201 19.3292ms 2190725150fb42f59432834b7ff239a7
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 2.1431ms 02606a549977452cbd6e9b3042024348
+info: RequestAudit[0]
+      /api/v1/subscriptions/ 200 3.3751ms 4d551ba9f3e1468d8385687fd33e328c
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 200 2.3037ms 8fc7f99e077f4bda9c4456c5cc7f7f5a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 4.8042ms 4fe56f0593364bb58d816548fd2c962a
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 201 1.3462ms 81abe69f1e74461487e88a81eb250889
+info: RequestAudit[0]
+      /api/v1/subscriptions/{subscriptionId}/payments 409 1.0521ms e7b16e063ef54fb69b7b018010d5a8d3
+info: RequestAudit[0]
+      /api/v1/payments/ 200 8.5168ms d583576147a047bb8fb9fd70e6f04cb5
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 6.0082ms 98b6e66418f245fdb623289d7ebeeed2
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.6067ms ec21d62b76f4417ea7baaca4541580d7
+info: RequestAudit[0]
+      /api/v1/analytics/forecast 200 1.7605ms d6b3a926fc2c451d81286de3316506b3
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/pause 200 1.2063ms 9d1f7fd88c194c18ac83d5143a138436
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 200 0.8622ms 4a151222eea34edebedb61b6cc1bdf0c
+info: RequestAudit[0]
+      /api/v1/payments/{id} 200 1.5531ms da0429142b5e46b0b125a476308602e6
+info: RequestAudit[0]
+      /api/v1/payments/{id}/void 200 1.0383ms 81ff08eb993c4cba9d90616df5050ede
+info: RequestAudit[0]
+      /api/v1/payments/{id}/audit 200 2.4786ms 048933bbdc8e4016a193c55f5912119a
+info: RequestAudit[0]
+      /api/v1/analytics/expenses 200 0.8569ms 65ba2e561f5441edbdea0f5778c5f489
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/cancel 200 0.7686ms ec1c4d7534bd4f4ba664605ef53b033c
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id}/resume 409 0.5654ms 12ff7075aff94c63a468563481da957d
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 204 1.2329ms 1c1a4fd09f4149e9b4c28f4749415d3f
+info: RequestAudit[0]
+      /api/v1/payments/ 200 0.4677ms 3f6c30b6f93245d5ae8f2b91559cc1a0
+info: RequestAudit[0]
+      /api/v1/auth/register 201 166.3495ms af71b84542714746833fd2f7b1cb0f33
+info: RequestAudit[0]
+      /api/v1/auth/login 200 145.3478ms e9c0b1975dae452b9f63f8b2898f4aef
+info: RequestAudit[0]
+      /api/v1/subscriptions/{id} 404 0.6997ms 2aa094b0b66241c9a0cf2dfcbe5b1a11
+info: RequestAudit[0]
+      unmatched 200 54.9424ms 1e402a3d7cb042bebad0e4d21bf7ffd5
+info: RequestAudit[0]
+      unmatched 200 19.187ms ef6065fb48434fd28fae53b1bcd26a85
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...

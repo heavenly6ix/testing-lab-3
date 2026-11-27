@@ -1,0 +1,18 @@
+{
+  "removed_generated_directories": [
+    "part1/src/BinaryMaxHeap/bin",
+    "part1/src/BinaryMaxHeap/obj",
+    "part1/src/OrderProcessing/bin",
+    "part1/src/OrderProcessing/obj",
+    "part1/src/PrimesAmount/bin",
+    "part1/src/PrimesAmount/obj",
+    "part1/tests/BinaryMaxHeap.Tests/bin",
+    "part1/tests/BinaryMaxHeap.Tests/obj",
+    "part1/tests/OrderProcessing.Tests/bin",
+    "part1/tests/OrderProcessing.Tests/obj",
+    "part1/tests/PrimesAmount.Tests/bin",
+    "part1/tests/PrimesAmount.Tests/obj"
+  ],
+  "originals_unchanged": true,
+  "note": "After successful final runs. Only subsequent test-source edits: three inaccurate comments corrected; no code/assert changes."
+}

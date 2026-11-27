@@ -1,0 +1,7 @@
+<RunSettings>
+  <DataCollectionRunSettings><DataCollectors><DataCollector friendlyName="XPlat Code Coverage"><Configuration>
+    <Format>cobertura,opencover</Format>
+    <Include>[BinaryMaxHeap]Heaps.BinaryMaxHeap*</Include>
+    <SingleHit>false</SingleHit>
+  </Configuration></DataCollector></DataCollectors></DataCollectionRunSettings>
+</RunSettings>

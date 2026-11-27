@@ -1,0 +1,33 @@
+{
+  "label": "forecast",
+  "requirement": "F15",
+  "request": "curl -i -X GET http://127.0.0.1:5087/api/v1/analytics/forecast -H 'Content-Type: application/json' -H 'Authorization: Bearer $ACCESS_TOKEN'",
+  "expected": 200,
+  "actual_http": 200,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Thu, 26 Nov 2026 11:41:43 GMT",
+    "Server": "Kestrel",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "ecf88a1945a045048eac72822629fb50"
+  },
+  "actual_result": {
+    "from": "2026-11-26",
+    "toExclusive": "2026-12-26",
+    "items": [
+      {
+        "date": "2026-11-26",
+        "subscriptionId": "9896078a-bf6b-4915-96fc-3ed8468a4e5e",
+        "name": "Updated Music",
+        "amount": 12,
+        "currency": "RUB"
+      }
+    ],
+    "totals": {
+      "RUB": 12,
+      "USD": 0,
+      "EUR": 0
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="fd762c17-063e-46c7-819a-0d4be7ddacbd" name="@MacBook-Air-Egor 2026-11-21 20:54:50" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-21T20:54:50.0368010+07:00" queuing="2026-11-21T20:54:50.0368010+07:00" start="2026-11-21T20:54:49.6321310+07:00" finish="2026-11-21T20:54:50.0393160+07:00" />
+  <TestSettings name="default" id="99d4c841-b896-4859-ad6b-448610f7a24c">
+    <Deployment runDeploymentRoot="_MacBook-Air-Egor_2026-11-21_20_54_50" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="7bf79a3d-4f76-4ba6-87fa-1de4dc7f7e0f" testId="f0549186-8a4f-5be3-b96e-997948fe86d3" testName="ValidMinimumCalendarDateIsNotMissingInput(&quot;subscription&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0393730" startTime="2026-11-21T20:54:49.9088700+07:00" endTime="2026-11-21T20:54:49.9482160+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7bf79a3d-4f76-4ba6-87fa-1de4dc7f7e0f">
+      <Output>
+        <ErrorInfo>
+          <Message>Subscriptions.Application.BusinessFault : Invalid request.</Message>
+          <StackTrace>   at Subscriptions.Application.SubscriptionService.Create(Guid user, SubscriptionInput input) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/SubscriptionService.cs:line 9
+   at Subscriptions.Application.Tests.CalendarBoundaryTests.ValidMinimumCalendarDateIsNotMissingInput(String operation) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/CalendarBoundaryTests.cs:line 10
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2d871522-1f45-44ec-aca7-61446711e63b" testId="643bdb43-51d5-b913-0abd-7fad167969aa" testName="ValidMinimumCalendarDateIsNotMissingInput(&quot;analytics&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0019060" startTime="2026-11-21T20:54:49.9699940+07:00" endTime="2026-11-21T20:54:49.9719000+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d871522-1f45-44ec-aca7-61446711e63b">
+      <Output>
+        <ErrorInfo>
+          <Message>Subscriptions.Application.BusinessFault : Invalid request.</Message>
+          <StackTrace>   at Subscriptions.Application.AnalyticsService.Expenses(Guid user, DateOnly from, DateOnly to) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/AnalyticsService.cs:line 8
+   at Subscriptions.Application.Tests.CalendarBoundaryTests.ValidMinimumCalendarDateIsNotMissingInput(String operation) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/CalendarBoundaryTests.cs:line 12
+   at InvokeStub_CalendarBoundaryTests.ValidMinimumCalendarDateIsNotMissingInput(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="08f13a5d-dd27-45b7-a56c-47aa05e15db5" testId="0ad48d57-116f-d350-d8c3-84688acf967a" testName="ValidMinimumCalendarDateIsNotMissingInput(&quot;payment&quot;)" computerName="MacBook-Air-Egor" duration="00:00:00.0211370" startTime="2026-11-21T20:54:49.9488240+07:00" endTime="2026-11-21T20:54:49.9699600+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08f13a5d-dd27-45b7-a56c-47aa05e15db5">
+      <Output>
+        <ErrorInfo>
+          <Message>Subscriptions.Application.BusinessFault : Invalid request.</Message>
+          <StackTrace>   at Subscriptions.Application.Rules.PaymentDate(DateOnly date, IClock clock) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/Rules.cs:line 62
+   at Subscriptions.Application.PaymentService.&lt;&gt;c__DisplayClass3_0.&lt;Create&gt;b__0(IData data) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/PaymentService.cs:line 20
+   at Subscriptions.Application.Tests.MemoryData.Transaction[T](Func`2 work) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 15
+   at Subscriptions.Application.Tests.TestContext.&lt;Bind&gt;b__27_3[T](Func`2 work) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/TestContext.cs:line 58
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+--- End of stack trace from previous location ---
+   at Moq.Extensions.InvokePreserveStack(Delegate del, IReadOnlyList`1 args) in /_/src/Moq/Extensions.cs:line 163
+   at Moq.MethodCall.&lt;&gt;c__DisplayClass23_0.&lt;SetReturnComputedValueBehavior&gt;b__2(IInvocation invocation) in /_/src/Moq/MethodCall.cs:line 268
+   at Moq.Behaviors.ReturnComputedValue.Execute(Invocation invocation) in /_/src/Moq/Behaviors/ReturnComputedValue.cs:line 22
+   at Moq.MethodCall.ExecuteCore(Invocation invocation) in /_/src/Moq/MethodCall.cs:line 109
+   at Moq.Setup.Execute(Invocation invocation) in /_/src/Moq/Setup.cs:line 84
+   at Moq.FindAndExecuteMatchingSetup.Handle(Invocation invocation, Mock mock) in /_/src/Moq/Interception/InterceptionAspects.cs:line 95
+   at Moq.Mock.Moq.IInterceptor.Intercept(Invocation invocation) in /_/src/Moq/Interception/Mock.cs:line 17
+   at Moq.CastleProxyFactory.Interceptor.Intercept(IInvocation underlying) in /_/src/Moq/Interception/CastleProxyFactory.cs:line 107
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IStoreProxy.Write[T](Func`2 work)
+   at Subscriptions.Application.PaymentService.Create(Guid user, Guid subscriptionId, String key, PaymentInput input) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/PaymentService.cs:line 11
+   at Subscriptions.Application.Tests.CalendarBoundaryTests.ValidMinimumCalendarDateIsNotMissingInput(String operation) in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/CalendarBoundaryTests.cs:line 11
+   at InvokeStub_CalendarBoundaryTests.ValidMinimumCalendarDateIsNotMissingInput(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ValidMinimumCalendarDateIsNotMissingInput(&quot;subscription&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.application.tests/bin/debug/net10.0/subscriptions.application.tests.dll" id="f0549186-8a4f-5be3-b96e-997948fe86d3">
+      <Execution id="7bf79a3d-4f76-4ba6-87fa-1de4dc7f7e0f" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Application.Tests.CalendarBoundaryTests" name="ValidMinimumCalendarDateIsNotMissingInput(&quot;subscription&quot;)" />
+    </UnitTest>
+    <UnitTest name="ValidMinimumCalendarDateIsNotMissingInput(&quot;analytics&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.application.tests/bin/debug/net10.0/subscriptions.application.tests.dll" id="643bdb43-51d5-b913-0abd-7fad167969aa">
+      <Execution id="2d871522-1f45-44ec-aca7-61446711e63b" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Application.Tests.CalendarBoundaryTests" name="ValidMinimumCalendarDateIsNotMissingInput(&quot;analytics&quot;)" />
+    </UnitTest>
+    <UnitTest name="ValidMinimumCalendarDateIsNotMissingInput(&quot;payment&quot;)" storage="/users/egorharitonov/documents/1. учебные предметы/4 курс/тестирование и контроль по/практическая 3/part2/tests/subscriptions.application.tests/bin/debug/net10.0/subscriptions.application.tests.dll" id="0ad48d57-116f-d350-d8c3-84688acf967a">
+      <Execution id="08f13a5d-dd27-45b7-a56c-47aa05e15db5" />
+      <TestMethod codeBase="/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="Subscriptions.Application.Tests.CalendarBoundaryTests" name="ValidMinimumCalendarDateIsNotMissingInput(&quot;payment&quot;)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f0549186-8a4f-5be3-b96e-997948fe86d3" executionId="7bf79a3d-4f76-4ba6-87fa-1de4dc7f7e0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="643bdb43-51d5-b913-0abd-7fad167969aa" executionId="2d871522-1f45-44ec-aca7-61446711e63b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ad48d57-116f-d350-d8c3-84688acf967a" executionId="08f13a5d-dd27-45b7-a56c-47aa05e15db5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 5.0.0.0: Test execution started
+Running selected tests in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Application.Tests/bin/Debug/net10.0/Subscriptions.Application.Tests.dll
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 5.0.0.0: Test execution complete
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,179 @@
+$ ['dotnet', 'test', 'tests/Subscriptions.Api.Tests', '--filter', 'FullyQualifiedName~OpenApiSecurityTests', '--logger', 'trx', '--results-directory', 'artifacts/swagger-bearer-2026-11-26/red-results']
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  Subscriptions.Domain -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Domain/bin/Debug/net10.0/Subscriptions.Domain.dll
+  Subscriptions.Application -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Application/bin/Debug/net10.0/Subscriptions.Application.dll
+  Subscriptions.Infrastructure -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Infrastructure/bin/Debug/net10.0/Subscriptions.Infrastructure.dll
+  Subscriptions.Api -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api/bin/Debug/net10.0/Subscriptions.Api.dll
+  Subscriptions.Api.Tests -> /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll
+Тестовый запуск для /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/bin/Debug/net10.0/Subscriptions.Api.Tests.dll (.NETCoreApp,Version=v10.0)
+Общее количество тестовых файлов (1), соответствующих указанному шаблону.
+  Не пройден ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative [896 ms]
+  Сообщение об ошибке:
+   Multiple failures or warnings in test:
+  1)   post /api/v1/subscriptions: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  2)   get /api/v1/subscriptions: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  3)   get /api/v1/subscriptions/{id}: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  4)   patch /api/v1/subscriptions/{id}: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  5)   delete /api/v1/subscriptions/{id}: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  6)   post /api/v1/subscriptions/{id}/pause: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  7)   post /api/v1/subscriptions/{id}/resume: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  8)   post /api/v1/subscriptions/{id}/cancel: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  9)   post /api/v1/subscriptions/{subscriptionId}/payments: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  10)   get /api/v1/payments: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  11)   patch /api/v1/payments/{id}: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  12)   post /api/v1/payments/{id}/void: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  13)   get /api/v1/payments/{id}/audit: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  14)   get /api/v1/analytics/expenses: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+  15)   get /api/v1/analytics/forecast: security must name the registered scheme, not {}
+Assert.That(requirement.EnumerateObject().Select(p => p.Name), Is.EqualTo(new[] { "Bearer" }))
+  Expected is <System.String[1]>, actual is <System.Linq.Enumerable+IEnumerableSelectIterator`2[System.Text.Json.JsonProperty,System.String]>
+  Values differ at index [0]
+  Missing:  < "Bearer", ... >
+
+  Трассировка стека:
+     at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+
+1)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+2)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+3)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+4)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+5)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+6)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+7)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+8)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+9)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+10)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+11)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+12)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+13)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+14)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+15)    at Subscriptions.Api.Tests.OpenApiSecurityTests.<>c__DisplayClass1_0.<ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative>b__0() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 34
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Subscriptions.Api.Tests.OpenApiSecurityTests.ProtectedOperations_SerializeNamedBearerRequirementWithoutAnonymousAlternative() in /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/tests/Subscriptions.Api.Tests/OpenApiSecurityTests.cs:line 24
+
+
+  Стандартные выходные сообщения:
+ info: Microsoft.Hosting.Lifetime[0]
+       Application started. Press Ctrl+C to shut down.
+ info: Microsoft.Hosting.Lifetime[0]
+       Hosting environment: Development
+ info: Microsoft.Hosting.Lifetime[0]
+       Content root path: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/src/Subscriptions.Api
+ info: RequestAudit[0]
+       unmatched 200 117.1836ms b9765941881e418aa35b6d9e452a32d4
+ info: Microsoft.Hosting.Lifetime[0]
+       Application is shutting down...
+
+
+Файл результатов: /Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/swagger-bearer-2026-11-26/red-results/_MacBook-Air-Egor_2026-11-26_22_23_25_net10.0.trx
+
+Не пройден!: не пройдено     1, пройдено     1, пропущено     0, всего     2, длительность 1 s. - Subscriptions.Api.Tests.dll (net10.0)
+
+EXIT CODE: 1

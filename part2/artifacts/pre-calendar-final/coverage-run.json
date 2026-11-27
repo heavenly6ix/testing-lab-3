@@ -1,0 +1,18 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Subscriptions.Application.Tests",
+    "--no-build",
+    "--settings",
+    "coverage.runsettings",
+    "--collect",
+    "XPlat Code Coverage",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/final/coverage"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-21T13:42:52.792019+00:00"
+}

@@ -1,0 +1,167 @@
+{
+  "checks": [
+    {
+      "check": "all_preexisting_materials_outside_part2_unchanged",
+      "passed": true,
+      "detail": {
+        "files": 770,
+        "changes": []
+      }
+    },
+    {
+      "check": "required_deliverables_exist",
+      "passed": true,
+      "detail": [
+        "README.md",
+        "PART2_REPORT.md",
+        "Subscriptions.sln",
+        "docs/requirements-review.md",
+        "docs/final-requirements.md",
+        "docs/final-requirements.v0.1.md",
+        "docs/api-contract.md",
+        "docs/prompts.md",
+        "docs/code-review.md",
+        "docs/smoke-tests.md",
+        "docs/requirements-traceability.md",
+        "artifacts/coverage/coverage.cobertura.xml",
+        "artifacts/coverage/coverage.opencover.xml",
+        "artifacts/coverage/html/index.html",
+        "artifacts/coverage/summary.json"
+      ]
+    },
+    {
+      "check": "traceability_keeps_all_35_ids",
+      "passed": true,
+      "detail": {
+        "rows": 35
+      }
+    },
+    {
+      "check": "working_requirements_keep_all_ids",
+      "passed": true,
+      "detail": {
+        "sections": 35
+      }
+    },
+    {
+      "check": "actual_prompts_preserved",
+      "passed": true,
+      "detail": {
+        "prompts": [
+          "P001",
+          "P002"
+        ]
+      }
+    },
+    {
+      "check": "actual_openapi_matches_22_contract_operations",
+      "passed": true,
+      "detail": {
+        "operations": 22,
+        "paths": 19,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "authored_document_links_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_generated_binaries_db_or_word_in_delivery",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_raw_jwt_in_delivered_text_artifacts",
+      "passed": true,
+      "detail": {
+        "files_with_matches": []
+      }
+    },
+    {
+      "check": "latest_real_tests_green",
+      "passed": true,
+      "detail": {
+        "unit": {
+          "passed": 104,
+          "failed": 0,
+          "skipped": 0,
+          "total": 104
+        },
+        "api": {
+          "passed": 45,
+          "failed": 0,
+          "skipped": 0,
+          "total": 45
+        },
+        "infrastructure": {
+          "passed": 4,
+          "failed": 0,
+          "skipped": 0,
+          "total": 4
+        }
+      }
+    },
+    {
+      "check": "latest_real_smoke_green",
+      "passed": true,
+      "detail": {
+        "base_url": "http://127.0.0.1:5087",
+        "utc": "2026-11-21T13:56:51.557542+00:00",
+        "requests": 31,
+        "passed": 31,
+        "failed": 0,
+        "secrets_redacted": true
+      }
+    },
+    {
+      "check": "coverage_thresholds_and_html",
+      "passed": true,
+      "detail": {
+        "line": 100.0,
+        "branch": 98.54014598540147,
+        "statement": "statement coverage not directly available"
+      }
+    },
+    {
+      "check": "real_command_exit_zero_restore",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/restore.log"
+    },
+    {
+      "check": "real_command_exit_zero_build",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/build.log"
+    },
+    {
+      "check": "real_command_exit_zero_test",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/test.log"
+    },
+    {
+      "check": "real_command_exit_zero_coverage-run",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/coverage-run.log"
+    },
+    {
+      "check": "real_command_exit_zero_smoke-run",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/smoke-run.log"
+    },
+    {
+      "check": "real_command_exit_zero_swagger-ui",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/swagger-ui.log"
+    },
+    {
+      "check": "real_command_exit_zero_html",
+      "passed": true,
+      "detail": "/Users/egorharitonov/Documents/1. Учебные предметы/4 курс/Тестирование и контроль ПО/Практическая 3/part2/artifacts/final/html.log"
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "outside_part2_unchanged": true
+}

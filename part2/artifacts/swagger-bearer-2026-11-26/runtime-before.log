@@ -1,0 +1,12 @@
+$ ['python3', 'artifacts/swagger-bearer-2026-11-26/verify-runtime.py', 'before']
+{
+  "mode": "before",
+  "protected": 15,
+  "public": 7,
+  "sample_security": [
+    {}
+  ],
+  "checks": []
+}
+
+EXIT CODE: 0

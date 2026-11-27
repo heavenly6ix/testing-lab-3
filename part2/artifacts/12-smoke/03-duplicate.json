@@ -1,0 +1,21 @@
+{
+  "label": "duplicate",
+  "requirement": "F01",
+  "request": "curl -i -X POST http://127.0.0.1:5087/api/v1/auth/register -H 'Content-Type: application/json' --data '{\"email\":\" SMOKE-CD07B72A5A134ECCB0D3198F9B1C92F4@EXAMPLE.TEST \",\"password\":\"[REDACTED]\"}'",
+  "expected": 409,
+  "actual_http": 409,
+  "response_headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Sat, 21 Nov 2026 13:29:27 GMT",
+    "Server": "Kestrel",
+    "Cache-Control": "no-store",
+    "Transfer-Encoding": "chunked",
+    "X-Correlation-ID": "962589fd194c4f88b60db52b7bf59f26"
+  },
+  "actual_result": {
+    "code": "duplicate_email",
+    "message": "Operation conflicts with current state.",
+    "correlationId": "962589fd194c4f88b60db52b7bf59f26"
+  },
+  "passed": true
+}

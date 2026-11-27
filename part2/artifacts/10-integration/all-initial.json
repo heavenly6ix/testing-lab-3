@@ -1,0 +1,13 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "--no-restore",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "artifacts/10-integration/all-initial"
+  ],
+  "exit_code": 1,
+  "utc": "2026-11-21T13:25:25.155633+00:00"
+}
